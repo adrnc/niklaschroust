@@ -1,0 +1,13 @@
+<script>
+	document.querySelector('.js-menu-open').addEventListener('click', event => {
+		event.preventDefault();
+		document.querySelector('.js-menu').classList.add('menu-open');
+	}, false);
+	document.querySelector('.js-menu-close').addEventListener('click', event => {
+		event.preventDefault();
+		if (location.hash == '#menu') location.hash = '';
+		document.querySelector('.js-menu').classList.remove('menu-open');
+	}, false);
+</script>
+<link rel="stylesheet" href="{{ .Scratch.Get "font" }}">
+<link rel="stylesheet" href="{{ (.Scratch.Get "style").RelPermalink }}">

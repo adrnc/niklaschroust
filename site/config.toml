@@ -1,0 +1,31 @@
+defaultContentLanguage = 'de'
+defaultContentLanguageInSubdir = false
+uglyURLs = false
+disableKinds = ['RSS']
+
+title = 'Niklas A. Chroust'
+baseURL = '/'
+googleAnalytics = ''
+
+[params]
+	author = 'Niklas A. Chroust'
+	firstname = 'Niklas'
+	middlename = 'Alexander'
+	surname = 'Chroust'
+	email = 'chroust.niklas@gmail.com'
+	keywords = ['niklas chroust']
+
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.parser]
+			autoHeadingIDType = 'blackfriday'
+
+[languages]
+	[languages.de]
+		weight = 1
+		languageName = 'Deutsch'
+		languageCode = 'de'
+	[languages.en]
+		weight = 2
+		languageName = 'English'
+		languageCode = 'en'

@@ -1,0 +1,26 @@
+[menu]
+	other = 'Menu'
+
+[home]
+	other = 'Home'
+
+[life]
+	other = 'Life'
+
+[contact]
+	other = 'Contact'
+
+[events]
+	other = 'Events'
+
+[gallery]
+	other = 'Gallery'
+
+[music]
+	other = 'Music'
+
+[notfound]
+	other = 'Not found'
+
+[close]
+	other = 'Close'

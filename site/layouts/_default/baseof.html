@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+	<head>
+		{{ partial "html-head" . }}
+		{{ block "html-head-inject" . }}{{ end }}
+	</head>
+	<body>
+		<div class="page">
+			{{ partial "header" . }}
+			<main>
+				{{ partial "heading" . }}
+				<div class="content{{ if eq .Kind "404" }} hidden{{ end }}">
+					{{ block "main" . }}
+						{{ .Content }}
+					{{ end }}
+				</div>
+			</main>
+			{{ if not (eq .Kind "404" ) }}
+				{{ partial "footer" . }}
+			{{ end }}
+		</div>
+		{{ partial "html-body" . }}
+		{{ block "html-body-inject" . }}{{ end }}
+	</body>
+</html>

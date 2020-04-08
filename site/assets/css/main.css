@@ -1,0 +1,153 @@
+.page {display: block;}
+
+.about {
+	font-weight: normal;
+	font-size: 3rem;
+	margin: 2.75rem 0 3.25rem 0;
+}
+
+.about a {
+	text-decoration: none;
+	color: var(--font-color1);
+}
+
+.about-invisible {visibility: hidden;}
+
+.about-small, .about-extrasmall {display: none;}
+
+.about-colorful {color: var(--color1);}
+
+.heading {
+	min-height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5rem;
+	background-color: var(--background-color1);
+}
+
+
+header {
+	font-family: var(--font-family2);
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	letter-spacing: 0.3rem;
+	padding: 0 3rem;
+	justify-content: space-between;
+	user-select: none;
+	border-top: 0.3rem solid var(--color1);
+}
+
+.title {
+	font-family: var(--font-family2);
+	letter-spacing: 0.7rem;
+	text-align: center;
+	font-size: calc(6vw + 2rem);
+	margin: 0;
+	font-weight: normal;
+}
+
+nav {
+	color: var(--font-color2);
+	text-align: center;
+}
+
+nav a {
+	display: inline-block;
+	color: var(--font-color1);
+	text-decoration: none;
+	margin: 1.5rem 1rem;
+	letter-spacing: 0.3rem;
+	font-size: 2.5rem;
+}
+
+.menu-inner a {
+	box-shadow: inset 0 -0.5rem var(--color1);
+}
+
+.lang {
+	font-weight: bold;
+	color: var(--color1);
+	margin-right: 0;
+}
+
+.menu {
+	display: inline-block;
+	overflow: hidden;
+	width: 0;
+	transition: opacity 0.3s ease;
+	opacity: 0;
+	height: 0;
+}
+
+.menu.menu-open, .menu:target {
+	position: absolute;
+	width: auto;
+	height: auto;
+	background-color: var(--background-color2);
+	right: 0;
+	top: 0;
+	opacity: 1;
+	width: 100%;
+	box-shadow: 0 0 20rem 100vh rgba(0, 0, 0, 0.5);
+}
+
+.menu-inner {padding: 3rem;}
+
+.menu-close {
+	display: block;
+	margin: 0;
+	padding: 1.5rem 3rem;
+	background-color: var(--color1);
+}
+
+nav span {display: none;}
+
+@media screen and (min-width: 1300px) {
+	nav a {margin: 0 1.5rem;}
+	header {padding: 0 4rem;}
+	.menu, .menu-inner {
+		display: inline;
+		padding: 0;
+		opacity: 1;
+	}
+	.menu-button, .menu-close, .menu-home {display: none;}
+	.menu-inner a {box-shadow: none;}
+	nav span {display: inline;}
+	.about {
+		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header {letter-spacing: normal;}
+	.heading {min-height: 55vh;}
+	.about-small {display: inline;}
+	.about-small-not {display: none;}
+}
+
+@media screen and (max-width: 450px) {
+	.about {
+		font-size: 2.5rem;
+		margin: 3rem 0;
+	}
+	.about-extrasmall {display: inline;}
+	.about-extrasmall-not {display: none;}
+}
+
+main {
+	background-color: var(--background-color2);
+}
+
+.content {
+	font-size: 2rem;
+	padding: 3rem 2rem;
+	margin: 0 auto;
+}
+
+footer {
+	padding: 3rem 2rem;
+	border-top: 0.3rem solid var(--font-color1);
+	background-color: var(--color1);
+}
