@@ -85,6 +85,7 @@ nav a {
 	position: absolute;
 	width: auto;
 	height: auto;
+	background-color: white;
 	background-color: var(--background-color2);
 	right: 0;
 	top: 0;
