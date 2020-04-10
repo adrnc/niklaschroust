@@ -15,11 +15,6 @@ googleAnalytics = ''
 	email = 'chroust.niklas@gmail.com'
 	keywords = ['niklas chroust']
 
-[markup]
-	[markup.goldmark]
-		[markup.goldmark.parser]
-			autoHeadingIDType = 'blackfriday'
-
 [languages]
 	[languages.de]
 		weight = 1
@@ -29,3 +24,18 @@ googleAnalytics = ''
 		weight = 2
 		languageName = 'English'
 		languageCode = 'en'
+
+[privacy]
+	[privacy.googleAnalytics]
+		anonymizeIP = true
+		respectDoNotTrack = true
+		useSessionStorage = true
+	[privacy.twitter]
+		enableDNT = true
+	[privacy.youtube]
+		privacyEnhanced = true
+
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.parser]
+			autoHeadingIDType = 'blackfriday'
