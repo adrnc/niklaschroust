@@ -2,25 +2,25 @@
 	<h1 class="about{{ if eq .Kind "home" }} about-invisible{{ end }}">
 		<a href="{{ (.GetPage "/").RelPermalink }}">
 			<span class="about-colorful">{{ substr .Site.Params.firstname 0 1 }}</span><span class="about-small">.</span><span class="about-small-not">{{ substr .Site.Params.firstname 1 }}</span>
-			{{ with .Site.Params.middlename }}{{ substr . 0 1 }}. {{ end }}
+			{{- with .Site.Params.middlename }} {{ substr . 0 1 }}. {{ end -}}
 			{{ substr .Site.Params.surname 0 1 }}<span class="about-extrasmall">.</span><span class="about-extrasmall-not">{{ substr .Site.Params.surname 1 }}</span>
 		</a>
 	</h1>
 	<nav>
 		<a href="#menu" class="js-menu-open menu-button">{{ i18n "menu" }}</a><div class="js-menu menu" id="menu">
 			<div class="menu-inner">
-				<a href="{{ (.GetPage "/").RelPermalink }}" class="menu-home">{{ i18n "home" }}</a>
-				<a href="{{ (.GetPage "/events").RelPermalink }}">{{ i18n "events" }}</a><span> |</span>
-				<a href="{{ (.GetPage "/music").RelPermalink }}">{{ i18n "music" }}</a><span> |</span>
-				<a href="{{ (.GetPage "/life").RelPermalink }}">{{ i18n "life" }}</a><span> |</span>
-				<a href="{{ (.GetPage "/gallery").RelPermalink }}">{{ i18n "gallery" }}</a><span> |</span>
+				<a href="{{ (.GetPage "/").RelPermalink }}" class="menu-home">{{ i18n "home" }}</a>{{ print -}}
+				<a href="{{ (.GetPage "/events").RelPermalink }}">{{ i18n "events" }}</a><span class="nav-delimit">|</span>{{ print -}}
+				<a href="{{ (.GetPage "/music").RelPermalink }}">{{ i18n "music" }}</a><span class="nav-delimit">|</span>{{ print -}}
+				<a href="{{ (.GetPage "/life").RelPermalink }}">{{ i18n "life" }}</a><span class="nav-delimit">|</span>{{ print -}}
+				<a href="{{ (.GetPage "/gallery").RelPermalink }}">{{ i18n "gallery" }}</a><span class="nav-delimit">|</span>{{ print -}}
 				<a href="{{ (.GetPage "/contact").RelPermalink }}">{{ i18n "contact" }}</a>
 			</div>
 			<a href="#" class="js-menu-close menu-close">{{ i18n "close" }}</a>
 		</div>
 		{{ if .IsTranslated }}
 			{{ range .Translations }}
-				| <a class="lang" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Language.LanguageName }}">{{ .Lang | upper }}</a>
+				<span class="lang-delimit">|</span><a class="lang" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Language.LanguageName }}">{{ .Lang | upper }}</a>
 			{{ end }}
 		{{ end }}
 	</nav>

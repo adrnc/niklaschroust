@@ -104,10 +104,11 @@ nav a {
 	background-color: var(--color1);
 }
 
-nav span {display: none;}
+.lang-delimit {display: inline;}
+.nav-delimit {display: none;}
 
 @media screen and (min-width: 1300px) {
-	nav a {margin: 0 1.5rem;}
+	nav a {margin: 0 2rem;}
 	header {padding: 0 4rem;}
 	.menu, .menu-inner {
 		display: inline;
@@ -116,7 +117,7 @@ nav span {display: none;}
 	}
 	.menu-button, .menu-close, .menu-home {display: none;}
 	.menu-inner a {box-shadow: none;}
-	nav span {display: inline;}
+	.nav-delimit {display: inline;}
 	.about {
 		font-size: 4rem;
 	}
