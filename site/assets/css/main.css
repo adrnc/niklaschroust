@@ -99,6 +99,7 @@ nav a {
 	0%, 100% {
 		width: auto;
 		height: auto;
+		box-shadow: 0 0 20rem 100vh rgba(0, 0, 0, 0.5);
 	}
 }
 
