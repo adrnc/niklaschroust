@@ -79,15 +79,16 @@ nav a {
 .menu {
 	display: inline-block;
 	position: absolute;
-	visibility: hidden;
 	opacity: 0;
 	left: 0;
 	right: 0;
 	top: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
 	background-color: white;
 	background-color: var(--background-color2);
 	transition: opacity 0.2s ease;
-	box-shadow: 0 0 20rem 100vh rgba(0, 0, 0, 0.5);
 }
 
 .menu-invisible {
@@ -95,7 +96,10 @@ nav a {
 }
 
 @keyframes menu-invisible {
-	0%, 100% {visibility: visible;}
+	0%, 100% {
+		width: auto;
+		height: auto;
+	}
 }
 
 .menu.menu-open, .menu:target {
@@ -103,6 +107,7 @@ nav a {
 	height: auto;
 	visibility: visible;
 	opacity: 1;
+	box-shadow: 0 0 20rem 100vh rgba(0, 0, 0, 0.5);
 }
 
 .menu-inner {padding: 3rem;}
@@ -120,10 +125,9 @@ nav a {
 @media screen and (min-width: 1300px) {
 	nav a {margin: 0 2rem;}
 	header {padding: 0 4rem;}
-	.menu, .menu-inner {
+	.menu, .menu.menu-open, .menu:target, .menu-inner {
 		display: inline;
 		padding: 0;
-		visibility: visible;
 		box-shadow: none;
 		position: relative;
 		background-color: transparent;
