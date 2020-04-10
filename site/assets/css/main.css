@@ -88,11 +88,11 @@ nav a {
 	overflow: hidden;
 	background-color: white;
 	background-color: var(--background-color2);
-	transition: opacity 0.2s linear;
+	transition: opacity 0.3s ease;
 }
 
 .menu-invisible {
-	animation: 0.2s linear 0s menu-invisible;
+	animation: 0.3s ease-in 0s menu-invisible;
 }
 
 @keyframes menu-invisible {
@@ -101,6 +101,8 @@ nav a {
 		height: auto;
 		box-shadow: 0 0 20rem 100vh rgba(0, 0, 0, 0.5);
 	}
+	from {transform: translateY(0);}
+	to {transform: translateY(-40vw);}
 }
 
 .menu.menu-open, .menu:target {
@@ -109,6 +111,12 @@ nav a {
 	visibility: visible;
 	opacity: 1;
 	box-shadow: 0 0 20rem 100vh rgba(0, 0, 0, 0.5);
+	animation: 0.3s ease-out 0s menu-open;
+}
+
+@keyframes menu-open {
+	from {transform: translateY(-40vw);}
+	to {transform: translateY(0);}
 }
 
 .menu-inner {padding: 3rem;}
