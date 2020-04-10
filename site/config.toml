@@ -1,7 +1,7 @@
 defaultContentLanguage = 'de'
 defaultContentLanguageInSubdir = false
 uglyURLs = false
-disableKinds = ['RSS']
+disableKinds = ['taxonomy', 'taxonomyTerm', 'RSS']
 
 title = 'Niklas A. Chroust'
 baseURL = '/'
