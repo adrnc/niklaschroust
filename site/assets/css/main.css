@@ -102,7 +102,7 @@ nav a {
 		height: auto;
 	}
 	from {transform: translateY(0);}
-	to {transform: translateY(-30vw);}
+	to {transform: translateY(-30rem);}
 }
 
 .menu.menu-open, .menu:target {
@@ -115,7 +115,7 @@ nav a {
 }
 
 @keyframes menu-open {
-	from {transform: translateY(-30vw);}
+	from {transform: translateY(-30rem);}
 	to {transform: translateY(0);}
 }
 
