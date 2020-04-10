@@ -88,11 +88,12 @@ nav a {
 	overflow: hidden;
 	background-color: white;
 	background-color: var(--background-color2);
-	transition: opacity 0.4s ease, box-shadow 0.4s ease;
+	transition: opacity 0.4s ease;
 }
 
 .menu-invisible {
 	animation: 0.4s ease-in 0s menu-invisible;
+	box-shadow: 0 0 15rem 100vh rgba(0, 0, 0, 0.5);
 }
 
 @keyframes menu-invisible {
@@ -109,7 +110,7 @@ nav a {
 	height: auto;
 	visibility: visible;
 	opacity: 1;
-	box-shadow: 0 0 20rem 100vh rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 15rem 100vh rgba(0, 0, 0, 0.5);
 	animation: 0.4s ease-out 0s menu-open;
 }
 
