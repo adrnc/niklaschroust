@@ -1,12 +1,16 @@
 <script>
 	document.querySelector('.js-menu-open').addEventListener('click', event => {
 		event.preventDefault();
-		document.querySelector('.js-menu').classList.add('menu-open');
+		const menu = document.querySelector('.js-menu');
+		menu.classList.add('menu-open');
 	}, false);
 	document.querySelector('.js-menu-close').addEventListener('click', event => {
 		event.preventDefault();
-		if (location.hash == '#menu') location.hash = '';
-		document.querySelector('.js-menu').classList.remove('menu-open');
+		if (location.hash == '#_menu') location.hash = '';
+		const menu = document.querySelector('.js-menu');
+		menu.classList.remove('menu-open');
+		menu.classList.add('menu-invisible');
+		setTimeout(() => menu.classList.remove('menu-invisible'), parseFloat(getComputedStyle(menu).animationDuration) * 1000);
 	}, false);
 </script>
 <link rel="stylesheet" href="{{ .Scratch.Get "font" }}">

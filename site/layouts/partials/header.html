@@ -7,21 +7,22 @@
 		</a>
 	</h1>
 	<nav>
-		<a href="#_menu" class="js-menu-open menu-button">{{ i18n "menu" }}</a><div class="js-menu menu" id="_menu">
+		<a href="#_menu" class="js-menu-open menu-button">{{ i18n "menu" }}</a>{{ print -}}
+		<div class="js-menu menu" id="_menu">
 			<div class="menu-inner">
 				<a href="{{ (.GetPage "/").RelPermalink }}" class="menu-home">{{ i18n "home" }}</a>{{ print -}}
 				<a href="{{ (.GetPage "/events").RelPermalink }}">{{ i18n "events" }}</a><span class="nav-delimit">|</span>{{ print -}}
 				<a href="{{ (.GetPage "/music").RelPermalink }}">{{ i18n "music" }}</a><span class="nav-delimit">|</span>{{ print -}}
 				<a href="{{ (.GetPage "/life").RelPermalink }}">{{ i18n "life" }}</a><span class="nav-delimit">|</span>{{ print -}}
 				<a href="{{ (.GetPage "/gallery").RelPermalink }}">{{ i18n "gallery" }}</a><span class="nav-delimit">|</span>{{ print -}}
-				<a href="{{ (.GetPage "/contact").RelPermalink }}">{{ i18n "contact" }}</a>
-			</div>
-			<a href="#" class="js-menu-close menu-close">{{ i18n "close" }}</a>
+				<a href="{{ (.GetPage "/contact").RelPermalink }}">{{ i18n "contact" }}</a>{{ print -}}
+			</div>{{ print -}}
+			<a href="#" class="js-menu-close menu-close">{{ i18n "close" }}</a>{{ print -}}
 		</div>
-		{{ if .IsTranslated }}
-			{{ range .Translations }}
+		{{- if .IsTranslated -}}
+			{{- range .Translations -}}
 				<span class="lang-delimit">|</span><a class="lang" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Language.LanguageName }}">{{ .Lang | upper }}</a>
-			{{ end }}
+			{{- end }}
 		{{ end }}
 	</nav>
 </header>

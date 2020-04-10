@@ -78,24 +78,31 @@ nav a {
 
 .menu {
 	display: inline-block;
-	overflow: hidden;
-	width: 0;
-	transition: opacity 0.3s ease;
+	position: absolute;
+	visibility: hidden;
 	opacity: 0;
-	height: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: white;
+	background-color: var(--background-color2);
+	transition: opacity 0.2s ease;
+	box-shadow: 0 0 20rem 100vh rgba(0, 0, 0, 0.5);
+}
+
+.menu-invisible {
+	animation: 0.2s ease 0s menu-invisible;
+}
+
+@keyframes menu-invisible {
+	0%, 100% {visibility: visible;}
 }
 
 .menu.menu-open, .menu:target {
-	position: absolute;
 	width: auto;
 	height: auto;
-	background-color: white;
-	background-color: var(--background-color2);
-	right: 0;
-	top: 0;
+	visibility: visible;
 	opacity: 1;
-	width: 100%;
-	box-shadow: 0 0 20rem 100vh rgba(0, 0, 0, 0.5);
 }
 
 .menu-inner {padding: 3rem;}
@@ -116,7 +123,12 @@ nav a {
 	.menu, .menu-inner {
 		display: inline;
 		padding: 0;
+		visibility: visible;
+		box-shadow: none;
+		position: relative;
+		background-color: transparent;
 		opacity: 1;
+		animation: none;
 	}
 	.menu-button, .menu-close, .menu-home {display: none;}
 	.menu-inner a {box-shadow: none;}
