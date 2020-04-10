@@ -88,11 +88,11 @@ nav a {
 	overflow: hidden;
 	background-color: white;
 	background-color: var(--background-color2);
-	transition: opacity 0.2s ease;
+	transition: opacity 0.2s linear;
 }
 
 .menu-invisible {
-	animation: 0.2s ease 0s menu-invisible;
+	animation: 0.2s linear 0s menu-invisible;
 }
 
 @keyframes menu-invisible {
