@@ -23,7 +23,7 @@
   from = '/*'
   to = '/404.html'
   status = 404
-  conditions = {Language = ['de']}
+  conditions = {Language = ['ch']}
 
 [[redirects]]
   from = '/*'
