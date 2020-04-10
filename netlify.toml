@@ -20,15 +20,13 @@
 	compress = true
 
 [[redirects]]
-  from = 'en/*'
-	to = '/en/404.html'
-	force = true
-  status = 404
-
-[[redirects]]
   from = '/*'
   to = '/404.html'
   status = 404
 	force = true
 
-
+[[redirects]]
+  from = 'en/*'
+	to = '/en/404.html'
+  status = 404
+	force = true
