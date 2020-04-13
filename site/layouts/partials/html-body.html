@@ -1,10 +1,19 @@
-<script>
-	document.querySelector('.js-menu-open').addEventListener('click', event => {
+<script type="module">
+	const menuOpen = document.querySelector('.js-menu-open'),
+	menuClose = document.querySelector('.js-menu-close');
+
+	menuOpen.removeAttribute('href');
+	menuOpen.setAttribute('tabindex', '-1');
+	menuOpen.querySelector('button').setAttribute('tabindex', '0');
+	menuOpen.addEventListener('click', event => {
 		event.preventDefault();
-		const menu = document.querySelector('.js-menu');
-		menu.classList.add('menu-open');
+		document.querySelector('.js-menu').classList.add('menu-open');
 	}, false);
-	document.querySelector('.js-menu-close').addEventListener('click', event => {
+
+	menuClose.removeAttribute('href');
+	menuClose.setAttribute('tabindex', '-1');
+	menuClose.querySelector('button').setAttribute('tabindex', '0');
+	menuClose.addEventListener('click', event => {
 		event.preventDefault();
 		if (location.hash == '#_menu') location.hash = '';
 		const menu = document.querySelector('.js-menu');

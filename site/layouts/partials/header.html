@@ -7,7 +7,7 @@
 		</a>
 	</h1>
 	<nav>
-		<a href="#_menu" class="js-menu-open menu-button">{{ i18n "menu" }}</a>{{ print -}}
+		<a href="#_menu" class="js-menu-open menu-button" tabindex="0" aria-hidden="true"><button tabindex="-1">{{ i18n "menu" }}</button></a>{{ print -}}
 		<div class="js-menu menu" id="_menu">
 			<div class="menu-inner">
 				<a href="{{ (.GetPage "/").RelPermalink }}" class="menu-home">{{ i18n "home" }}</a>{{ print -}}
@@ -17,7 +17,7 @@
 				<a href="{{ (.GetPage "/gallery").RelPermalink }}">{{ i18n "gallery" }}</a><span class="nav-delimit">|</span>{{ print -}}
 				<a href="{{ (.GetPage "/contact").RelPermalink }}">{{ i18n "contact" }}</a>{{ print -}}
 			</div>{{ print -}}
-			<a href="#" class="js-menu-close menu-close">{{ i18n "close" }}</a>{{ print -}}
+			<a href="#" class="js-menu-close menu-close" tabindex="0" aria-hidden="true"><button class="menu-close-inner" tabindex="-1">{{ i18n "close" }}</button></a>{{ print -}}
 		</div>
 		{{- if .IsTranslated -}}
 			{{- range .Translations -}}

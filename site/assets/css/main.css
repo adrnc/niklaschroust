@@ -26,7 +26,6 @@
 	background-color: var(--background-color1);
 }
 
-
 header {
 	font-family: var(--font-family2);
 	display: flex;
@@ -60,6 +59,16 @@ nav a {
 	margin: 1.5rem 1rem;
 	letter-spacing: 0.3rem;
 	font-size: 2.5rem;
+	cursor: pointer;
+}
+
+nav button {
+	display: inline;
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
 }
 
 .menu-inner a {
@@ -78,7 +87,7 @@ nav a {
 
 .menu {
 	display: inline-block;
-	position: absolute;
+	position: fixed;
 	opacity: 0;
 	left: 0;
 	right: 0;
@@ -128,11 +137,17 @@ nav a {
 
 .menu-inner {padding: 3rem;}
 
-.menu-close {
+.menu-close, .menu-close-inner {
 	display: block;
 	margin: 0;
-	padding: 1.5rem 3rem;
 	background-color: var(--color1);
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.menu-close-inner {
+	padding: 1.5rem 3rem;
+	width: 100%;
 }
 
 .lang-delimit {display: inline;}
