@@ -9,10 +9,6 @@
 {{ if not .Site.IsServer }}{{ .Scratch.Set "style" (.Scratch.Get "style" | minify) }}{{ end }}
 <link rel="preload" as="style" href="{{ (.Scratch.Get "style").RelPermalink }}">
 
-{{ if not .Site.IsServer }}
-	{{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
-
 <title>
 	{{- if eq .Kind "404" -}}
 		404 {{ i18n "notfound" }}
@@ -70,3 +66,7 @@
 	.page {display: none;}
 	.hidden {display: none !important;}
 </style>
+
+{{ if not .Site.IsServer }}
+	{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
