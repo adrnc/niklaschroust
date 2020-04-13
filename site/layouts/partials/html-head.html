@@ -17,7 +17,7 @@
 	{{- if eq .Kind "404" -}}
 		404 {{ i18n "notfound" }}
 	{{- else -}}
-	{{ .Title }}{{ if not (eq .Kind "home") }} - {{ .Site.Title }}{{ end }}
+		{{ .Title }}{{ if not (eq .Kind "home") }} - {{ .Site.Title }}{{ end }}
 	{{- end -}}
 </title>
 <meta name="description" content="
