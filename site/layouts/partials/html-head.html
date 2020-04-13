@@ -14,14 +14,29 @@
 {{ end }}
 
 <title>
-	{{ if eq .Kind "404" }}
+	{{- if eq .Kind "404" -}}
 		404 {{ i18n "notfound" }}
-	{{ else }}
-		{{ if not (eq .Kind "home") }}{{ .Title }} - {{ end }}{{ .Site.Title }}
-	{{ end }}
+	{{- else -}}
+		{{ if not (eq .Kind "home") }}{{ .Title }}  {{ end }}{{ .Site.Title }}
+	{{- end -}}
 </title>
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-<meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
+<meta name="description" content="
+	{{- with .Description -}}
+		{{- . -}}
+	{{- else -}}
+		{{- with .Summary -}}
+			{{ . }}
+		{{- else -}}
+			{{ .Site.Params.Description }}
+		{{- end -}}
+	{{- end -}}
+">
+<meta name="keywords" content="
+	{{- delimit .Site.Params.keywords ", " -}}
+	{{- with .Keywords -}}
+			{{ range . }}, {{ . }}{{ end }}
+	{{- end -}}
+">
 <meta name="author" content="{{ .Site.Params.Author }}">
 
 <meta name="theme-color" content="#e83055">

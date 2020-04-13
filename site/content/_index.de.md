@@ -1,3 +1,3 @@
-+++
-title = 'Niklas A. Chroust'
-+++
+---
+title: Niklas A. Chroust
+---

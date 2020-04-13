@@ -1,5 +1,3 @@
-+++
-title = 'Events'
-+++
-
-
+---
+title: Events
+---

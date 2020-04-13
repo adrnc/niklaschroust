@@ -1,6 +1,4 @@
-+++
-title = 'Galerie'
-slug = 'galerie'
-+++
-
-
+---
+title: Galerie
+slug: galerie
+---

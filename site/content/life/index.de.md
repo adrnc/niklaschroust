@@ -1,6 +1,6 @@
-+++
-title = 'Leben'
-slug = 'leben'
-+++
+---
+title: Leben
+slug: leben
+---
 
 

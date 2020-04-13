@@ -1,6 +1,6 @@
-+++
-title = 'Niklas A. Chroust'
-+++
+---
+title: Niklas A. Chroust
+---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi nullam vehicula ipsum a. Nisi vitae suscipit tellus mauris a diam maecenas. Metus vulputate eu scelerisque felis. Id volutpat lacus laoreet non curabitur gravida. Et malesuada fames ac turpis egestas. Turpis egestas sed tempus urna et pharetra pharetra massa. Massa vitae tortor condimentum lacinia quis vel eros donec. In ornare quam viverra orci. Tellus in metus vulputate eu scelerisque felis imperdiet.
 

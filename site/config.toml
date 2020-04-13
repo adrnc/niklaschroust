@@ -12,18 +12,22 @@ googleAnalytics = ''
 	firstname = 'Niklas'
 	middlename = 'Alexander'
 	surname = 'Chroust'
-	email = 'chroust.niklas@gmail.com'
-	keywords = ['niklas chroust']
 
 [languages]
 	[languages.de]
 		weight = 1
 		languageName = 'Deutsch'
 		languageCode = 'de'
+		[languages.de.params]
+			keywords = ['niklas chroust', 'musik', 'komposition']
+			description = 'Persönliche Website von Niklas A. Chroust'
 	[languages.en]
 		weight = 2
 		languageName = 'English'
 		languageCode = 'en'
+		[languages.en.params]
+			keywords = ['niklas chroust', 'music', 'composition']
+			description = 'Personal website of Niklas A. Chroust'
 
 [privacy]
 	[privacy.googleAnalytics]
