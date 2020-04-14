@@ -1,11 +1,11 @@
-<script type="module">
+<script>
 	const menuOpen = document.querySelector('.js-menu-open'),
 	menuClose = document.querySelector('.js-menu-close');
 
 	menuOpen.removeAttribute('href');
 	menuOpen.setAttribute('tabindex', '-1');
 	menuOpen.querySelector('button').setAttribute('tabindex', '0');
-	menuOpen.addEventListener('click', event => {
+	menuOpen.addEventListener('click', function(event) {
 		event.preventDefault();
 		document.querySelector('.js-menu').classList.add('menu-open');
 	}, false);
@@ -13,7 +13,7 @@
 	menuClose.removeAttribute('href');
 	menuClose.setAttribute('tabindex', '-1');
 	menuClose.querySelector('button').setAttribute('tabindex', '0');
-	menuClose.addEventListener('click', event => {
+	menuClose.addEventListener('click', function(event) {
 		event.preventDefault();
 		if (location.hash == '#_menu') location.hash = '';
 		const menu = document.querySelector('.js-menu');
