@@ -1,18 +1,19 @@
 <script>
+{
 	const menuOpen = document.querySelector('.js-menu-open'),
 	menuClose = document.querySelector('.js-menu-close');
 
-	menuOpen.removeAttribute('href');
-	menuOpen.setAttribute('tabindex', '-1');
-	menuOpen.querySelector('button').setAttribute('tabindex', '0');
+	[menuOpen, menuClose].forEach(menuItem => {
+		menuItem.removeAttribute('href');
+		menuItem.setAttribute('tabindex', '-1');
+		menuItem.firstChild.setAttribute('tabindex', '0');
+	});
+
 	menuOpen.addEventListener('click', event => {
 		event.preventDefault();
 		document.querySelector('.js-menu').classList.add('menu-open');
 	}, false);
 
-	menuClose.removeAttribute('href');
-	menuClose.setAttribute('tabindex', '-1');
-	menuClose.querySelector('button').setAttribute('tabindex', '0');
 	menuClose.addEventListener('click', event => {
 		event.preventDefault();
 		if (location.hash == '#_menu') location.hash = '';
@@ -21,7 +22,7 @@
 		menu.classList.add('menu-invisible');
 		setTimeout(() => menu.classList.remove('menu-invisible'), parseFloat(getComputedStyle(menu).animationDuration) * 1000);
 	}, false);
+}
 </script>
 
-<!--<link rel="stylesheet" href="{{ .Scratch.Get "font" }}">-->
 <link rel="stylesheet" href="{{ (.Scratch.Get "style").RelPermalink }}">
