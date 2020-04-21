@@ -10,8 +10,7 @@
 	</head>
 	<body>
 		<div class="page">
-			{{ $home := eq .Kind "home" }}
-			{{ partialCached "header" . $home }}
+			{{ partial "header" . }}
 			<main>
 				{{ partial "heading" . }}
 				<div class="content{{ if eq .Kind "404" }} hidden{{ end }}">
