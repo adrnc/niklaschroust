@@ -1,3 +1,7 @@
+{{ $style := resources.Get "css/main.css" }}
+{{ if not .Site.IsServer }}{{ $style = $style | minify }}{{ end }}
+{{ .Scratch.Set "style" $style.RelPermalink }}
+
 <!DOCTYPE html>
 <html lang="{{ .Lang }}">
 	<head>
@@ -6,7 +10,8 @@
 	</head>
 	<body>
 		<div class="page">
-			{{ partial "header" . }}
+			{{ $home := eq .Kind "home" }}
+			{{ partialCached "header" . .Lang $home }}
 			<main>
 				{{ partial "heading" . }}
 				<div class="content{{ if eq .Kind "404" }} hidden{{ end }}">
@@ -16,7 +21,7 @@
 				</div>
 			</main>
 			{{ if not (eq .Kind "404" ) }}
-				{{ partial "footer" . }}
+				{{ partialCached "footer" . .Lang }}
 			{{ end }}
 		</div>
 		{{ partial "html-body" . }}

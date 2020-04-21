@@ -25,4 +25,5 @@
 }
 </script>
 
-<link rel="stylesheet" href="{{ (.Scratch.Get "style").RelPermalink }}">
+{{ $style := .Scratch.Get "style" }}
+{{ with $style }}<link rel="stylesheet" href="{{ . }}">{{ end }}
