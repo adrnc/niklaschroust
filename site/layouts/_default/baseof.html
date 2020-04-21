@@ -11,7 +11,7 @@
 	<body>
 		<div class="page">
 			{{ $home := eq .Kind "home" }}
-			{{ partialCached "header" . .Lang $home }}
+			{{ partialCached "header" . $home }}
 			<main>
 				{{ partial "heading" . }}
 				<div class="content{{ if eq .Kind "404" }} hidden{{ end }}">
@@ -21,7 +21,7 @@
 				</div>
 			</main>
 			{{ if not (eq .Kind "404" ) }}
-				{{ partialCached "footer" . .Lang }}
+				{{ partialCached "footer" . }}
 			{{ end }}
 		</div>
 		{{ partial "html-body" . }}
