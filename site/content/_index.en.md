@@ -11,5 +11,5 @@ Mr. Mag. Hans G. Kitzbichler at the Johann Sebastian Bach Music School – and t
 Currently I attend the second grade of the Bundes Oberstufen Realgymnasium Hegelgasse 12
 für Musik & Kunst in Vienna, a high school with focus on music and arts.
 
->"The guitar's all right John, but you'll never make a living out of it"
+>The guitar's all right John, but you'll never make a living out of it
 >>– John Lennon’s Aunt Mimi Smith
