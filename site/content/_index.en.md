@@ -2,13 +2,14 @@
 title: Niklas A. Chroust
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi nullam vehicula ipsum a. Nisi vitae suscipit tellus mauris a diam maecenas. Metus vulputate eu scelerisque felis. Id volutpat lacus laoreet non curabitur gravida. Et malesuada fames ac turpis egestas. Turpis egestas sed tempus urna et pharetra pharetra massa. Massa vitae tortor condimentum lacinia quis vel eros donec. In ornare quam viverra orci. Tellus in metus vulputate eu scelerisque felis imperdiet.
+# About me
 
-Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Risus feugiat in ante metus dictum at tempor. Urna id volutpat lacus laoreet non. Mauris cursus mattis molestie a iaculis at erat pellentesque. Euismod lacinia at quis risus sed vulputate odio ut. Lectus quam id leo in vitae turpis massa. Arcu odio ut sem nulla pharetra. Platea dictumst quisque sagittis purus. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Tellus integer feugiat scelerisque varius. Pellentesque elit eget gravida cum sociis natoque. Mauris vitae ultricies leo integer malesuada nunc vel. Faucibus nisl tincidunt eget nullam.
+I was born on June 4th, 2004 in Vienna as the second of three children.
+I started taking piano lessons at the age of six, followed by two years of violin lessons.
+Over time, I discovered my passion for composing and four years ago began studying composition with
+Mr. Mag. Hans G. Kitzbichler at the Johann Sebastian Bach Music School – and the passion is here to stay.
+Currently I attend the second grade of the Bundes Oberstufen Realgymnasium Hegelgasse 12
+für Musik & Kunst in Vienna, a high school with focus on music and arts.
 
-Bibendum ut tristique et egestas quis ipsum suspendisse. Non odio euismod lacinia at quis risus sed vulputate. Turpis massa tincidunt dui ut ornare lectus sit amet est. Nibh ipsum consequat nisl vel. Viverra tellus in hac habitasse platea dictumst. Consequat ac felis donec et odio pellentesque diam. Quis enim lobortis scelerisque fermentum. Sem integer vitae justo eget magna fermentum. Habitant morbi tristique senectus et netus et malesuada fames ac. Imperdiet sed euismod nisi porta. Enim lobortis scelerisque fermentum dui faucibus in ornare. Magna sit amet purus gravida quis blandit turpis cursus in. Porttitor leo a diam sollicitudin tempor id eu nisl. Laoreet sit amet cursus sit amet.
-
-Vitae congue mauris rhoncus aenean. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Nam libero justo laoreet sit. Leo urna molestie at elementum. Quis eleifend quam adipiscing vitae proin sagittis nisl. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Mus mauris vitae ultricies leo integer. Eget egestas purus viverra accumsan. Condimentum lacinia quis vel eros donec. Tempus iaculis urna id volutpat. Non sodales neque sodales ut. Tortor consequat id porta nibh venenatis cras sed felis. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Turpis egestas sed tempus urna et pharetra pharetra massa massa. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Sodales ut eu sem integer vitae. Enim praesent elementum facilisis leo vel fringilla.
-
-Ultrices neque ornare aenean euismod elementum nisi. Gravida neque convallis a cras semper auctor neque. Semper eget duis at tellus at urna condimentum mattis pellentesque. Cras pulvinar mattis nunc sed blandit. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra. Porta nibh venenatis cras sed. Elit at imperdiet dui accumsan sit amet. Magna fringilla urna porttitor rhoncus dolor purus non enim. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci. Tortor posuere ac ut consequat semper viverra nam libero justo. Malesuada fames ac turpis egestas maecenas pharetra. Elementum sagittis vitae et leo duis ut diam.
-		
+>"The guitar's all right John, but you'll never make a living out of it"
+>>– John Lennon’s Aunt Mimi Smith

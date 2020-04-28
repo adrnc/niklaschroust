@@ -2,16 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="canonical" href="{{ .Permalink }}">
 
-{{ $style := .Scratch.Get "style" }}
-{{ with $style }}<link rel="preload" as="style" href="{{ . }}">{{ end }}
-
-{{ .Scratch.Set "font" "https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" }}
-<link rel="stylesheet" href="{{ .Scratch.Get "font" }}" media="print" onload="this.media='all'">
-
-<noscript>
-	<link rel="stylesheet" href="{{ .Scratch.Get "font" }}">
-</noscript>
-
 <title>
 	{{- if eq .Kind "404" -}}
 		404 {{ i18n "notfound" }}
@@ -69,6 +59,18 @@
 	.page {display: none;}
 	.hidden {display: none !important;}
 </style>
+
+{{ $style := resources.Get "css/main.css" }}
+{{ if not .Site.IsServer }}{{ $style = $style | minify }}{{ end }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" media="print" onload="this.onload=null;this.media='all'">
+
+{{ $font := "https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" }}
+<link rel="stylesheet" href="{{ $font }}" media="print" onload="this.onload=null;this.media='all'">
+
+<noscript>
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	<link rel="stylesheet" href="{{ $font }}">
+</noscript>
 
 {{ if not .Site.IsServer }}
 	{{ template "_internal/google_analytics_async.html" . }}

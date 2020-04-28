@@ -1,7 +1,3 @@
-{{ $style := resources.Get "css/main.css" }}
-{{ if not .Site.IsServer }}{{ $style = $style | minify }}{{ end }}
-{{ .Scratch.Set "style" $style.RelPermalink }}
-
 <!DOCTYPE html>
 <html lang="{{ .Lang }}">
 	<head>

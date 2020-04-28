@@ -40,6 +40,7 @@ header {
 
 .title {
 	font-family: var(--font-family2);
+	color: var(--font-color1);
 	letter-spacing: 0.7rem;
 	text-align: center;
 	font-size: calc(6vw + 2rem);
@@ -191,6 +192,23 @@ nav button {
 }
 */
 
+main {
+	background-color: var(--background-color2);
+}
+
+.content {
+	font-size: 2rem;
+	padding: 0 2rem 6rem 2rem;
+	margin: 0 auto;
+}
+
+footer {
+	padding: 3rem 2rem;
+	border-top: 0.3rem solid var(--font-color1);
+	background-color: var(--color1);
+}
+
+
 @media screen and (max-width: 600px) {
 	header {letter-spacing: normal;}
 	.heading {min-height: 55vh;}
@@ -207,18 +225,13 @@ nav button {
 	.about-extrasmall-not {display: none;}
 }
 
-main {
-	background-color: var(--background-color2);
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family2);
+	color: var(--color1);
 }
 
-.content {
-	font-size: 2rem;
-	padding: 2rem;
-	margin: 0 auto;
-}
+h1 {margin-bottom: 1rem;}
 
-footer {
-	padding: 3rem 2rem;
-	border-top: 0.3rem solid var(--font-color1);
-	background-color: var(--color1);
+p {
+	margin: 1rem 0;
 }
