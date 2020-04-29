@@ -227,6 +227,7 @@ nav button {
 	margin: 0 auto;
 	background-color: var(--background-color2);
 	transform: translateY(-10rem);
+	line-height: 1.4;
 }
 
 .content *:first-child {margin-top: 0;}
@@ -265,6 +266,7 @@ footer {
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-family2);
 	color: var(--color1);
+	line-height: 1;
 }
 
 h1 {margin-bottom: 1rem;}
