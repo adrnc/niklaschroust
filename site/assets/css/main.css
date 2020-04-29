@@ -249,7 +249,7 @@ footer {
 	header {letter-spacing: normal;}
 	.about-small {display: inline;}
 	.about-small-not {display: none;}
-	.content {padding: 2.5rem;}
+	.content {padding: 3rem 2.5rem;}
 }
 
 @media screen and (max-width: 450px) {
