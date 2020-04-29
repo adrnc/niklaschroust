@@ -221,7 +221,7 @@ nav button {
 */
 
 .content {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	padding: 4rem;
 	border-radius: 2rem;
 	margin: 0 auto;
@@ -241,6 +241,7 @@ footer {
 	.content {
 		border-radius: 0;
 		background-color: var(--background-color1);
+		font-size: 2rem;
 	}
 }
 
