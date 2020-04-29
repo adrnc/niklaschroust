@@ -18,11 +18,34 @@
 .about-colorful {color: var(--color1);}
 
 .heading {
-	min-height: 75vh;
+	min-height: calc(75vh + 10rem);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 5rem;
+	padding: 10rem 0 12rem 0;
+	position: relative;
+}
+
+.heading-inner {position: absolute;}
+
+.heading::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	background: no-repeat url(/images/hands.jpg);
+	background-size: cover;
+	filter: grayscale(100%) brightness(30%) blur(0.5rem);
+}
+
+.heading::after {
+	position: absolute;
+	content: "";
+	bottom: -1rem;
+	height: 2rem;
+	width: 100%;
 	background-color: var(--background-color1);
 }
 
@@ -36,6 +59,10 @@ header {
 	justify-content: space-between;
 	user-select: none;
 	border-top: 0.3rem solid var(--color1);
+	height: 10rem;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
 }
 
 .title {
@@ -43,7 +70,7 @@ header {
 	color: var(--font-color1);
 	letter-spacing: 0.7rem;
 	text-align: center;
-	font-size: calc(6vw + 2rem);
+	font-size: calc(4vw + 3rem);
 	margin: 0;
 	font-weight: normal;
 }
@@ -192,15 +219,16 @@ nav button {
 }
 */
 
-main {
-	background-color: var(--background-color2);
-}
-
 .content {
 	font-size: 2rem;
-	padding: 0 2rem 6rem 2rem;
+	padding: 4rem;
+	border-radius: 2rem;
 	margin: 0 auto;
+	background-color: var(--background-color2);
+	transform: translateY(-10rem);
 }
+
+.content *:first-child {margin-top: 0;}
 
 footer {
 	padding: 3rem 2rem;
@@ -208,12 +236,20 @@ footer {
 	background-color: var(--color1);
 }
 
+@media screen and (max-width: 800px) {
+	.content {
+		border-radius: 0;
+		background-color: var(--background-color1);
+	}
+}
+
 
 @media screen and (max-width: 600px) {
 	header {letter-spacing: normal;}
-	.heading {min-height: 55vh;}
+	.heading {min-height: calc(55vh + 10rem);}
 	.about-small {display: inline;}
 	.about-small-not {display: none;}
+	.content {padding: 2.5rem;}
 }
 
 @media screen and (max-width: 450px) {

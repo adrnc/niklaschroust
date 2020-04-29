@@ -62,6 +62,7 @@
 
 {{ $style := resources.Get "css/main.css" }}
 {{ if not .Site.IsServer }}{{ $style = $style | minify }}{{ end }}
+{{ $style = $style | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="print" onload="this.onload=null;this.media='all'">
 
 {{ $font := "https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" }}
