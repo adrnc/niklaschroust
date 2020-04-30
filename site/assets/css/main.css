@@ -229,7 +229,7 @@ nav button {
 	max-width: 80rem;
 }
 
-.content *:first-child {margin-top: 0;}
+.content :first-child {margin-top: 0;}
 
 footer {
 	padding: 3rem 2rem;
