@@ -126,6 +126,7 @@ nav button {
 	height: 0;
 	overflow: hidden;
 	background-color: white;
+	background-color: var(--background-color1);
 	background-color: var(--background-color2);
 }
 
@@ -219,11 +220,12 @@ nav button {
 }
 
 .content {
+	--no-hsla: #202020;
 	font-size: 1.8rem;
 	padding: 4rem;
 	border-radius: 2rem;
 	margin: 0 auto;
-	background-color: #202020;
+	background-color: var(--no-hsla);
 	background-color: var(--background-color2);
 	transform: translateY(-10rem);
 	line-height: 1.4;
