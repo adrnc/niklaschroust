@@ -203,7 +203,6 @@ nav button {
 	}
 }
 
-/*
 @media screen and (min-width: 600px) {
 	::-webkit-scrollbar {
 		width: 1.5rem;
@@ -211,14 +210,13 @@ nav button {
 	}
 	
 	::-webkit-scrollbar-track {
-		background-color: var(--background-color1);
+		background-color: var(--background-color2);
 	}
 	
 	::-webkit-scrollbar-thumb {
 		background-color: var(--font-color1);
 	}
 }
-*/
 
 .content {
 	font-size: 1.8rem;
@@ -228,6 +226,7 @@ nav button {
 	background-color: var(--background-color2);
 	transform: translateY(-10rem);
 	line-height: 1.4;
+	max-width: 80rem;
 }
 
 .content *:first-child {margin-top: 0;}
