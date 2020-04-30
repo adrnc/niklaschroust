@@ -223,6 +223,7 @@ nav button {
 	padding: 4rem;
 	border-radius: 2rem;
 	margin: 0 auto;
+	background-color: #202020;
 	background-color: var(--background-color2);
 	transform: translateY(-10rem);
 	line-height: 1.4;
