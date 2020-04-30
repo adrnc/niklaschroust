@@ -18,12 +18,15 @@
 .about-colorful {color: var(--color1);}
 
 .heading {
+	--modern: transparent;
 	min-height: calc(75vh + 10rem);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 10rem 0 12rem 0;
 	position: relative;
+	background-color: white;
+	background-color: var(--modern);
 }
 
 .heading-inner {position: absolute;}
