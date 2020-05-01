@@ -75,6 +75,7 @@ header {
 	font-size: calc(4vw + 3rem);
 	margin: 0;
 	font-weight: normal;
+	line-height: normal;
 }
 
 nav {
