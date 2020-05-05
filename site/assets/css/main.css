@@ -29,7 +29,6 @@
 .heading-inner {position: absolute;}
 
 .heading::before {
-	--url: url(/background-images/default.jpg);
 	position: absolute;
 	top: 0;
 	left: 0;

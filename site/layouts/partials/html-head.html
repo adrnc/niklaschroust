@@ -72,13 +72,13 @@
 	<link rel="stylesheet" href="{{ $font }}">
 </noscript>
 
-{{ with .Params.background }}
-	<style>
-		.heading::before {
-			--url: url(/background-images/{{ . | safeCSS }});
-		}
-	</style>
-{{ end }}
+{{ $background := cond (isset .Params "background") .Params.background "default.jpg" }}
+<link rel="preload" as="image" href="//background-images/{{ $background }}">
+<style>
+	.heading::before {
+		--url: url(/background-images/{{ $background | safeCSS }});
+	}
+</style>
 
 {{ if not .Site.IsServer }}
 	{{ template "_internal/google_analytics_async.html" . }}

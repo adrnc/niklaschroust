@@ -1,6 +1,7 @@
 ---
 title: Leben
 slug: leben
+background: life.jpg
 ---
 
 

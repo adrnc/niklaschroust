@@ -1,5 +1,6 @@
 ---
 title: Life
+background: life.jpg
 ---
 
 -	# July 2020
