@@ -73,7 +73,7 @@
 </noscript>
 
 {{ $background := cond (isset .Params "background") .Params.background "default.jpg" }}
-<link rel="preload" as="image" href="//background-images/{{ $background }}">
+<link rel="preload" as="image" href="/background-images/{{ $background }}">
 <style>
 	.heading::before {
 		--url: url(/background-images/{{ $background | safeCSS }});
