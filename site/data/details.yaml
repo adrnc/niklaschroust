@@ -1,16 +1,20 @@
 email: chroust.niklas@gmail.com
 address: nonono
 
-related:
+people:
+  - name: Andrea Chroust
+    email: andrea.chroust@gmx.at
 
-  adrian:
-    email: chroust.adrian@gmail.com
-    website: https://adrianchroust.com/
-
-  martin:
+  - name: Martin Chroust
     email: chroust.martin@gmail.com
     website: https://www.martinchroust.info/
 
-  gerhard:
+  - name: Adrian Chroust
+    email: chroust.adrian@gmail.com
+    website: https://adrianchroust.com/
+
+  - name: Ella Chroust
+
+  - name: Gerhard Chroust
     email: gerhard.chroust@jku.at
     website: http://www.gerhard-chroust.at/

@@ -1,0 +1,89 @@
+- date: 2019-06-17
+  piece: 7. Jänner
+  de:
+    location: Jahreskonzert Johann Sebastian Bach Musikschule, Musikverein Wien, Gläserner Saal
+    instruments: Vierhändiges Klavierstück Tobias Antonic & Niklas Chroust
+  en:
+    location: Johann Sebastian Bach Musikschule Annual Concert, Vienna Musikverein, Glass Hall
+    instruments: Four-handed piano Tobias Antonic & Niklas Chroust
+
+- date: 2019-07-10
+  piece: Atlantic
+  de:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments:
+      - person: Harald Martin Winkler
+        instrument: violin
+      - person: Simon Schuller
+        instrument: piano
+  en:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments:
+      - person: Harald Martin Winkler
+        instrument: Violine
+      - person: Simon Schuller
+        instrument: Klavier
+
+- date: 2019-11-24
+  piece: Shape the Future Waltz
+  de:
+    location: Mumok, MuseumsQuartier, Wien
+    instruments:
+      - person: Johanna Hechwartner
+        instrument: Violine
+      - person: Rebekka Rennert
+        instrument: Violoncello
+      - person: Defne Saydam
+        instrument: Klavier
+  en:
+    location: Mumok, MuseumsQuartier, Vienna
+    instruments:
+      - person: Johanna Hechwartner
+        instrument: Violin
+      - person: Rebekka Rennert
+        instrument: Violoncello
+      - person: Defne Saydam
+        instrument: Piano
+
+- date: 2020-01-19
+  piece: Winter Quartet
+  de:
+    location: Arnold-Schönberg-Center, Wien
+    instruments:
+      - person: Johannes Fleischmann
+        instrument: Violine
+      - person: Robert Olisa Nzekwu
+        instrument: Violine
+      - person: Lena Fankhauser
+        instrument: Viola
+      - person: Melissa Coleman
+        instrument: Violoncello
+  en:
+    location: Arnold-Schönberg-Center, Vienna
+    instruments:
+      - person: Johannes Fleischmann
+        instrument: Violin
+      - person: Robert Olisa Nzekwu
+        instrument: Violin
+      - person: Lena Fankhauser
+        instrument: Viola
+      - person: Melissa Coleman
+        instrument: Violoncello
+
+- date: postponed
+  piece: Winter Quartet
+  de:
+    location: Mozarteum, Salzburg
+    instruments: Names Ensemble
+  en:
+    location: Mozarteum, Salzburg
+    instruments: Names Ensemble
+
+- date: postponed
+  piece: Die Stadtgrenze
+  de:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Klassisches Bläserquintett
+  en:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Classical wind quintet

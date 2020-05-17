@@ -4,7 +4,7 @@
 	command = 'hugo --gc'
 
 [build.environment]
-	HUGO_VERSION = '0.69.0'
+	HUGO_VERSION = '0.70.0'
 	HUGO_ENV = 'development'
 	HUGO_ENABLEGITINFO = 'true'
 
@@ -12,6 +12,7 @@
 	HUGO_ENV = 'production'
 	HUGO_ENABLEGITINFO = 'false'
 	command = 'hugo --gc --minify'
+
 [context.production.processing]
 	skip_processing = false
 [context.production.processing.html]
