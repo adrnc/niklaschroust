@@ -11,16 +11,16 @@
 
 	menuOpen.addEventListener('click', event => {
 		event.preventDefault();
-		document.querySelector('.js-menu').classList.add('menu-open');
+		document.querySelector('.js-menu').classList.add('header__menu--open');
 	}, false);
 
 	menuClose.addEventListener('click', event => {
 		event.preventDefault();
 		if (location.hash == '#_menu') location.hash = '';
 		const menu = document.querySelector('.js-menu');
-		menu.classList.remove('menu-open');
-		menu.classList.add('menu-invisible');
-		setTimeout(() => menu.classList.remove('menu-invisible'), parseFloat(getComputedStyle(menu).animationDuration) * 1000);
+		menu.classList.remove('header__menu--open');
+		menu.classList.add('header__menu--invisible');
+		setTimeout(() => menu.classList.remove('header__menu--invisible'), parseFloat(getComputedStyle(menu).animationDuration) * 1000);
 	}, false);
 }
 </script>

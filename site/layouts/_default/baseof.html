@@ -9,7 +9,7 @@
 			{{ partial "header" . }}
 			<main>
 				{{ partial "heading" . }}
-				<div class="content{{ if eq .Kind "404" }} hidden{{ end }}">
+				<div class="content{{ if eq .Kind "404" }} --hidden{{ end }}">
 					{{ block "main" . }}
 						{{ .Content }}
 					{{ end }}

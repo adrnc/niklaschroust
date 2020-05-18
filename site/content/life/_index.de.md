@@ -28,12 +28,15 @@ background: life.jpg
 
 -	# 2014-2016
 	Violinunterricht bei Karin Freiler
+
 -	# 2014-2018
 	Unterstufe Wirtschaftskundliches Realgymnasium der Dominikanerinnen, 1130 Wien
 
 -	# 2011
 	Beginn Klavierunterricht bei Stefan Schwager in der Ersten Wiener Privatmusikschule Hietzing
+
 -	# 2010-2014
 	Volksschule Ober St. Veit, 1130 Wien
+
 -	# 2004
 	Geboren am 4.Juni im Krankenhaus Hietzing als 2. von 3 Kindern

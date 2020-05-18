@@ -1,27 +1,27 @@
-<header>
-	<h1 class="about{{ if eq .Kind "home" }} about-invisible{{ end }}">
-		<a href="{{ (.GetPage "/").RelPermalink }}">
-			<span class="about-colorful">{{ substr .Site.Params.firstname 0 1 }}</span><span class="about-small">.</span><span class="about-small-not">{{ substr .Site.Params.firstname 1 }}</span>
+<header class="header">
+	<h1 class="header__about{{ if eq .Kind "home" }} header__about--invisible{{ end }}">
+		<a class="header__about-inner" href="{{ (.GetPage "/").RelPermalink }}">
+			<span class="header__about--colorful">{{ substr .Site.Params.firstname 0 1 }}</span><span class="header__about--small">.</span><span class="header__about--not-small">{{ substr .Site.Params.firstname 1 }}</span>
 			{{- with .Site.Params.middlename }} {{ substr . 0 1 }}. {{ end -}}
-			{{ substr .Site.Params.surname 0 1 }}<span class="about-extrasmall">.</span><span class="about-extrasmall-not">{{ substr .Site.Params.surname 1 }}</span>
+			{{ substr .Site.Params.surname 0 1 }}<span class="header__about--extrasmall">.</span><span class="header__about--not-extrasmall">{{ substr .Site.Params.surname 1 }}</span>
 		</a>
 	</h1>
-	<nav>
-		<a href="#_menu" class="js-menu-open menu-button" tabindex="0" aria-hidden="true"><button tabindex="-1">{{ i18n "menu" }}</button></a>{{ print -}}
-		<div class="js-menu menu" id="_menu">
-			<div class="menu-inner">
-				<a href="{{ (.GetPage "/").RelPermalink }}" class="menu-home">{{ i18n "home" }}</a>{{ print -}}
-				<a href="{{ (.GetPage "/events").RelPermalink }}">{{ i18n "events" }}</a><span class="nav-delimit">|</span>{{ print -}}
-				<a href="{{ (.GetPage "/music").RelPermalink }}">{{ i18n "music" }}</a><span class="nav-delimit">|</span>{{ print -}}
-				<a href="{{ (.GetPage "/life").RelPermalink }}">{{ i18n "life" }}</a><span class="nav-delimit">|</span>{{ print -}}
-				<a href="{{ (.GetPage "/gallery").RelPermalink }}">{{ i18n "gallery" }}</a><span class="nav-delimit">|</span>{{ print -}}
-				<a href="{{ (.GetPage "/contact").RelPermalink }}">{{ i18n "contact" }}</a>{{ print -}}
+	<nav class="header__nav">
+		<a href="#_menu" class="js-menu-open header__nav-a header__menu-button" tabindex="0" aria-hidden="true"><button class="header__nav-button" tabindex="-1">{{ i18n "menu" }}</button></a>{{ print -}}
+		<div class="js-menu header__menu" id="_menu">
+			<div class="header__menu-inner">
+				<a class="header__nav-a" href="{{ (.GetPage "/").RelPermalink }}" class="header__menu-home">{{ i18n "home" }}</a>{{ print -}}
+				<a class="header__nav-a" href="{{ (.GetPage "/events").RelPermalink }}">{{ i18n "events" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
+				<a class="header__nav-a" href="{{ (.GetPage "/music").RelPermalink }}">{{ i18n "music" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
+				<a class="header__nav-a" href="{{ (.GetPage "/life").RelPermalink }}">{{ i18n "life" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
+				<a class="header__nav-a" href="{{ (.GetPage "/gallery").RelPermalink }}">{{ i18n "gallery" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
+				<a class="header__nav-a" href="{{ (.GetPage "/contact").RelPermalink }}">{{ i18n "contact" }}</a>{{ print -}}
 			</div>{{ print -}}
-			<a href="#" class="js-menu-close menu-close" tabindex="0" aria-hidden="true"><button class="menu-close-inner" tabindex="-1">{{ i18n "close" }}</button></a>{{ print -}}
+			<a href="#" class="js-menu-close header__nav-a header__menu-close" tabindex="0" aria-hidden="true"><button class="header__nav-button header__menu-close-inner" tabindex="-1">{{ i18n "close" }}</button></a>{{ print -}}
 		</div>
 		{{- if .IsTranslated -}}
 			{{- range .Translations -}}
-				<span class="lang-delimit">|</span><a class="lang" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Language.LanguageName }}">{{ .Lang | upper }}</a>
+				<span class="header__lang-delimit">|</span><a class="header__nav-a header__lang" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Language.LanguageName }}">{{ .Lang | upper }}</a>
 			{{- end }}
 		{{ end }}
 	</nav>

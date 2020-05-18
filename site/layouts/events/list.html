@@ -1,0 +1,8 @@
+{{ define "main" }}
+	{{ .Content }}
+	<ul class="events">
+		{{ range .Site.Data.events }}
+			<li class="events__item"></li>
+		{{ end }}
+	</ul>
+{{ end }}
