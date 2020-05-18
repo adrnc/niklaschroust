@@ -212,7 +212,7 @@ html, body {
 	.header {
 		padding: 0 4rem;
 
-		a {margin: 0 2rem;}
+		&__nav-a {margin: 0 2rem;}
 
 		&__menu, &__menu--open, &__menu:target, &__menu-inner {
 			display: inline;
@@ -232,7 +232,7 @@ html, body {
 	}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (hover: hover), (pointer: fine) {
 	::-webkit-scrollbar {
 		width: 1.5rem;
 		height: 1.5rem;

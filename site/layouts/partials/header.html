@@ -10,7 +10,7 @@
 		<a href="#_menu" class="js-menu-open header__nav-a header__menu-button" tabindex="0" aria-hidden="true"><button class="header__nav-button" tabindex="-1">{{ i18n "menu" }}</button></a>{{ print -}}
 		<div class="js-menu header__menu" id="_menu">
 			<div class="header__menu-inner">
-				<a class="header__nav-a" href="{{ (.GetPage "/").RelPermalink }}" class="header__menu-home">{{ i18n "home" }}</a>{{ print -}}
+				<a class="header__nav-a header__menu-home" href="{{ (.GetPage "/").RelPermalink }}">{{ i18n "home" }}</a>{{ print -}}
 				<a class="header__nav-a" href="{{ (.GetPage "/events").RelPermalink }}">{{ i18n "events" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
 				<a class="header__nav-a" href="{{ (.GetPage "/music").RelPermalink }}">{{ i18n "music" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
 				<a class="header__nav-a" href="{{ (.GetPage "/life").RelPermalink }}">{{ i18n "life" }}</a><span class="header__nav-delimit">|</span>{{ print -}}

@@ -1,8 +1,15 @@
 {{ define "main" }}
 	{{ .Content }}
 	<ul class="events">
+		{{ $events := slice }}
 		{{ range .Site.Data.events }}
-			<li class="events__item"></li>
+			{{ $events = (slice .) | append $events }}
+		{{ end }}
+
+		{{ range $events }}
+			<li class="events__item">
+				<h1 class="events__date{{ with i18n .date }}">{{ . }}{{ else }} events__date--date"><time class="events__time" datetime="{{ .date }}">{{ .date }}</time>{{ end }}</h1>
+			</li>
 		{{ end }}
 	</ul>
 {{ end }}

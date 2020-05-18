@@ -24,3 +24,6 @@
 
 [close]
 	other = 'Close'
+
+[postponed]
+	other = 'Postponed'
