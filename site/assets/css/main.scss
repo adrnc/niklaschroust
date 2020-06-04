@@ -35,13 +35,18 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10rem 0 15rem 0;
+	padding: 10rem 2rem 15rem 2rem;
 	top: 0;
+	text-align: center;
 	position: fixed;
 
-	&__inner {position: absolute;}
+	&__inner {
+		display: inline;
+		position: absolute;
+	}
 
 	&__title {
+		display: inline;
 		font-family: $font-family2;
 		color: $font-color1;
 		letter-spacing: 0.7rem;
