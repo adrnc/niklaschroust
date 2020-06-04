@@ -29,11 +29,10 @@ html, body {
 
 .page {
 	display: block;
-	border-top: 0.3rem solid $color1;
 }
 
 .heading {
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -71,6 +70,7 @@ html, body {
 	}
 }
 
+$border-top: 0.3rem solid $color1;
 .header {
 	font-family: $font-family2;
 	display: flex;
@@ -82,6 +82,8 @@ html, body {
 	user-select: none;
 	height: 10rem;
 	position: absolute;
+	top: 0;
+	border-top: $border-top;
 	z-index: 1;
 	width: 100%;
 
@@ -163,6 +165,7 @@ html, body {
 		overflow: hidden;
 		background-color: $background-color1;
 		overflow: visible;
+		border-top: $border-top;
 
 		&--invisible {
 			animation: 0.4s ease-in 0s menu--invisible;
@@ -192,7 +195,7 @@ html, body {
 	&__menu-close, &__menu-close-inner {
 		display: block;
 		margin: 0;
-		background-color: $background-color2;
+		background-color: rgba(255, 255, 255, 0.01);
 		font-size: 2.5rem;
 		text-align: center;
 	}
@@ -226,7 +229,7 @@ html, body {
 			padding: 0;
 			box-shadow: none;
 			position: relative;
-			background-color: transparent;
+			background-color: transparent !important;
 			opacity: 1;
 			animation: none;
 		}
@@ -267,10 +270,10 @@ html, body {
 	:first-child {margin-top: 0;}
 }
 
-@supports (backdrop-filter: blur(15px)) {
+@supports (backdrop-filter: blur()) {
 	.content, .header__menu {
 		backdrop-filter: blur(15px);
-		background-color: transparentize($color: $background-color2, $amount: 0.2);
+		background-color: transparentize($color: $background-color2, $amount: 0.3);
 	}
 }
 
