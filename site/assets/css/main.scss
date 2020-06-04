@@ -16,8 +16,6 @@ $border-radius: 2rem;
 html, body {
 	margin: 0;
 	padding: 0;
-	height: 100%;
-	width: 100%;
 	font-family: $font-family1;
 	color: $font-color1;
 	background-color: $background-color1;
@@ -258,7 +256,7 @@ $border-top: 0.3rem solid $color1;
 }
 
 .content {
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	padding: 4rem;
 	position: relative;
 	//border-radius: 2rem;
@@ -273,7 +271,7 @@ $border-top: 0.3rem solid $color1;
 @supports (backdrop-filter: blur()) {
 	.content, .header__menu {
 		backdrop-filter: blur(15px);
-		background-color: transparentize($color: $background-color2, $amount: 0.3);
+		background-color: transparentize($color: $background-color2, $amount: 0.5);
 	}
 }
 
