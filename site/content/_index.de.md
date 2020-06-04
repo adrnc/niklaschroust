@@ -11,4 +11,5 @@ Herrn Mag. Hans G. Kitzbichler in der Johann Sebastian Bach Musikschule, wo ich 
 Derzeit besuche ich die zweite Klasse des Bundes Oberstufen Realgymnasiums Hegelgasse 12 für Musik & Kunst, 1010 Wien. 
 
 >The guitar's all right John, but you'll never make a living out of it
->>– John Lennons Tante Mimi Smith
+>> John Lennons Tante Mimi Smith
+

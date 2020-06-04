@@ -1,3 +1,4 @@
-.*/
-/site/resources/*
-/site/public/*
+.*
+
+site/resources
+site/public

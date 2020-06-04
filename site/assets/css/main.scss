@@ -2,8 +2,8 @@ $font-family1: sans-serif;
 $font-family2: "Crimson Text", serif;
 $font-color1: hsl(0, 0%, 100%);
 $font-color2: hsl(0, 0%, 40%);
-$background-color1: hsl(0, 2%, 10%);
-$background-color2: hsla(0, 2%, 12%, 0.9);
+$background-color1: hsl(0, 2%, 5%);
+$background-color2: hsl(0, 2%, 8%);
 $color1: hsl(348, 80%, 55%);
 $border-radius: 2rem;
 
@@ -27,15 +27,20 @@ html, body {
 * {box-sizing: border-box;}
 .--hidden {display: none !important;}
 
-.page {display: block;}
+.page {
+	display: block;
+	border-top: 0.3rem solid $color1;
+}
 
 .heading {
-	min-height: calc(75vh + 10rem);
+	height: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10rem 0 12rem 0;
-	position: relative;
+	padding: 10rem 0 15rem 0;
+	top: 0;
+	position: fixed;
 
 	&__inner {position: absolute;}
 
@@ -44,7 +49,7 @@ html, body {
 		color: $font-color1;
 		letter-spacing: 0.7rem;
 		text-align: center;
-		font-size: calc(4vw + 3rem);
+		font-size: calc(3vw + 3rem);
 		margin: 0;
 		font-weight: normal;
 		line-height: normal;
@@ -62,7 +67,7 @@ html, body {
 		background: no-repeat var(--url);
 		background-position: center;
 		background-size: cover;
-		filter: grayscale(100%) brightness(25%) blur(0rem);
+		filter: grayscale(100%) brightness(25%) blur(0px);
 	}
 }
 
@@ -75,7 +80,6 @@ html, body {
 	padding: 0 3rem;
 	justify-content: space-between;
 	user-select: none;
-	border-top: 0.3rem solid $color1;
 	height: 10rem;
 	position: absolute;
 	z-index: 1;
@@ -87,9 +91,10 @@ html, body {
 		margin: 0 0 0.5rem 0;
 	}
 	
-	&__about-inner {
+	&__about-inner, &__about-inner:link {
 		text-decoration: none;
 		color: $font-color1;
+		box-shadow: none;
 	}
 	
 	&__about--invisible {visibility: hidden;}
@@ -157,6 +162,7 @@ html, body {
 		height: 0;
 		overflow: hidden;
 		background-color: $background-color1;
+		overflow: visible;
 
 		&--invisible {
 			animation: 0.4s ease-in 0s menu--invisible;
@@ -196,10 +202,11 @@ html, body {
 		width: 100%;
 	}
 
-	&__lang {
+	&__lang, &__lang:link {
 		font-weight: bold;
 		margin: 0 2rem;
 		color: $color1;
+		box-shadow: none;
 
 		&:last-child {margin-right: 0;}
 	}
@@ -251,13 +258,20 @@ html, body {
 	font-size: 1.8rem;
 	padding: 4rem;
 	position: relative;
-	border-radius: 2rem;
-	margin: -10rem auto 5rem auto;
+	//border-radius: 2rem;
+	margin: 75vh auto 5rem auto;
 	background-color: $background-color2;
 	line-height: 1.4;
 	max-width: 80rem;
 
 	:first-child {margin-top: 0;}
+}
+
+@supports (backdrop-filter: blur(15px)) {
+	.content, .header__menu {
+		backdrop-filter: blur(15px);
+		background-color: transparentize($color: $background-color2, $amount: 0.2);
+	}
 }
 
 .footer {
@@ -268,8 +282,7 @@ html, body {
 
 @media screen and (max-width: 800px) {
 	.content {
-		border-radius: 0;
-		background-color: $background-color1;
+		//background-color: $background-color1;
 		font-size: 2rem;
 	}
 }
@@ -292,4 +305,8 @@ html, body {
 		&--extrasmall {display: inline;}
 		&--not-extrasmall {display: none;}
 	}
+}
+
+.footer {
+	position: relative;
 }
