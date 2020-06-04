@@ -3,7 +3,7 @@ $font-family2: "Crimson Text", serif;
 $font-color1: hsl(0, 0%, 100%);
 $font-color2: hsl(0, 0%, 40%);
 $background-color1: hsl(0, 2%, 10%);
-$background-color2: hsl(0, 2%, 13%);
+$background-color2: hsl(0, 2%, 15%);
 $color1: hsl(348, 80%, 55%);
 
 @import '_default';
@@ -39,11 +39,6 @@ html, body {
 	text-align: center;
 	position: fixed;
 
-	&__inner {
-		display: inline;
-		position: absolute;
-	}
-
 	&__title {
 		display: inline;
 		font-family: $font-family2;
@@ -54,6 +49,7 @@ html, body {
 		margin: 0;
 		font-weight: normal;
 		line-height: normal;
+		z-index: 1;
 
 		&--colorful {color: $color1;}
 	}
@@ -266,7 +262,7 @@ $border-top: 0.3rem solid $color1;
 	padding: 4rem;
 	position: relative;
 	//border-radius: 2rem;
-	margin: 75vh auto 5rem auto;
+	margin: 75vh auto 0 auto;
 	background-color: $background-color2;
 	line-height: 1.4;
 	max-width: 80rem;
