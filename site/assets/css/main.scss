@@ -2,10 +2,9 @@ $font-family1: sans-serif;
 $font-family2: "Crimson Text", serif;
 $font-color1: hsl(0, 0%, 100%);
 $font-color2: hsl(0, 0%, 40%);
-$background-color1: hsl(0, 2%, 5%);
-$background-color2: hsl(0, 2%, 8%);
+$background-color1: hsl(0, 2%, 10%);
+$background-color2: hsl(0, 2%, 13%);
 $color1: hsl(348, 80%, 55%);
-$border-radius: 2rem;
 
 @import '_default';
 
@@ -235,6 +234,7 @@ $border-top: 0.3rem solid $color1;
 			background-color: transparent !important;
 			opacity: 1;
 			animation: none;
+			border-top: none;
 		}
 		&__menu-button, &__menu-close, &__menu-home {display: none;}
 		&__menu-inner a {box-shadow: none;}
@@ -284,13 +284,6 @@ $border-top: 0.3rem solid $color1;
 	padding: 3rem 2rem;
 	border-top: 0.3rem solid $font-color1;
 	background-color: $color1;
-}
-
-@media screen and (max-width: 800px) {
-	.content {
-		//background-color: $background-color1;
-		font-size: 2rem;
-	}
 }
 
 
