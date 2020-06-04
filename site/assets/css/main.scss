@@ -19,7 +19,6 @@ html, body {
 	color: $font-color1;
 	background-color: $background-color1;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
-	overflow-x: hidden;
 }
 
 * {box-sizing: border-box;}
@@ -31,6 +30,8 @@ html, body {
 	
 	&::before {
 		position: fixed;
+		top: 0;
+		left: 0;
 		height: 100vh;
 		width: 100%;
 		content: "";
@@ -86,7 +87,7 @@ $border-top: 0.3rem solid $color1;
 	position: absolute;
 	top: 0;
 	border-top: $border-top;
-	z-index: 1;
+	z-index: 2;
 	width: 100%;
 
 	&__about {
@@ -272,25 +273,12 @@ $content-padding-color: transparentize($color: $background-color1, $amount: 0.07
 	background-color: $background-color2;
 	line-height: 1.4;
 	max-width: 80rem;
+	box-shadow:
+		0 10rem $content-padding-color,
+		80rem 10rem $content-padding-color, 160rem 10rem $content-padding-color,
+		-80rem 10rem $content-padding-color, -160rem 10rem $content-padding-color;
 
 	:first-child {margin-top: 0;}
-
-	&::before, &::after {
-		content: "";
-		background-color: $content-padding-color;
-		position: absolute;
-		top: 10rem;
-		height: calc(100% - 10rem);
-		width: 100vw;
-	}
-
-	&::before {
-		right: 100%;
-	}
-
-	&::after {
-		left: 100%;
-	}
 }
 
 @supports (backdrop-filter: blur()) {
@@ -331,15 +319,5 @@ $content-padding-color: transparentize($color: $background-color1, $amount: 0.07
 @media screen and (min-width: 800px) {
 	.footer {
 		margin-top: 10rem;
-	}
-
-	.main::after {
-		content: "";
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		height: 10rem;
-		background-color: $content-padding-color;
 	}
 }
