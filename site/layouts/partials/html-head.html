@@ -29,11 +29,18 @@
 <meta name="author" content="{{ .Site.Params.Author }}">
 
 <meta name="theme-color" content="#e83055">
+
+
+{{ $background := cond (isset .Params "background") .Params.background "default.jpg" }}
+<link rel="preload" as="image" href="/background-images/{{ $background }}">
 <style>
-
+</style>
+<style>
 	html, body {background-color: hsl(0, 2%, 10%);}
-
 	.page {display: none;}
+	.page::before {
+		--url: url(/background-images/{{ $background | safeCSS }});
+	}
 </style>
 
 {{ $style := resources.Get "css/main.scss" | toCSS }}
@@ -48,14 +55,6 @@
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	<link rel="stylesheet" href="{{ $font }}">
 </noscript>
-
-{{ $background := cond (isset .Params "background") .Params.background "default.jpg" }}
-<link rel="preload" as="image" href="/background-images/{{ $background }}">
-<style>
-	.heading::before {
-		--url: url(/background-images/{{ $background | safeCSS }});
-	}
-</style>
 
 {{ if not .Site.IsServer }}
 	{{ template "_internal/google_analytics_async.html" . }}
