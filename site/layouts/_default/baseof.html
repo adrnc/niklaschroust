@@ -7,7 +7,7 @@
 	<body>
 		<div class="page">
 			{{ partial "header" . }}
-			<main>
+			<main class="main">
 				{{ partial "heading" . }}
 				<div class="content{{ if eq .Kind "404" }} --hidden{{ end }}">
 					{{ block "main" . }}

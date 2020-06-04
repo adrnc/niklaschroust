@@ -2,7 +2,7 @@ $font-family1: sans-serif;
 $font-family2: "Crimson Text", serif;
 $font-color1: hsl(0, 0%, 100%);
 $font-color2: hsl(0, 0%, 40%);
-$background-color1: hsl(0, 2%, 10%);
+$background-color1: hsl(0, 2%, 8%);
 $background-color2: hsl(0, 2%, 15%);
 $color1: hsl(348, 80%, 55%);
 
@@ -19,6 +19,7 @@ html, body {
 	color: $font-color1;
 	background-color: $background-color1;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
+	overflow-x: hidden;
 }
 
 * {box-sizing: border-box;}
@@ -187,16 +188,18 @@ $border-top: 0.3rem solid $color1;
 		a {box-shadow: inset 0 -0.5rem $color1;}
 	}
 
-	&__menu-button {
+	&__menu-button, &__menu-button:link {
 		margin: 0 2rem;
+		box-shadow: none;
 	}
 
-	&__menu-close, &__menu-close-inner {
+	&__menu-close, &__menu-close:link, &__menu-close-inner {
 		display: block;
 		margin: 0;
 		background-color: rgba(255, 255, 255, 0.01);
 		font-size: 2.5rem;
 		text-align: center;
+		box-shadow: none;
 	}
 
 	&__menu-close-inner {
@@ -257,17 +260,34 @@ $border-top: 0.3rem solid $color1;
 	}
 }
 
+$content-padding-color: transparentize($color: $background-color1, $amount: 0.075);
 .content {
 	font-size: 1.7rem;
 	padding: 4rem;
 	position: relative;
-	//border-radius: 2rem;
 	margin: 75vh auto 0 auto;
 	background-color: $background-color2;
 	line-height: 1.4;
 	max-width: 80rem;
 
 	:first-child {margin-top: 0;}
+
+	&::before, &::after {
+		content: "";
+		background-color: $content-padding-color;
+		position: absolute;
+		top: 10rem;
+		height: calc(100% - 10rem);
+		width: 100vw;
+	}
+
+	&::before {
+		right: 100%;
+	}
+
+	&::after {
+		left: 100%;
+	}
 }
 
 @supports (backdrop-filter: blur()) {
@@ -276,13 +296,6 @@ $border-top: 0.3rem solid $color1;
 		background-color: transparentize($color: $background-color2, $amount: 0.5);
 	}
 }
-
-.footer {
-	padding: 3rem 2rem;
-	border-top: 0.3rem solid $font-color1;
-	background-color: $color1;
-}
-
 
 @media screen and (max-width: 600px) {
 	.header {
@@ -304,5 +317,23 @@ $border-top: 0.3rem solid $color1;
 }
 
 .footer {
+	padding: 3rem 2rem;
+	border-top: 0.3rem solid $font-color1;
+	background-color: $color1;
 	position: relative;
+}
+
+@media screen and (min-width: 800px) {
+	.footer {
+		margin-top: 10rem;
+		&::before {
+			content: "";
+			position: absolute;
+			background-color: $content-padding-color;
+			bottom: calc(100% + 0.3rem);
+			width: 100%;
+			left: 0;
+			height: 10rem;
+		}
+	}
 }
