@@ -137,6 +137,7 @@ $border-top: 0.3rem solid $color1;
 		0%, 100% {
 			width: auto;
 			height: auto;
+			overflow: visible;
 		}
 		0% {transform: translateY(0);}
 		0%, 50% {opacity: 1;}
@@ -164,9 +165,8 @@ $border-top: 0.3rem solid $color1;
 		top: 0;
 		width: 0;
 		height: 0;
-		overflow: hidden;
 		background-color: $background-color1;
-		overflow: visible;
+		overflow: hidden;
 		border-top: $border-top;
 
 		&--invisible {
@@ -181,6 +181,7 @@ $border-top: 0.3rem solid $color1;
 			opacity: 1;
 			box-shadow: 0 0 15rem 100vh rgba(0, 0, 0, 0.5);
 			animation: 0.4s ease-out 0s menu--open;
+			overflow: visible;
 		}
 	}
 	
