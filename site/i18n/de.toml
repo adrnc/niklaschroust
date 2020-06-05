@@ -26,4 +26,40 @@
 	other = 'Schließen'
 
 [postponed]
-	other = 'Postponed'
+	other = 'Verschoben'
+
+
+# Months
+
+[january]
+	other = 'Jänner'
+
+[february]
+	other = 'Februar'
+
+[march]
+	other = 'März'
+
+[april]
+	other = 'April'
+
+[june]
+	other = 'Juni'
+
+[july]
+	other = 'Juli'
+
+[august]
+	other = 'August'
+
+[september]
+	other = 'September'
+
+[october]
+	other = 'Oktober'
+
+[november]
+	other = 'November'
+
+[december]
+	other = 'Dezember'

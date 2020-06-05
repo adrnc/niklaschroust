@@ -28,7 +28,7 @@
 ">
 <meta name="author" content="{{ .Site.Params.Author }}">
 
-<meta name="theme-color" content="#e83055">
+<meta name="theme-color" content="#121111">
 
 
 {{ $background := cond (isset .Params "background") .Params.background "default.jpg" }}
@@ -36,7 +36,7 @@
 <style>
 </style>
 <style>
-	html, body {background-color: hsl(0, 2%, 10%);}
+	html, body {background-color: #121111;}
 	.page {display: none;}
 	.page::before {
 		--url: url(/background-images/{{ $background | safeCSS }});

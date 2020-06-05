@@ -27,3 +27,39 @@
 
 [postponed]
 	other = 'Postponed'
+
+
+# Months
+
+[january]
+	other = 'January'
+
+[february]
+	other = 'February'
+
+[march]
+	other = 'March'
+
+[april]
+	other = 'April'
+
+[june]
+	other = 'June'
+
+[july]
+	other = 'July'
+
+[august]
+	other = 'August'
+
+[september]
+	other = 'September'
+
+[october]
+	other = 'October'
+
+[november]
+	other = 'November'
+
+[december]
+	other = 'December'
