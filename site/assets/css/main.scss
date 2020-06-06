@@ -9,6 +9,9 @@ $color1: hsl(348, 80%, 55%);
 @import '_default';
 
 :root {
+	--color1: #{$color1};
+	--font-color1: #{$font-color1};
+	--background-color1: #{$background-color1};
 	font-size: 62.5%;
 }
 
@@ -278,7 +281,7 @@ $content-padding-color: transparentize($color: $background-color1, $amount: 0.07
 		80rem 10rem $content-padding-color, 160rem 10rem $content-padding-color,
 		-80rem 10rem $content-padding-color, -160rem 10rem $content-padding-color;
 
-	:first-child {margin-top: 0;}
+	& > :first-child {margin-top: 0;}
 }
 
 @supports (backdrop-filter: none) or (-webkit-backdrop-filter: none) {

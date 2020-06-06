@@ -46,7 +46,7 @@
         instrument: Piano
 
 - date: 2020-01-19
-  piece: Winter Quartet
+  piece: Winterquartett
   de:
     location: Arnold-Schönberg-Center, Wien
     instruments:
@@ -71,7 +71,7 @@
         instrument: Violoncello
 
 - date: postponed
-  piece: Winter Quartet
+  piece: Winterquartett
   de:
     location: Mozarteum, Salzburg
     instruments: Names Ensemble

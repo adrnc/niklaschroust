@@ -1,15 +1,85 @@
 {{ define "main" }}
 	{{ .Content }}
-	<ul class="events">
-		{{ $events := slice }}
-		{{ range .Site.Data.events }}
-			{{ $events = (slice .) | append $events }}
-		{{ end }}
+	{{ $events := slice }}
+	{{ range .Site.Data.events }}
+		{{ $events = (slice .) | append $events }}
+	{{ end }}
 
-		{{ range $events }}
-			<li class="events__item">
-				<h1 class="events__date{{ with i18n .date }}">{{ . }}{{ else }} events__date--date"><time class="events__time" datetime="{{ .date }}">{{ partial "date" (dict "lang" $.Lang "date" .date) }}</time>{{ end }}</h1>
-			</li>
+	{{ range $e := $events }}
+		{{ $lang := index . $.Lang }}
+		{{ $piece := false }}
+		{{ range $.Site.Data.music }}
+			{{ if eq $e.piece .title }}
+				{{ $langpiece := index . $.Lang }}
+				{{ $piece = cond (isset $langpiece "title") (index $langpiece "title") .title }}
+			{{ end }}
 		{{ end }}
-	</ul>
+		<section class="event{{ if not (i18n .date) }}{{ if gt (now.Format "2006-01-02") $e.date }} event--passed{{ end }}{{ end }}">
+			<h2 class="event__piece"><a class="event__rel"{{ if $piece }} href="{{ relref $ "/music" }}#{{ $piece | anchorize }}">{{ $piece }}{{ else }}>{{ .piece }}{{ end }}</a></h2>
+			<h1 class="event__date{{ with i18n .date }}">{{ . }}{{ else }} events__date--date"><time class="events__time" datetime="{{ .date }}">{{ partial "date" (dict "lang" $.Lang "date" .date) }}</time>{{ end }}</h1>
+			<p class="event__location">{{ $lang.location }}</p>
+			{{ if isset $lang.instruments 0 }}
+				<ul class="event__instrument-list">
+					{{ range $lang.instruments }}
+						<li class="event__instrument-item">
+							<span class="event__person">{{ .person }}</span> - <span class="event__instrument">{{ .instrument }}</span>
+						</li>
+					{{ end }}
+				</ul>
+			{{ else }}
+				<p class="event__instrument-single">{{ $lang.instruments }}</p>
+			{{ end }}
+		</section>
+	{{ end }}
+{{ end }}
+
+{{ define "html-head-inject" }}
+	<style>
+		.event {
+			padding: 2rem;
+			margin-top: 1.5rem;
+			background-color: rgba(255, 255, 255, 0.05);
+			border-left: 1rem solid var(--color1);
+		}
+
+		.event--passed {
+			border-left-color: rgba(255, 255, 255, 0.05);
+		}
+
+		.event:first-child {margin-top: 0;}
+
+		.event__date {
+			font-size: 4rem;
+			color: white;
+			font-weight: normal;
+			margin: 0;
+		}
+
+		.event__piece {
+			font-size: 2rem;
+			margin: 0 0 0 0.5rem;
+		}
+
+		.event__location {
+			font-size: 1.8rem;
+			opacity: 0.5;
+			margin: 1.5rem 0 0 0.5rem;
+		}
+
+		.event__instrument-single, .event__instrument-list {
+			font-size: 1.8rem;
+			margin: 0.5rem 0 0 0.5rem;
+		}
+
+		.event__instrument-list {
+			margin-top: 1rem;
+			padding-left: 2rem;
+			list-style-type: square;
+			color: rgba(255, 255, 255, 0.5);
+		}
+
+		.event__instrument, .event__person {
+			color: white;
+		}
+	</style>
 {{ end }}
