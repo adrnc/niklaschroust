@@ -13,16 +13,16 @@
     location: Styriarte, Helmut-List-Halle, Graz
     instruments:
       - person: Harald Martin Winkler
-        instrument: violin
+        instrument: Violine
       - person: Simon Schuller
-        instrument: piano
+        instrument: Klavier
   en:
     location: Styriarte, Helmut-List-Halle, Graz
     instruments:
       - person: Harald Martin Winkler
-        instrument: Violine
+        instrument: violin
       - person: Simon Schuller
-        instrument: Klavier
+        instrument: piano
 
 - date: 2019-11-24
   piece: Shape the Future Waltz
