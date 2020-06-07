@@ -1,19 +1,19 @@
 [build]
 	publish = 'site/public/'
-	command = 'hugo-s site --gc '
+	command = 'hugo -s site --gc '
 
 [build.environment]
 	HUGO_VERSION = '0.72.0'
 	HUGO_ENV = 'development'
-	HUGO_ENABLEGITINFO = 'true'
 
 [context.production]
-	HUGO_ENV = 'production'
-	HUGO_ENABLEGITINFO = 'false'
 	command = 'hugo -s site --gc --minify'
 
+[context.production.environment]
+	HUGO_ENV = 'production'
+
 [context.production.processing]
-	skip_processing = false
+	skip_processing = true
 [context.production.processing.html]
 	pretty_urls = false
 [build.processing.images]

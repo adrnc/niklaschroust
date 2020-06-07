@@ -43,7 +43,7 @@
 </style>
 
 {{ $style := resources.Get "css/main.scss" | toCSS }}
-{{ if not .Site.IsServer }}{{ $style = $style | minify }}{{ end }}
+{{ if hugo.IsProduction }}{{ $style = $style | minify }}{{ end }}
 {{ $style = $style | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="print" onload="this.onload=null;this.media='all'">
 
@@ -57,6 +57,6 @@
 
 <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
-{{ if not .Site.IsServer }}
+{{ if hugo.IsProduction }}
 	{{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
