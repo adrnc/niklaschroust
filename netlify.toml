@@ -1,13 +1,14 @@
 [build]
-	publish = 'site/public/'
-	command = 'hugo -s site --gc '
+	base = 'site/'
+	publish = 'public/'
+	command = 'hugo --gc '
 
 [build.environment]
 	HUGO_VERSION = '0.72.0'
 	HUGO_ENV = 'development'
 
 [context.production]
-	command = 'hugo -s site --gc --minify'
+	command = 'hugo --gc --minify'
 
 [context.production.environment]
 	HUGO_ENV = 'production'
