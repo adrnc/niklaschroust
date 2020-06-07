@@ -1,11 +1,13 @@
 [build]
-	base = ''
 	publish = 'dist/'
 	command = 'npm run build'
 
 [build.environment]
 	HUGO_VERSION = '0.72.0'
 	HUGO_ENV = 'development'
+
+[build.processing]
+	skip_processing = true
 
 [context.production.environment]
 	HUGO_ENV = 'production'
@@ -14,6 +16,12 @@
 	skip_processing = true
 [context.production.processing.html]
 	pretty_urls = false
+[context.production.processing.css]
+	bundle = false
+	minify = false
+[context.production.processing.js]
+	bundle = false
+	minify = false
 [build.processing.images]
 	compress = true
 

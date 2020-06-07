@@ -42,7 +42,7 @@
 	}
 </style>
 
-{{ $style := resources.Get "css/main.scss" | toCSS }}
+{{ $style := resources.Get "css/main.scss" | toCSS | postCSS }}
 {{ if hugo.IsProduction }}{{ $style = $style | minify }}{{ end }}
 {{ $style = $style | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="print" onload="this.onload=null;this.media='all'">
