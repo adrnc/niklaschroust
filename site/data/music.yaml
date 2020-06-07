@@ -3,14 +3,14 @@
   opus: 4
   de:
     instruments: 4-händiges Klavier
-    description: |
+    description: >
       Das Stück 7.Jänner beschreibt meine Gefühle, als mein
       Bruder an diesem Tag für ein halbes Jahr ins Ausland
       ging.
   en:
     title: January 7th
     instruments: Four-handed piano
-    description: |
+    description: >
       This piece describes my feelings on the day that my brother
       left to stay abroad for half a year.
 
@@ -19,7 +19,7 @@
   opus: 8.17
   de:
     instruments: Violine, Klavier
-    description: |
+    description: >
       "Atlantic" ist das 17. Stück meiner vertonten
       Geschichte mit dem Titel WHITE. In dieser
       Komposition stellt die Atlantiküberquerung für die
@@ -54,7 +54,7 @@
       Schiffsüberfahrt gut ausgeht.
   en:
     instruments: Violin, Piano
-    description: |
+    description: >
       „Atlantic“ is the 17th piece of the story WHITE that I am
       telling by musical means. In this part of the story the
       crossing of the Atlantic Ocean changes the life of the main
@@ -89,7 +89,7 @@
   opus: 11
   de:
     instruments: Violine, Violoncello, Klavier
-    description: |
+    description: >
       Bei diesem Stück habe ich das Kinderrecht „Recht des
       Kindes auf Bildung und Ausbildung zur Förderung
       seiner Begabungen“ vertont. Mir persönlich ist dieses
@@ -98,7 +98,7 @@
       werden muss.
   en:
     instruments: Violin, Violoncello, Piano
-    description: |
+    description: >
       With this piece I set the the child right “right of each child to
       education and training to promote its talents”. I personally
       think that this right is of particular importance, because I
@@ -110,7 +110,7 @@
   opus: 13
   de:
     instruments: Violine, Violine, Viola, Violoncello
-    description: |
+    description: >
       The Winter Quartet describes a typical winter landscape,
       consisting of various elements such as icicles, a fir tree, a
       skiing landscape, etc. The sum of all these elements is what
@@ -122,7 +122,7 @@
   en:
     title: Winter Quartet
     instruments: Violin, Violin, Viola, Violoncello
-    description: |
+    description: >
       The Winter Quartet describes a typical winter landscape,
       consisting of various elements such as icicles, a fir tree, a
       skiing landscape, etc. The sum of all these elements is what

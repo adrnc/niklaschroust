@@ -30,8 +30,7 @@
 
 <meta name="theme-color" content="#121111">
 
-
-{{ $background := cond (isset .Params "background") .Params.background "default.jpg" }}
+{{ $background := cond (ne .Section "") (print .Section ".jpg") "default.jpg" }}
 <link rel="preload" as="image" href="/background-images/{{ $background }}">
 <style>
 </style>
@@ -55,6 +54,8 @@
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	<link rel="stylesheet" href="{{ $font }}">
 </noscript>
+
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
 {{ if not .Site.IsServer }}
 	{{ template "_internal/google_analytics_async.html" . }}

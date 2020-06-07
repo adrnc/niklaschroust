@@ -1,8 +1,41 @@
 {{ define "main" }}
-	{{ .Content }}
-	<ul class="events">
-		{{ range .Site.Data.music }}
-			
+	{{ $life := slice }}
+	{{ range .Site.Data.life }}
+		{{ $life = (slice .) | append $life }}
+	{{ end }}
+	<ul class="life">
+		{{ range $life }}
+			<li class="life__item">
+				<h1 class="life__title">{{ if isset .title $.Lang }}{{ index .title $.Lang }}{{ else }}{{ .title }}{{ end }}</h1>
+				<p class="life__description">{{ index . $.Lang | markdownify }}</p>
+			</li>
 		{{ end }}
 	</ul>
+{{ end }}
+
+{{ define "html-head-inject" }}
+	<style>
+		.life {
+			margin: 0;
+			list-style-type: none;
+			padding: 0;
+		}
+
+		.life__item {
+			margin: 2rem 0 0 0;
+		}
+
+		.life__item:first-child {margin-top: 0;}
+
+		.life__title {
+			font-size: 1.5em;
+			margin: 0;
+		}
+
+		.life__description {
+			margin: 1rem 0 1rem 0.5rem;
+			padding: 0 0 0 1.5rem;
+			border-left: 0.1rem solid rgba(255, 255, 255, 0.5);
+		}
+	</style>
 {{ end }}

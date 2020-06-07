@@ -1,5 +1,4 @@
 {{ define "main" }}
-	{{ .Content }}
 	{{ $events := slice }}
 	{{ range .Site.Data.events }}
 		{{ $events = (slice .) | append $events }}
