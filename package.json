@@ -1,0 +1,19 @@
+{
+	"name": "niklaschroust",
+	"version": "1.0.0",
+	"author": "Adrian Chroust",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/adrianchroust/niklaschroust.git"
+	},
+	"scripts": {
+		"start": "hugo server -s site --gc --disableFastRender --ignoreCache",
+		"build": "hugo -s site -d ../dist --gc --minify"
+	},
+	"devDependencies": {
+		"autoprefixer": "^9.8.0",
+		"cssnano": "^4.1.10",
+		"postcss-cli": "^7.1.1"
+	}
+}

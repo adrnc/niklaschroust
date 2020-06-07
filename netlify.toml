@@ -1,14 +1,11 @@
 [build]
-	base = 'site/'
-	publish = 'public/'
-	command = 'hugo --gc '
+	base = ''
+	publish = 'dist/'
+	command = 'npm run build'
 
 [build.environment]
 	HUGO_VERSION = '0.72.0'
 	HUGO_ENV = 'development'
-
-[context.production]
-	command = 'hugo --gc --minify'
 
 [context.production.environment]
 	HUGO_ENV = 'production'
