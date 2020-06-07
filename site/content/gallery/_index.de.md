@@ -1,4 +1,4 @@
 ---
 title: Galerie
-slug: galerie
+url: galerie
 ---

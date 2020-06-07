@@ -1,4 +1,4 @@
 ---
 title: Leben
-slug: leben
+url: leben
 ---

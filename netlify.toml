@@ -4,7 +4,7 @@
 	command = 'hugo --gc '
 
 [build.environment]
-	HUGO_VERSION = '0.70.0'
+	HUGO_VERSION = '0.72.0'
 	HUGO_ENV = 'development'
 
 [context.production]

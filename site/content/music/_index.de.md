@@ -1,4 +1,4 @@
 ---
 title: Musik
-slug: musik
+url: musik
 ---
