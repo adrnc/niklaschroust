@@ -12,7 +12,7 @@
 			<h1 class="music__title">{{ $title }}</h1>
 			<h3 class="music__additional">{{ .year }}, {{ i18n "opus" }} {{ .opus }}</h3>
 			<p class="music__instruments">{{ $lang.instruments }}</p>
-			<p class="music__description js-description">{{ $lang.description }}</p>
+			<p class="music__description js-description">{{ $lang.description | markdownify }}</p>
 			<p class="music__view">
 				{{- with .mp3 }}<a class="music__view-item js-mp3" target="_blank" href="/music/mp3/{{ . }}">MP3</a>{{ end -}}
 				{{- with .pdf }}<a class="music__view-item" target="_blank" href="/music/pdf/{{ . }}">PDF</a>{{ end -}}
