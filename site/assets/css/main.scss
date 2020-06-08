@@ -10,6 +10,7 @@ $color1: hsl(348, 80%, 55%);
 
 :root {
 	--color1: #{$color1};
+	--font-family2: #{$font-family2};
 	--font-color1: #{$font-color1};
 	--background-color1: #{$background-color1};
 	font-size: 62.5%;
@@ -30,7 +31,7 @@ html, body {
 .page {
 	display: block;
 
-	
+
 	&::before {
 		position: fixed;
 		top: 0;
@@ -98,19 +99,19 @@ $border-top: 0.3rem solid $color1;
 		font-size: 3rem;
 		margin: 0 0 0.5rem 0;
 	}
-	
+
 	&__about-inner, &__about-inner:link {
 		text-decoration: none;
 		color: $font-color1;
 		box-shadow: none;
 	}
-	
+
 	&__about--invisible {visibility: hidden;}
-	
+
 	&__about--small, &__about--extrasmall {display: none;}
-	
+
 	&__about--colorful {color: $color1;}
-	
+
 	&__nav {
 		color: $font-color2;
 		text-align: center;
@@ -136,7 +137,7 @@ $border-top: 0.3rem solid $color1;
 		cursor: pointer;
 	}
 
-	
+
 	@keyframes menu--invisible {
 		0%, 100% {
 			width: auto;
@@ -150,7 +151,7 @@ $border-top: 0.3rem solid $color1;
 			transform: translateY(-30rem);
 		}
 	}
-	
+
 	@keyframes menu--open {
 		0% {
 			opacity: 0;
@@ -188,7 +189,7 @@ $border-top: 0.3rem solid $color1;
 			overflow: visible;
 		}
 	}
-	
+
 	&__menu-inner {
 		padding: 3rem;
 
@@ -257,11 +258,11 @@ $border-top: 0.3rem solid $color1;
 		width: 1.5rem;
 		height: 1.5rem;
 	}
-	
+
 	::-webkit-scrollbar-track {
 		background-color: $background-color2;
 	}
-	
+
 	::-webkit-scrollbar-thumb {
 		background-color: $font-color1;
 	}
@@ -287,7 +288,7 @@ $content-padding-color: transparentize($color: $background-color1, $amount: 0.07
 @media screen and (max-width: 600px) {
 	.header {
 		letter-spacing: normal;
-		
+
 		&__about--small {display: inline;}
 		&__about--not-small {display: none;}
 	}

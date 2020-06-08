@@ -28,6 +28,11 @@
 [postponed]
 	other = 'Verschoben'
 
+[opus]
+	other = 'Opus'
+
+[readmore]
+	other = 'Mehr lesen'
 
 # Months
 

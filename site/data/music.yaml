@@ -1,6 +1,7 @@
 - title: 7. Jänner
   year: 2018
   opus: 4
+  pdf: 7-jaenner.pdf
   de:
     instruments: 4-händiges Klavier
     description: >
@@ -17,6 +18,7 @@
 - title: Atlantic
   year: 2018
   opus: 8.17
+  pdf: atlantic.pdf
   de:
     instruments: Violine, Klavier
     description: >
@@ -87,6 +89,7 @@
 - title: Shape the Future Waltz
   year: 2019
   opus: 11
+  pdf: shape-the-future-waltz.pdf
   de:
     instruments: Violine, Violoncello, Klavier
     description: >
@@ -105,9 +108,10 @@
       believe that each child has hidden talents that need to be
       discovered.
 
-- title: Winterquartett
+- title: Winter-Quartett
   year: 2019
   opus: 13
+  pdf: winterquartett.pdf
   de:
     instruments: Violine, Violine, Viola, Violoncello
     description: >

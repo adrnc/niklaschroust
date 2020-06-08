@@ -1,5 +1,138 @@
 {{ define "main" }}
+	{{ $music := slice }}
 	{{ range .Site.Data.music }}
-		
+		{{ $music = (slice .) | append $music }}
 	{{ end }}
+
+	{{ range $music }}
+		{{ $lang := index . $.Lang }}
+		{{ $title := cond (isset $lang "title") (index $lang "title") .title }}
+		<section class="music js-music" id="{{ $title | anchorize }}">
+			{{ if ne $title .title }}<h2 class="music__original-title">{{ .title }}</h2>{{ end }}
+			<h1 class="music__title">{{ $title }}</h1>
+			<h3 class="music__additional">
+				<span class="music__additional--light">{{ .year }}</span>, {{ i18n "opus" }} <span class="music__additional--light">{{ .opus }}</span>
+			</h3>
+			<p class="music__instruments">{{ $lang.instruments }}</p>
+			<p class="music__description js-description">{{ $lang.description }}</p>
+			<p class="music__view">
+				{{- with .mp3 }}<a class="music__view-item js-mp3" target="_blank" href="/music/mp3/{{ . }}">MP3</a>{{ end -}}
+				{{- with .pdf }}<a class="music__view-item" target="_blank" href="/music/pdf/{{ . }}">PDF</a>{{ end -}}
+				<button class="music__readmore js-readmore">{{ i18n "readmore" }}</button>
+			</p>
+		</section>
+	{{ end }}
+{{ end }}
+
+{{ define "html-head-inject" }}
+	<style>
+		.music {
+			background-color: rgba(255, 255, 255, 0.05);
+			padding: 2rem;
+			margin-top: 1.5rem;
+			border-left: 1rem solid rgba(255, 255, 255, 0.05);
+		}
+
+		.music:first-child {margin-top: 0;}
+
+		.music:target {
+			border-left-color: var(--color1);
+		}
+
+		.music__title {
+			font-size: 1.7em;
+			margin: 0;
+		}
+
+		.music__original-title{
+			font-size: 0.9em;
+			color: rgba(255, 255, 255, 0.5);
+			margin: 0 0 0.1rem 0;
+			font-weight: normal;
+		}
+
+		.music__additional {
+			font-size: 1.2em;
+			color: var(--font-color1);
+			margin: 0.1rem 0 2rem 0;
+			font-weight: normal;
+		}
+
+		.music__additional--colorful {
+			color: var(--color1);
+		}
+
+		.music__additional--light {
+			color: var(--font-color1);
+		}
+
+		.music__instruments {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 1em;
+			margin: 0.5rem 0;
+		}
+
+		.music__description {
+			font-size: 1em;
+			margin: 0;
+			overflow: hidden;
+			white-space: pre-wrap;
+			text-overflow: clip;
+		}
+
+		.music__description--hidden {
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			margin-right: 3rem;
+		}
+
+		.music__view {
+			margin: 1.5rem 0 0 0;
+			font-family: var(--font-family2);
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.music__view-item {
+			background-color: var(--color1);
+			color: var(--font-color1);
+			padding: 1rem;
+			margin-right: 0.7rem;
+			font-size: 1em;
+		}
+
+		.music__readmore {
+			cursor: pointer;
+			font-size: 1em;
+			display: none;
+			background-color: rgba(255, 255, 255, 0.05);
+			border: none;
+			padding: 1rem;
+			color: var(--font-color1);
+			font-family: var(--font-family2);
+		}
+
+		.music__readmore--visible {
+			display: inline-block;
+		}
+	</style>
+{{ end }}
+
+{{ define "html-body-inject" }}
+	<script>
+		document.querySelectorAll('.js-music').forEach(element => {
+			const description = element.querySelector('.js-description'),
+			readMore = element.querySelector('.js-readmore'),
+			classDescriptionHidden = 'music__description--hidden',
+			classReadMoreVisible = 'music__readmore--visible';
+
+			description.classList.add(classDescriptionHidden);
+			readMore.classList.add(classReadMoreVisible);
+			readMore.addEventListener('click', event => {
+				description.classList.remove(classDescriptionHidden);
+				event.currentTarget.classList.remove(classReadMoreVisible);
+			}, false);
+		});
+	</script>
 {{ end }}
