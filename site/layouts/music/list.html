@@ -10,9 +10,7 @@
 		<section class="music js-music" id="{{ $title | anchorize }}">
 			{{ if ne $title .title }}<h2 class="music__original-title">{{ .title }}</h2>{{ end }}
 			<h1 class="music__title">{{ $title }}</h1>
-			<h3 class="music__additional">
-				<span class="music__additional--light">{{ .year }}</span>, {{ i18n "opus" }} <span class="music__additional--light">{{ .opus }}</span>
-			</h3>
+			<h3 class="music__additional">{{ .year }}, {{ i18n "opus" }} {{ .opus }}</h3>
 			<p class="music__instruments">{{ $lang.instruments }}</p>
 			<p class="music__description js-description">{{ $lang.description }}</p>
 			<p class="music__view">
