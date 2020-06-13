@@ -1,0 +1,38 @@
+<script>
+	document.querySelectorAll('.js-music').forEach(element => {
+		const description = element.querySelector('.js-description'),
+		readMore = element.querySelector('.js-readmore'),
+		classDescriptionHidden = 'music__description--hidden',
+		classReadMoreVisible = 'music__readmore--visible';
+
+		description.classList.add(classDescriptionHidden);
+		readMore.classList.add(classReadMoreVisible);
+		readMore.addEventListener('click', event => {
+			description.classList.remove(classDescriptionHidden);
+			event.currentTarget.classList.remove(classReadMoreVisible);
+		}, false);
+	});
+
+	{
+		let currentAudio = null;
+
+		document.querySelectorAll('.js-mp3').forEach(element => element.addEventListener('click' , event => {
+			const currentTarget = event.currentTarget,
+			classSelected = 'music__view-item--selected',
+			selectedItem = document.querySelector(`.${classSelected}`);
+
+			event.preventDefault();
+			if (currentAudio) currentAudio.pause();
+			if (selectedItem) selectedItem.classList.remove(classSelected);
+			if (selectedItem !== currentTarget) {
+				currentTarget.classList.add(classSelected);
+				currentAudio = new Audio(currentTarget.href);
+				currentAudio.addEventListener('ended', () => {
+					currentTarget.classList.remove(classSelected);
+					currentAudio = null;
+				}, false);
+				currentAudio.play();
+			}
+		}, false));
+	}
+</script>
