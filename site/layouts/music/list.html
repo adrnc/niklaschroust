@@ -149,15 +149,20 @@
 			let currentAudio = null;
 
 			document.querySelectorAll('.js-mp3').forEach(element => element.addEventListener('click' , event => {
-				const classSelected = 'music__view-item--selected',
+				const currentTarget = event.currentTarget,
+				classSelected = 'music__view-item--selected',
 				selectedItem = document.querySelector(`.${classSelected}`);
 
 				event.preventDefault();
 				if (currentAudio) currentAudio.pause();
 				if (selectedItem) selectedItem.classList.remove(classSelected);
-				if (selectedItem !== event.currentTarget) {
-					event.currentTarget.classList.add(classSelected);
-					currentAudio = new Audio(event.currentTarget.href);
+				if (selectedItem !== currentTarget) {
+					currentTarget.classList.add(classSelected);
+					currentAudio = new Audio(currentTarget.href);
+					currentAudio.addEventListener('ended', () => {
+						currentTarget.classList.remove(classSelected);
+						currentAudio = null;
+					}, false);
 					currentAudio.play();
 				}
 			}, false));
