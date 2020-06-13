@@ -35,10 +35,10 @@
 	other = 'Read more'
 
 [view]
-	other = 'Anschauen'
+	other = 'View'
 
 [listen]
-	other = 'Anhören'
+	other = 'Listen'
 
 
 # Months
