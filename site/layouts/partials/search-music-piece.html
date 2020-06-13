@@ -1,0 +1,16 @@
+{{ $ := .page }}
+{{ $title := .title }}
+{{ $piece := false }}
+{{ $list := cond (isset . "child") .child $.Site.Data.music }}
+
+{{ range $list }}
+	{{ if eq .title $title }}
+		{{ $langpiece := index . $.Lang }}
+		{{ $piece = cond (isset $langpiece "title") (index $langpiece "title") .title }}
+	{{ end }}
+	{{ with .children }}
+		{{ $piece = partial "search-music-piece" (dict "page" $ "title" $title "child" .) }}
+	{{ end }}
+{{ end }}
+
+{{ return $piece }}
