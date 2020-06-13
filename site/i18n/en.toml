@@ -43,6 +43,9 @@
 [upcoming-events]
 	other = 'Upcoming events'
 
+[no-events]
+	other = 'At the moment there are no upcoming events :('
+
 
 # Months
 
