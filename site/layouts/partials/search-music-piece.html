@@ -1,15 +1,17 @@
 {{ $ := .page }}
 {{ $title := .title }}
-{{ $piece := false }}
+{{ $piece := dict "title" "" "anchor" "" }}
+{{ $parent := cond (isset . "parent") (print .parent " ") "" }}
 {{ $list := cond (isset . "child") .child $.Site.Data.music }}
 
-{{ range $list }}
+{{ range $l := $list }}
 	{{ if eq .title $title }}
 		{{ $langpiece := index . $.Lang }}
-		{{ $piece = cond (isset $langpiece "title") (index $langpiece "title") .title }}
+		{{ $piecename := cond (isset $langpiece "title") (index $langpiece "title") .title }}
+		{{ $piece = dict "title" $piecename "anchor" ((print $parent $piecename) | anchorize) }}
 	{{ end }}
 	{{ with .children }}
-		{{ $piece = partial "search-music-piece" (dict "page" $ "title" $title "child" .) }}
+		{{ $piece = partial "search-music-piece" (dict "page" $ "title" $title "parent" (print $parent $l.title) "child" .) }}
 	{{ end }}
 {{ end }}
 
