@@ -12,4 +12,4 @@ Currently I attend the second grade of the Bundes Oberstufen Realgymnasium Hegel
 für Musik & Kunst in Vienna, a high school with focus on music and arts.
 
 >The guitar's all right John, but you'll never make a living out of it
->>– John Lennon’s Aunt Mimi Smith
+>>John Lennon’s Aunt Mimi Smith

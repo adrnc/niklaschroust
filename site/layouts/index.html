@@ -1,0 +1,22 @@
+{{ define "html-head-inject" }}
+	<style>
+		blockquote:first-of-type {
+			margin-top: 4rem;
+		}
+
+		blockquote:first-of-type > blockquote {
+			font-style: normal;
+			color: rgba(255, 255, 255, 0.5);
+			margin: 0 0 0 2rem;
+		}
+
+		blockquote:first-of-type > blockquote::before {
+			content: "–";
+			display: inline;
+		}
+
+		blockquote:first-of-type > blockquote > p {
+			display: inline;
+		}
+	</style>
+{{ end }}
