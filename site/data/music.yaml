@@ -2,6 +2,7 @@
   year: 2018
   opus: 4
   pdf: 7-jaenner.pdf
+  mp3: 7-jaenner.mp3
   de:
     instruments: 4-händiges Klavier
     description: >
@@ -19,6 +20,7 @@
   year: 2018
   opus: 8.17
   pdf: atlantic.pdf
+  mp3: atlantic.mp3
   de:
     instruments: Violine, Klavier
     description: >
@@ -90,6 +92,7 @@
   year: 2019
   opus: 11
   pdf: shape-the-future-waltz.pdf
+  mp3: shape-the-future-waltz.mp3
   de:
     instruments: Violine, Violoncello, Klavier
     description: >
@@ -112,6 +115,7 @@
   year: 2019
   opus: 13
   pdf: winter-quartett.pdf
+  mp3: winter-quartett.mp3
   de:
     instruments: Violine, Violine, Viola, Violoncello
     description: >

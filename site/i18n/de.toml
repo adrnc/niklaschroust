@@ -34,6 +34,13 @@
 [readmore]
 	other = 'Mehr lesen'
 
+[view]
+	other = 'View'
+
+[listen]
+	other = 'Listen'
+
+
 # Months
 
 [january]

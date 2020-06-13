@@ -14,8 +14,8 @@
 			<p class="music__instruments">{{ $lang.instruments }}</p>
 			<p class="music__description js-description">{{ $lang.description | markdownify }}</p>
 			<p class="music__view">
-				{{- with .mp3 }}<a class="music__view-item js-mp3" target="_blank" href="/music/mp3/{{ . }}">MP3</a>{{ end -}}
-				{{- with .pdf }}<a class="music__view-item" target="_blank" href="/music/pdf/{{ . }}">PDF</a>{{ end -}}
+				{{- with .mp3 }}<a class="music__view-item js-mp3" target="_blank" href="/music/mp3/{{ . }}">{{ i18n "listen" }}</a>{{ end -}}
+				{{- with .pdf }}<a class="music__view-item" target="_blank" href="/music/pdf/{{ . }}">{{ i18n "view" }}</a>{{ end -}}
 				<button class="music__readmore js-readmore">{{ i18n "readmore" }}</button>
 			</p>
 		</section>
@@ -24,6 +24,10 @@
 
 {{ define "html-head-inject" }}
 	<style>
+		.audio {
+			display: none;
+		}
+
 		.music {
 			background-color: rgba(255, 255, 255, 0.05);
 			padding: 2rem;
@@ -92,13 +96,19 @@
 			justify-content: flex-start;
 		}
 
-		.music__view-item {
+		.music__view-item, .music__view-item:link {
 			user-select: none;
 			background-color: var(--color2);
 			color: var(--font-color1);
 			padding: 1rem;
 			margin-right: 0.7rem;
 			font-size: 1em;
+			box-shadow: none;
+		}
+
+		.music__view-item--selected, .music__view-item--selected:link {
+			color: var(--background-color1);
+			background-color: var(--font-color1);
 		}
 
 		.music__readmore {
@@ -134,5 +144,23 @@
 				event.currentTarget.classList.remove(classReadMoreVisible);
 			}, false);
 		});
+
+		{
+			let currentAudio = null;
+
+			document.querySelectorAll('.js-mp3').forEach(element => element.addEventListener('click' , event => {
+				const classSelected = 'music__view-item--selected',
+				selectedItem = document.querySelector(`.${classSelected}`);
+
+				event.preventDefault();
+				if (currentAudio) currentAudio.pause();
+				if (selectedItem) selectedItem.classList.remove(classSelected);
+				if (selectedItem !== event.currentTarget) {
+					event.currentTarget.classList.add(classSelected);
+					currentAudio = new Audio(event.currentTarget.href);
+					currentAudio.play();
+				}
+			}, false));
+		}
 	</script>
 {{ end }}
