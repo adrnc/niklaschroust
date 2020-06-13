@@ -1,7 +1,25 @@
+{{ define "main" }}
+	{{ .Content }}
+
+	<div class="events-list">
+		<h1 class="events-list__title">{{ i18n "upcoming-events" }}</h1>
+
+		{{ $events := slice }}
+		{{ range .Site.Data.events }}
+			{{ $events = (slice .) | append $events }}
+		{{ end }}
+
+		{{ range $events }}
+			{{ if or (i18n .date) (lt (now.Format "2006-01-02") .date) }}
+				{{ partial "event" (dict "page" $ "element" .) }}
+			{{ end }}
+		{{ end }}
+	</div>
+{{ end }}
 {{ define "html-head-inject" }}
 	<style>
 		blockquote:first-of-type {
-			margin-top: 4rem;
+			margin-top: 3rem;
 		}
 
 		blockquote:first-of-type > blockquote {
@@ -18,5 +36,19 @@
 		blockquote:first-of-type > blockquote > p {
 			display: inline;
 		}
+
+		.events-list {
+			margin-top: 6rem;
+		}
+
+		.events-list__title {
+			margin: 0;
+			font-size: 1.2em;
+			color: rgba(255, 255, 255, 0.8);
+			font-weight: normal;
+		}
 	</style>
+
+	{{ partial "event-style" . }}
 {{ end }}
+

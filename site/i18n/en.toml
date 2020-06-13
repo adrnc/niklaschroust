@@ -40,6 +40,9 @@
 [listen]
 	other = 'Listen'
 
+[upcoming-events]
+	other = 'Upcoming events'
+
 
 # Months
 

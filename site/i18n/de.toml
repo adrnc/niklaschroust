@@ -40,6 +40,9 @@
 [listen]
 	other = 'Anhören'
 
+[upcoming-events]
+	other = 'Bevorstehende Events'
+
 
 # Months
 
