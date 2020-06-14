@@ -34,3 +34,5 @@ fields:
       label: Beschreibung
       config:
         required: true
+pages:
+- site/data/life.yaml
