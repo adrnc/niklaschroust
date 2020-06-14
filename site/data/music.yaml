@@ -1,9 +1,9 @@
 ---
 - title: Winter-Quartett
-  year: "2019"
-  opus: "13"
-  pdf: /uploads/winter-quartett.pdf
-  audio: /uploads/winter-quartett.mp3
+  year: 2019
+  opus: 13
+  pdf: "/uploads/2020-06-14_winter-quartett.pdf"
+  audio: "/uploads/2020-06-14_winter-quartett.ogg"
   de:
     instruments: Violine, Violine, Viola, Violoncello
     description: |
@@ -18,6 +18,7 @@
       eine eigene singuläre Geschichte hat, die ich versucht
       habe in dieser Komposition herauszuheben und in das
       Ganze wieder rückzuführen.
+    title: ''
   en:
     title: Winter Quartet
     instruments: Violin, Violin, Viola, Violoncello
@@ -30,11 +31,12 @@
       it’s also important to me that each single winter element has
       a story of its own, which I have tried to highlight and to
       incorporate into the overall context.
+  children: []
 - title: Shape the Future Waltz
-  year: "2019"
-  opus: "11"
-  pdf: /uploads/shape-the-future-waltz.pdf
-  audio: /uploads/shape-the-future-waltz.mp3
+  year: 2019
+  opus: 11
+  pdf: "/uploads/2020-06-14_shape-the-future-waltz.ogg"
+  audio: "/uploads/2020-06-14_shape-the-future-waltz.ogg"
   de:
     instruments: Violine, Violoncello, Klavier
     description: |
@@ -44,6 +46,7 @@
       Recht besonders wichtig, da ich glaube, dass jedes Kind
       eine Begabung in sich schlummern hat und entdeckt
       werden muss.
+    title: ''
   en:
     instruments: Violin, Violoncello, Piano
     description: |
@@ -52,11 +55,13 @@
       think that this right is of particular importance, because I
       believe that each child has hidden talents that need to be
       discovered.
+    title: ''
+  children: []
 - title: Atlantic
-  year: "2018"
-  opus: "8.17"
-  pdf: /uploads/atlantic.pdf
-  audio: /uploads/atlantic.mp3
+  year: 2018
+  opus: 8.17
+  pdf: "/uploads/2020-06-14_atlantic.ogg"
+  audio: "/uploads/2020-06-14_atlantic.ogg"
   de:
     instruments: Violine, Klavier
     description: |
@@ -92,6 +97,7 @@
       Zuhörer offen, sprich weitere Interpretationen bleiben
       jedem selbst überlassen. Gewiss ist nur, dass die
       Schiffsüberfahrt gut ausgeht.
+    title: ''
   en:
     instruments: Violin, Piano
     description: |
@@ -123,20 +129,24 @@
       will result in remains open to the listener, and each one is
       left to interpret for her- or himself. We only know for sure
       that the passage succeeds.
+    title: ''
+  children: []
 - title: 7. Jänner
-  year: "2018"
-  opus: "4"
-  pdf: /uploads//uploads/7-jaenner.pdf
-  audio: /uploads//uploads/7-jaenner.mp3
+  year: 2018
+  opus: 4
+  pdf: "/uploads/2020-06-14_7-jaenner.pdf"
+  audio: "/uploads/2020-06-14_7-jaenner.ogg"
   de:
     instruments: 4-händiges Klavier
     description: |
       Das Stück 7.Jänner beschreibt meine Gefühle, als mein
       Bruder an diesem Tag für ein halbes Jahr ins Ausland
       ging.
+    title: ''
   en:
     title: January 7th
     instruments: Four-handed piano
     description: |
       This piece describes my feelings on the day that my brother
       left to stay abroad for half a year.
+  children: []
