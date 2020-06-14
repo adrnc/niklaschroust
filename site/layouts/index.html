@@ -4,10 +4,7 @@
 	<div class="events-list">
 		<h1 class="events-list__title">{{ i18n "upcoming-events" }}</h1>
 
-		{{ $events := slice }}
-		{{ range .Site.Data.events }}
-			{{ $events = (slice .) | append $events }}
-		{{ end }}
+		{{ $events := .Site.Data.events }}
 
 		{{ range $events }}
 			{{ if or (not .date) (lt (now.Format "2006-01-02") .date) }}
