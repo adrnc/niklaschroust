@@ -4,8 +4,8 @@
 	<ul class="life">
 		{{ range $life }}
 			<li class="life__item">
-				<h1 class="life__title">{{ if isset .title $.Lang }}{{ index .title $.Lang }}{{ else }}{{ .title }}{{ end }}</h1>
-				<p class="life__description">{{ index . $.Lang | markdownify }}</p>
+				<h1 class="life__title">{{ index . (print "title-" $.Lang) }}</h1>
+				<p class="life__description">{{ index . (print "description-" $.Lang) | markdownify }}</p>
 			</li>
 		{{ end }}
 	</ul>

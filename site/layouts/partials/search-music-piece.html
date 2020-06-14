@@ -7,7 +7,7 @@
 {{ range $l := $list }}
 	{{ if eq .title $title }}
 		{{ $langpiece := index . $.Lang }}
-		{{ $piecename := cond (isset $langpiece "title") (index $langpiece "title") .title }}
+		{{ $piecename := cond (ne $langpiece.title "") $langpiece.title .title }}
 		{{ $piece = dict "title" $piecename "anchor" ((print $parent $piecename) | anchorize) }}
 	{{ end }}
 	{{ with .children }}

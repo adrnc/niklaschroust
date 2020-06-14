@@ -2,8 +2,8 @@
 - title: Winter-Quartett
   year: 2019
   opus: 13
-  pdf: "/uploads/2020-06-14_winter-quartett.pdf"
-  audio: "/uploads/2020-06-14_winter-quartett.ogg"
+  pdf: "/uploads/winter-quartett.pdf"
+  audio: "/uploads/winter-quartett.mp3"
   de:
     instruments: Violine, Violine, Viola, Violoncello
     description: |
@@ -35,8 +35,8 @@
 - title: Shape the Future Waltz
   year: 2019
   opus: 11
-  pdf: "/uploads/2020-06-14_shape-the-future-waltz.pdf"
-  audio: "/uploads/2020-06-14_shape-the-future-waltz.ogg"
+  pdf: "/uploads/shape-the-future-waltz.pdf"
+  audio: "/uploads/shape-the-future-waltz.mp3"
   de:
     instruments: Violine, Violoncello, Klavier
     description: |
@@ -60,8 +60,8 @@
 - title: Atlantic
   year: 2018
   opus: 8.17
-  pdf: "/uploads/2020-06-14_atlantic.pdf"
-  audio: "/uploads/2020-06-14_atlantic.ogg"
+  pdf: "/uploads/_atlantic.pdf"
+  audio: "/uploads/atlantic.mp3"
   de:
     instruments: Violine, Klavier
     description: |
@@ -134,8 +134,8 @@
 - title: 7. Jänner
   year: 2018
   opus: 4
-  pdf: "/uploads/2020-06-14_7-jaenner.pdf"
-  audio: "/uploads/2020-06-14_7-jaenner.ogg"
+  pdf: "/uploads/jaenner.pdf"
+  audio: "/uploads/jaenner.mp3"
   de:
     instruments: 4-händiges Klavier
     description: |
