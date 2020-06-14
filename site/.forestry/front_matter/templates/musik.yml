@@ -8,39 +8,68 @@ fields:
   fields:
   - type: text
     name: title
-    label: title
-  - type: text
-    name: year
-    label: year
-  - type: text
-    name: opus
-    label: opus
-  - type: file
-    name: pdf
-    label: pdf
-  - type: text
-    name: audio
-    label: audio
+    label: Titel
+    config:
+      required: true
+  - name: year
+    type: number
+    label: Jahr
+    description: ''
+    default: 
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
+  - name: opus
+    type: number
+    label: Opus
+    description: ''
+    default: 
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
+  - name: pdf
+    type: file
+    config:
+      maxSize: 64
+    label: PDF
+  - name: audio
+    type: file
+    config:
+      maxSize: 64
+    label: Audio
   - type: field_group
     name: de
-    label: de
     fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Deutscher Titel
+      description: optional
     - type: text
       name: instruments
-      label: instruments
+      label: Instrumente
     - type: textarea
       name: description
-      label: description
+      label: Beschreibung
+    label: Deutsche Informationen
   - type: field_group
     name: en
-    label: en
     fields:
     - type: text
       name: title
-      label: title
+      label: Englischer Titel
+      description: optional
     - type: text
       name: instruments
-      label: instruments
+      label: Instrumente
     - type: textarea
       name: description
-      label: description
+      label: Beschreibung
+    label: Englische Informationen
