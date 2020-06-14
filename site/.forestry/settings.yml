@@ -13,6 +13,10 @@ sections:
   path: site/data/music.yaml
   label: Musik
 - type: document
+  path: site/data/life.yaml
+  label: Leben
+  match: "**/*"
+- type: document
   path: site/data/details.yaml
   label: Details
 - type: heading
