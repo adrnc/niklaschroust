@@ -1,24 +1,60 @@
-- title: 7. Jänner
-  year: 2018
-  opus: 4
-  pdf: 7-jaenner.pdf
-  audio: 7-jaenner.mp3
+---
+- title: Winter-Quartett
+  year: "2019"
+  opus: "13"
+  pdf: winter-quartett.pdf
+  audio: winter-quartett.mp3
   de:
-    instruments: 4-händiges Klavier
+    instruments: Violine, Violine, Viola, Violoncello
     description: |
-      Das Stück 7.Jänner beschreibt meine Gefühle, als mein
-      Bruder an diesem Tag für ein halbes Jahr ins Ausland
-      ging.
+      Das Winter-Quartett beschreibt eine klischeehafte
+      Winterlandschaft, die aus vielen einzelnen Elementen,
+      wie beispielsweise Eiszapfen, einem Tannenbaum,
+      einer Schilandschaft, … besteht. Die Summe aller
+      Elemente fügt sich zu der Komposition Winter-Quartett
+      zusammen, oder anders gesagt zu dem was ich mir
+      unter dem Wort „Winter“ vorstelle. Wichtig für mich
+      ist jedoch, dass jedes einzelne Winterelement auch
+      eine eigene singuläre Geschichte hat, die ich versucht
+      habe in dieser Komposition herauszuheben und in das
+      Ganze wieder rückzuführen.
   en:
-    title: January 7th
-    instruments: Four-handed piano
+    title: Winter Quartet
+    instruments: Violin, Violin, Viola, Violoncello
     description: |
-      This piece describes my feelings on the day that my brother
-      left to stay abroad for half a year.
-
+      The Winter Quartet describes a typical winter landscape,
+      consisting of various elements such as icicles, a fir tree, a
+      skiing landscape, etc. The sum of all these elements is what
+      makes up the composition of the Winter Quartet, or rather
+      what I as the composer associate with the term “winter”. But
+      it’s also important to me that each single winter element has
+      a story of its own, which I have tried to highlight and to
+      incorporate into the overall context.
+- title: Shape the Future Waltz
+  year: "2019"
+  opus: "11"
+  pdf: shape-the-future-waltz.pdf
+  audio: shape-the-future-waltz.mp3
+  de:
+    instruments: Violine, Violoncello, Klavier
+    description: |
+      Bei diesem Stück habe ich das Kinderrecht „Recht des
+      Kindes auf Bildung und Ausbildung zur Förderung
+      seiner Begabungen“ vertont. Mir persönlich ist dieses
+      Recht besonders wichtig, da ich glaube, dass jedes Kind
+      eine Begabung in sich schlummern hat und entdeckt
+      werden muss.
+  en:
+    instruments: Violin, Violoncello, Piano
+    description: |
+      With this piece I set the child right “right of each child to
+      education and training to promote its talents”. I personally
+      think that this right is of particular importance, because I
+      believe that each child has hidden talents that need to be
+      discovered.
 - title: Atlantic
-  year: 2018
-  opus: 8.17
+  year: "2018"
+  opus: "8.17"
   pdf: atlantic.pdf
   audio: atlantic.mp3
   de:
@@ -87,58 +123,20 @@
       will result in remains open to the listener, and each one is
       left to interpret for her- or himself. We only know for sure
       that the passage succeeds.
-
-- title: Shape the Future Waltz
-  year: 2019
-  opus: 11
-  pdf: shape-the-future-waltz.pdf
-  audio: shape-the-future-waltz.mp3
+- title: 7. Jänner
+  year: "2018"
+  opus: "4"
+  pdf: 7-jaenner.pdf
+  audio: 7-jaenner.mp3
   de:
-    instruments: Violine, Violoncello, Klavier
+    instruments: 4-händiges Klavier
     description: |
-      Bei diesem Stück habe ich das Kinderrecht „Recht des
-      Kindes auf Bildung und Ausbildung zur Förderung
-      seiner Begabungen“ vertont. Mir persönlich ist dieses
-      Recht besonders wichtig, da ich glaube, dass jedes Kind
-      eine Begabung in sich schlummern hat und entdeckt
-      werden muss.
+      Das Stück 7.Jänner beschreibt meine Gefühle, als mein
+      Bruder an diesem Tag für ein halbes Jahr ins Ausland
+      ging.
   en:
-    instruments: Violin, Violoncello, Piano
+    title: January 7th
+    instruments: Four-handed piano
     description: |
-      With this piece I set the child right “right of each child to
-      education and training to promote its talents”. I personally
-      think that this right is of particular importance, because I
-      believe that each child has hidden talents that need to be
-      discovered.
-
-- title: Winter-Quartett
-  year: 2019
-  opus: 13
-  pdf: winter-quartett.pdf
-  audio: winter-quartett.mp3
-  de:
-    instruments: Violine, Violine, Viola, Violoncello
-    description: |
-      Das Winter-Quartett beschreibt eine klischeehafte
-      Winterlandschaft, die aus vielen einzelnen Elementen,
-      wie beispielsweise Eiszapfen, einem Tannenbaum,
-      einer Schilandschaft, … besteht. Die Summe aller
-      Elemente fügt sich zu der Komposition Winter-Quartett
-      zusammen, oder anders gesagt zu dem was ich mir
-      unter dem Wort „Winter“ vorstelle. Wichtig für mich
-      ist jedoch, dass jedes einzelne Winterelement auch
-      eine eigene singuläre Geschichte hat, die ich versucht
-      habe in dieser Komposition herauszuheben und in das
-      Ganze wieder rückzuführen.
-  en:
-    title: Winter Quartet
-    instruments: Violin, Violin, Viola, Violoncello
-    description: |
-      The Winter Quartet describes a typical winter landscape,
-      consisting of various elements such as icicles, a fir tree, a
-      skiing landscape, etc. The sum of all these elements is what
-      makes up the composition of the Winter Quartet, or rather
-      what I as the composer associate with the term “winter”. But
-      it’s also important to me that each single winter element has
-      a story of its own, which I have tried to highlight and to
-      incorporate into the overall context.
+      This piece describes my feelings on the day that my brother
+      left to stay abroad for half a year.
