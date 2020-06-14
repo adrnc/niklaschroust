@@ -1,0 +1,20 @@
+---
+label: Lebensabschnitt
+hide_body: true
+fields:
+- type: field_group_list
+  name: Life
+  label: Life
+  fields:
+  - type: text
+    name: title-de
+    label: title-de
+  - type: text
+    name: title-en
+    label: title-en
+  - type: text
+    name: description-de
+    label: description-de
+  - type: text
+    name: description-en
+    label: description-en
