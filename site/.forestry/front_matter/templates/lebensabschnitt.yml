@@ -34,3 +34,5 @@ fields:
         format: markdown
     label: Englische Beschreibung
   label: Lebensabschnitt
+pages:
+- site/data/life.yaml
