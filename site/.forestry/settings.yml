@@ -4,8 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Daten
+- type: directory
+  path: site/static/uploads
+  label: Audio und PDF
+  create: all
+  match: "**/*"
 - type: document
   path: site/data/events.yaml
   label: Events
