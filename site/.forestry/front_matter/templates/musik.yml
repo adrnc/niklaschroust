@@ -1,0 +1,46 @@
+---
+label: Musik
+hide_body: true
+fields:
+- type: field_group_list
+  name: Music
+  label: Music
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: year
+    label: year
+  - type: text
+    name: opus
+    label: opus
+  - type: file
+    name: pdf
+    label: pdf
+  - type: text
+    name: audio
+    label: audio
+  - type: field_group
+    name: de
+    label: de
+    fields:
+    - type: text
+      name: instruments
+      label: instruments
+    - type: textarea
+      name: description
+      label: description
+  - type: field_group
+    name: en
+    label: en
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: instruments
+      label: instruments
+    - type: textarea
+      name: description
+      label: description
