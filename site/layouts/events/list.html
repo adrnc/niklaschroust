@@ -1,8 +1,5 @@
 {{ define "main" }}
-	{{ $events := slice }}
-	{{ range .Site.Data.events }}
-		{{ $events = (slice .) | append $events }}
-	{{ end }}
+	{{ $events := .Site.Data.events }}
 
 	{{ range $events }}
 		{{ partial "event" (dict "page" $ "element" .) }}

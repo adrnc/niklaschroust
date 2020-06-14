@@ -1,8 +1,5 @@
 {{ define "main" }}
-	{{ $music := slice }}
-	{{ range .Site.Data.music }}
-		{{ $music = (slice .) | append $music }}
-	{{ end }}
+	{{ $music := .Site.Data.music }}
 
 	{{ range $music }}
 		{{ partial "music" (dict "page" $ "element" .) }}
