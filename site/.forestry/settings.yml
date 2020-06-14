@@ -33,7 +33,7 @@ sections:
   match: "**/*.en.md"
   new_doc_ext: en.md
 upload_dir: static/---none---
-public_path: ''
+public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
