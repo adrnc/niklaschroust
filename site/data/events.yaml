@@ -1,12 +1,14 @@
+---
 - date: 2019-06-17
   piece: 7. Jänner
   de:
-    location: Jahreskonzert Johann Sebastian Bach Musikschule, Musikverein Wien, Gläserner Saal
+    location: Jahreskonzert Johann Sebastian Bach Musikschule, Musikverein Wien, Gläserner
+      Saal
     instruments: Vierhändiges Klavierstück Tobias Antonic & Niklas Chroust
   en:
-    location: Johann Sebastian Bach Musikschule Annual Concert, Vienna Musikverein, Glass Hall
+    location: Johann Sebastian Bach Musikschule Annual Concert, Vienna Musikverein,
+      Glass Hall
     instruments: Four-handed piano Tobias Antonic & Niklas Chroust
-
 - date: 2019-07-10
   piece: Atlantic
   de:
@@ -19,7 +21,6 @@
     instruments: |
       - Harald Martin Winkler - Violin
       - Simon Schuller - Piano
-
 - date: 2019-11-24
   piece: Shape the Future Waltz
   de:
@@ -34,7 +35,6 @@
       - Johanna Hechwartner - Violin
       - Rebekka Rennert - Violoncello
       - Defne Saydam - Piano
-
 - date: 2020-01-19
   piece: Winter-Quartett
   de:
@@ -51,8 +51,7 @@
       - Robert Olisa Nzekwu instrument - Violin
       - Lena Fankhauser - Viola
       - Melissa Coleman - Violoncello
-
-- date:
+- date: 
   piece: Winter-Quartett
   de:
     location: Mozarteum, Salzburg
@@ -60,8 +59,7 @@
   en:
     location: Mozarteum, Salzburg
     instruments: Names Ensemble
-
-- date:
+- date: 
   piece: Die Stadtgrenze
   de:
     location: Styriarte, Helmut-List-Halle, Graz

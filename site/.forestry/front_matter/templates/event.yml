@@ -55,3 +55,5 @@ fields:
           format: markdown
       label: Beschreibung / Instrumente
     label: Englische Informationen
+pages:
+- site/data/events.yaml
