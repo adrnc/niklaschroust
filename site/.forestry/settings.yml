@@ -32,11 +32,11 @@ sections:
   create: all
   match: "**/*.en.md"
   new_doc_ext: en.md
-upload_dir: site/static/uploads
-public_path: "/uploads"
+upload_dir: ''
+public_path: ''
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":year:-:month:-:day:_:filename:"
+file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
