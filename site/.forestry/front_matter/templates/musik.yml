@@ -1,5 +1,5 @@
 ---
-label: Musik
+label: Musikstück
 hide_body: true
 fields:
 - type: field_group_list
