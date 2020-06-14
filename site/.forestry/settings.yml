@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Informationen
 - type: document
   path: site/data/events.yaml
   label: Events
@@ -20,19 +22,16 @@ sections:
   label: Seiten
 - type: directory
   path: site/content
-  label: Alle Seiten
-  create: all
-  match: "**/*"
-- type: directory
-  path: site/content
   label: Deutsche Seiten
   create: all
   match: "**/*.de.md"
+  new_doc_ext: ".de.md"
 - type: directory
   path: site/content
   label: Englische Seiten
   create: all
   match: "**/*.en.md"
+  new_doc_ext: ".en.md"
 upload_dir: site/static/uploads
 public_path: "/uploads"
 front_matter_path: ''
