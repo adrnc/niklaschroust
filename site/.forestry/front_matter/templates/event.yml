@@ -8,27 +8,49 @@ fields:
   fields:
   - type: datetime
     name: date
-    label: date
+    label: Datum
+    config:
+      date_format: DD.MM.YYYY
+      export_format: YYYY-MM-DD
+    default: ''
   - type: text
     name: piece
-    label: piece
+    label: Stück
+    config:
+      required: true
   - type: field_group
     name: de
-    label: de
     fields:
     - type: text
       name: location
-      label: location
-    - type: text
-      name: instruments
-      label: instruments
+      label: Ort
+      config:
+        required: true
+    - name: instruments
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Beschreibung / Instrumente
+    label: Deutsche Informationen
   - type: field_group
     name: en
-    label: en
     fields:
     - type: text
       name: location
-      label: location
-    - type: text
-      name: instruments
-      label: instruments
+      config:
+        required: true
+      label: Ort
+    - name: instruments
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Beschreibung / Instrumente
+    label: Englische Informationen
