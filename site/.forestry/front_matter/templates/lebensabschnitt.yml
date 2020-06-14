@@ -8,21 +8,29 @@ fields:
   fields:
   - type: field_group
     name: de
-    label: de
     fields:
     - type: number
       name: title
-      label: title
+      label: Titel
+      config:
+        required: true
     - type: text
       name: description
-      label: description
+      config:
+        required: true
+      label: Beschreibung
+    label: Deutsche Informationen
   - type: field_group
     name: en
-    label: en
+    label: Englische Informationen
     fields:
     - type: number
       name: title
-      label: title
+      label: Titel
+      config:
+        required: true
     - type: text
       name: description
-      label: description
+      label: Beschreibung
+      config:
+        required: true
