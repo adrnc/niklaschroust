@@ -73,5 +73,7 @@ fields:
       name: description
       label: Beschreibung
     label: Englische Informationen
+  config:
+    labelField: title
 pages:
 - site/data/music.yaml
