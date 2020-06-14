@@ -4,7 +4,6 @@ hide_body: true
 fields:
 - type: field_group_list
   name: Life
-  label: Life
   fields:
   - type: text
     name: title-de
@@ -34,3 +33,4 @@ fields:
       schema:
         format: markdown
     label: Englische Beschreibung
+  label: Lebensabschnitt
