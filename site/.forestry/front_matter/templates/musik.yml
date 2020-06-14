@@ -73,6 +73,19 @@ fields:
       name: description
       label: Beschreibung
     label: Englische Informationen
+  - name: children
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: true
+      label: Titel
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Unterstücke
   config:
     labelField: title
 pages:
