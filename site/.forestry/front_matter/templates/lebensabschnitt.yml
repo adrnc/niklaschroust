@@ -33,6 +33,6 @@ fields:
       schema:
         format: markdown
     label: Englische Beschreibung
-  label: Lebensabschnitt
+  label: Leben
 pages:
 - site/data/life.yaml
