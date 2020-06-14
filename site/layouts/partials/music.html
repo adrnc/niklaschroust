@@ -4,8 +4,8 @@
 	{{ $piece := partial "search-music-piece" (dict "page" $ "title" .title) }}
 
 	<section class="music js-music" id="{{ $piece.anchor }}">
-		{{ if ne $piece.title .title }}<h2 class="music__original-title">{{ .title }}</h2>{{ end }}
-		<h1 class="music__title">{{ $piece.title }}</h1>
+		{{ if $piece.title }}<h2 class="music__original-title">{{ .title }}</h2>{{ end }}
+		<h1 class="music__title">{{ with $piece.title }}{{ . }}{{ else }}{{ .title }}{{ end }}</h1>
 		<h3 class="music__additional">{{ .year }}, {{ i18n "opus" }} {{ .opus }}</h3>
 		<p class="music__instruments">{{ $lang.instruments }}</p>
 		<div class="music__description js-description">{{ $lang.description | markdownify }}</div>
