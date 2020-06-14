@@ -35,7 +35,7 @@ sections:
   label: Englische Seiten
   create: all
   match: "**/*.en.md"
-upload_dir: site/static
+upload_dir: site/static/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
