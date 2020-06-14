@@ -1,8 +1,6 @@
 {{ define "main" }}
-	{{ $life := slice }}
-	{{ range .Site.Data.life }}
-		{{ $life = (slice .) | append $life }}
-	{{ end }}
+	{{ $life := .Site.Data.life }}
+
 	<ul class="life">
 		{{ range $life }}
 			<li class="life__item">
