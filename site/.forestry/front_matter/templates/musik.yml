@@ -73,3 +73,5 @@ fields:
       name: description
       label: Beschreibung
     label: Englische Informationen
+pages:
+- site/data/music.yaml
