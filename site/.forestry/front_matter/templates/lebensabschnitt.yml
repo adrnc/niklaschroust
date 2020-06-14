@@ -8,13 +8,29 @@ fields:
   fields:
   - type: text
     name: title-de
-    label: title-de
+    label: Deutscher Titel
+    config:
+      required: true
+  - name: description-de
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Deutsche Beschreibung
   - type: text
     name: title-en
-    label: title-en
-  - type: text
-    name: description-de
-    label: description-de
-  - type: text
-    name: description-en
-    label: description-en
+    label: Englischer Titel
+    config:
+      required: true
+  - name: description-en
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Englische Beschreibung
