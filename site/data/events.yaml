@@ -11,66 +11,48 @@
   piece: Atlantic
   de:
     location: Styriarte, Helmut-List-Halle, Graz
-    instruments:
-      - person: Harald Martin Winkler
-        instrument: Violine
-      - person: Simon Schuller
-        instrument: Klavier
+    instruments: |
+      - Harald Martin Winkler - Violine
+      - Simon Schuller - Klavier
   en:
     location: Styriarte, Helmut-List-Halle, Graz
-    instruments:
-      - person: Harald Martin Winkler
-        instrument: Violin
-      - person: Simon Schuller
-        instrument: Piano
+    instruments: |
+      - Harald Martin Winkler - Violin
+      - Simon Schuller - Piano
 
 - date: 2019-11-24
   piece: Shape the Future Waltz
   de:
     location: Mumok, MuseumsQuartier, Wien
-    instruments:
-      - person: Johanna Hechwartner
-        instrument: Violine
-      - person: Rebekka Rennert
-        instrument: Violoncello
-      - person: Defne Saydam
-        instrument: Klavier
+    instruments: |
+      - Johanna Hechwartner - Violine
+      - Rebekka Rennert - Violoncello
+      - Defne Saydam - Klavier
   en:
     location: Mumok, MuseumsQuartier, Vienna
-    instruments:
-      - person: Johanna Hechwartner
-        instrument: Violin
-      - person: Rebekka Rennert
-        instrument: Violoncello
-      - person: Defne Saydam
-        instrument: Piano
+    instruments: |
+      - Johanna Hechwartner - Violin
+      - Rebekka Rennert - Violoncello
+      - Defne Saydam - Piano
 
 - date: 2020-01-19
   piece: Winter-Quartett
   de:
     location: Arnold-Schönberg-Center, Wien
-    instruments:
-      - person: Johannes Fleischmann
-        instrument: Violine
-      - person: Robert Olisa Nzekwu
-        instrument: Violine
-      - person: Lena Fankhauser
-        instrument: Viola
-      - person: Melissa Coleman
-        instrument: Violoncello
+    instruments: |
+      - Johannes Fleischmann - Violine
+      - Robert Olisa Nzekwu instrument - Violine
+      - Lena Fankhauser - Viola
+      - Melissa Coleman - Violoncello
   en:
     location: Arnold-Schönberg-Center, Vienna
-    instruments:
-      - person: Johannes Fleischmann
-        instrument: Violin
-      - person: Robert Olisa Nzekwu
-        instrument: Violin
-      - person: Lena Fankhauser
-        instrument: Viola
-      - person: Melissa Coleman
-        instrument: Violoncello
+    instruments: |
+      - Johannes Fleischmann - Violin
+      - Robert Olisa Nzekwu instrument - Violin
+      - Lena Fankhauser - Viola
+      - Melissa Coleman - Violoncello
 
-- date: postponed
+- date:
   piece: Winter-Quartett
   de:
     location: Mozarteum, Salzburg
@@ -79,7 +61,7 @@
     location: Mozarteum, Salzburg
     instruments: Names Ensemble
 
-- date: postponed
+- date:
   piece: Die Stadtgrenze
   de:
     location: Styriarte, Helmut-List-Halle, Graz

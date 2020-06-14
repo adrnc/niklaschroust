@@ -53,10 +53,17 @@
 		text-overflow: clip;
 	}
 
+	.music__description :first-child {margin-top: 0;}
+	.music__description :last-child {margin-bottom: 1rem;}
+
 	.music__description--hidden {
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		margin-right: 3rem;
+	}
+
+	.music__description--hidden * {
+		display: inline;
 	}
 
 	.music__view {

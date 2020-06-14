@@ -16,7 +16,7 @@
 	{
 		let currentAudio = null;
 
-		document.querySelectorAll('.js-mp3').forEach(element => element.addEventListener('click' , event => {
+		document.querySelectorAll('.js-audio').forEach(element => element.addEventListener('click' , event => {
 			const currentTarget = event.currentTarget,
 			classSelected = 'music__view-item--selected',
 			selectedItem = document.querySelector(`.${classSelected}`);
