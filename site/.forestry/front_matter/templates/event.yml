@@ -1,0 +1,34 @@
+---
+label: Event
+hide_body: true
+fields:
+- type: field_group_list
+  name: Events
+  label: Events
+  fields:
+  - type: datetime
+    name: date
+    label: date
+  - type: text
+    name: piece
+    label: piece
+  - type: field_group
+    name: de
+    label: de
+    fields:
+    - type: text
+      name: location
+      label: location
+    - type: text
+      name: instruments
+      label: instruments
+  - type: field_group
+    name: en
+    label: en
+    fields:
+    - type: text
+      name: location
+      label: location
+    - type: text
+      name: instruments
+      label: instruments
