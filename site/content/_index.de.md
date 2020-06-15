@@ -1,7 +1,8 @@
 ---
 title: Niklas A. Chroust
----
+url: ''
 
+---
 # Über mich
 
 Ich wurde am 4. Juni 2004 in Wien Hietzing als zweites von drei Kindern geboren.
@@ -12,4 +13,3 @@ Derzeit besuche ich die zweite Klasse des Bundes Oberstufen Realgymnasiums Hegel
 
 >The guitar's all right John, but you'll never make a living out of it
 >>John Lennons Tante Mimi Smith
-

@@ -1,7 +1,8 @@
 ---
 title: Niklas A. Chroust
----
+url: ''
 
+---
 # About me
 
 I was born on June 4th, 2004 in Vienna as the second of three children.
