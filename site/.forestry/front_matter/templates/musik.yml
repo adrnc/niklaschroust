@@ -60,6 +60,10 @@ fields:
     - type: textarea
       name: description
       label: Beschreibung
+      config:
+        wysiwyg: true
+        schema:
+          format: markdown
     label: Deutsche Informationen
   - type: field_group
     name: en
@@ -74,6 +78,10 @@ fields:
     - type: textarea
       name: description
       label: Beschreibung
+      config:
+        wysiwyg: true
+        schema:
+          format: markdown
     label: Englische Informationen
   - name: children
     type: field_group_list
