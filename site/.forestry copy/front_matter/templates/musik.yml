@@ -1,0 +1,178 @@
+---
+label: Musikstück
+hide_body: true
+fields:
+- type: field_group_list
+  name: Music
+  label: Musikstück
+  fields:
+  - type: text
+    name: title
+    label: Originaltitel
+    config:
+      required: true
+  - name: year
+    type: number
+    label: Jahr
+    description: ''
+    default: 
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
+  - name: opus
+    type: number
+    label: Opus
+    description: ''
+    default: 
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
+  - name: pdf
+    type: file
+    config:
+      maxSize: 64
+    label: PDF
+    hidden: true
+  - name: audio
+    type: file
+    config:
+      maxSize: 64
+    label: Audio
+    hidden: true
+  - type: field_group
+    name: de
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Deutscher Titel
+      description: optional
+    - type: text
+      name: instruments
+      label: Instrumente
+    - type: textarea
+      name: description
+      label: Beschreibung
+    label: Deutsche Informationen
+  - type: field_group
+    name: en
+    fields:
+    - type: text
+      name: title
+      label: Englischer Titel
+      description: optional
+    - type: text
+      name: instruments
+      label: Instrumente
+    - type: textarea
+      name: description
+      label: Beschreibung
+    label: Englische Informationen
+  - name: children
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: true
+      label: Orignaltitel
+    - name: year
+      type: number
+      description: ''
+      default: 
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
+        required: true
+      label: Jahr
+    - name: opus
+      type: number
+      label: Opus
+      description: ''
+      default: 
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
+        required: true
+    - name: pdf
+      type: file
+      config:
+        maxSize: 64
+      label: PDF
+      hidden: true
+    - name: audio
+      type: file
+      config:
+        maxSize: 64
+      label: Audio
+      hidden: true
+    - name: de
+      type: field_group
+      config: {}
+      fields:
+      - name: title
+        type: text
+        config:
+          required: false
+        label: Deutscher Titel
+        description: optional
+      - name: instruments
+        type: text
+        config:
+          required: true
+        label: Instrumente
+      - name: description
+        type: textarea
+        default: ''
+        config:
+          required: true
+          wysiwyg: true
+          schema:
+            format: markdown
+        label: Beschreibung
+      label: Deutsche Informationen
+    - name: en
+      type: field_group
+      config: {}
+      fields:
+      - name: title
+        type: text
+        config:
+          required: false
+        label: Englischer Titel
+        description: optional
+      - name: instruments
+        type: text
+        config:
+          required: true
+        label: Instrumente
+      - name: description
+        type: textarea
+        default: ''
+        config:
+          required: true
+          wysiwyg: true
+          schema:
+            format: markdown
+        label: Beschreibung
+      label: Englische Informationen
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Unterstücke
+  config:
+    labelField: title
+pages:
+- site/data/music.yaml

@@ -1,0 +1,61 @@
+---
+label: Event
+hide_body: true
+fields:
+- type: field_group_list
+  name: Events
+  label: Event
+  fields:
+  - type: datetime
+    name: date
+    label: Datum
+    config:
+      date_format: DD.MM.YYYY
+      export_format: YYYY-MM-DD
+      time_format: " "
+    default: ''
+  - type: text
+    name: piece
+    label: Stück
+    config:
+      required: true
+  - type: field_group
+    name: de
+    fields:
+    - type: text
+      name: location
+      label: Ort
+      config:
+        required: true
+    - name: instruments
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: true
+        schema:
+          format: markdown
+      label: Beschreibung / Instrumente
+    label: Deutsche Informationen
+  - type: field_group
+    name: en
+    fields:
+    - type: text
+      name: location
+      config:
+        required: true
+      label: Ort
+    - name: instruments
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: true
+        schema:
+          format: markdown
+      label: Beschreibung / Instrumente
+    label: Englische Informationen
+  config:
+    labelField: piece
+pages:
+- site/data/events.yaml

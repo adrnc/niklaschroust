@@ -1,0 +1,17 @@
+---
+label: Seite
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Titel
+  config:
+    required: true
+- type: text
+  name: url
+  label: Kategorie
+  description: optional<br>Legt fest, was die URL der Seite ist:<br>z.b. Musik = musik
+pages:
+- site/content/_index.de.md
+- site/content/_index.en.md

@@ -1,0 +1,38 @@
+---
+label: Lebensabschnitt
+hide_body: true
+fields:
+- type: field_group_list
+  name: Life
+  fields:
+  - type: text
+    name: title-de
+    label: Deutscher Titel
+    config:
+      required: true
+  - name: description-de
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Deutsche Beschreibung
+  - type: text
+    name: title-en
+    label: Englischer Titel
+    config:
+      required: true
+  - name: description-en
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Englische Beschreibung
+  label: Lebensabschnitt
+pages:
+- site/data/life.yaml
