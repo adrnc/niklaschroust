@@ -8,3 +8,5 @@ fields:
   config:
     required: true
   label: Titel
+pages:
+- site/content/_index.de.md
