@@ -10,3 +10,4 @@ fields:
   label: Titel
 pages:
 - site/content/_index.de.md
+- site/content/_index.en.md
