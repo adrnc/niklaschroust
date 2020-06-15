@@ -30,7 +30,7 @@
 
 <meta name="theme-color" content="#121111">
 
-{{ $background := cond (ne .Section "") (print .Section ".jpg") "default.jpg" }}
+{{ $background := cond (ne .Section "") (print .Section ".jpg") (cond (eq .Kind "404") "404.jpg" "default.jpg") }}
 <link rel="preload" as="image" href="/background-images/{{ $background }}">
 <style>
 </style>

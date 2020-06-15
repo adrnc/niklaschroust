@@ -44,7 +44,7 @@ html, body {
 		background: no-repeat var(--url);
 		background-position: center;
 		background-size: cover;
-		filter: grayscale(100%) brightness(25%) blur(0px);
+		filter: brightness(25%) /*grayscale(100%)*/;
 	}
 }
 
@@ -127,6 +127,10 @@ $border-top: 0.3rem solid $color1;
 		letter-spacing: 0.3rem;
 		font-size: 2.3rem;
 		cursor: pointer;
+
+		&--last {
+			margin-right: 0 !important;
+		}
 	}
 
 	&__nav-button {
