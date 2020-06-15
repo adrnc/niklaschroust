@@ -1,6 +1,5 @@
 ---
 title: Niklas A. Chroust
-url: ''
 
 ---
 # Über mich
