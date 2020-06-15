@@ -26,12 +26,18 @@ sections:
   create: all
   match: "**/*.de.md"
   new_doc_ext: de.md
+  templates:
+  - seite
+  - liste
 - type: directory
   path: site/content
   label: Englische Seiten
   create: all
   match: "**/*.en.md"
   new_doc_ext: en.md
+  templates:
+  - seite
+  - liste
 upload_dir: static/---none---
 public_path: "/uploads"
 front_matter_path: ''
