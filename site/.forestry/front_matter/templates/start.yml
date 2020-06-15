@@ -8,6 +8,7 @@ fields:
   config:
     required: true
   label: Titel
+  hidden: false
 pages:
 - site/content/_index.de.md
 - site/content/_index.en.md
