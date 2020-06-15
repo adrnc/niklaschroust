@@ -197,9 +197,16 @@ $border-top: 0.3rem solid $color1;
 	}
 
 	&__menu-inner {
-		padding: 3rem;
+		padding: 1rem 2rem;
+		list-style-type: none;
 
 		a {box-shadow: inset 0 -0.5rem $color1;}
+	}
+
+	&__menu-item {
+		margin: 0;
+		padding: 0;
+		display: inline;
 	}
 
 	&__menu-button, &__menu-button:link {

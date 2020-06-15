@@ -9,14 +9,11 @@
 	<nav class="header__nav">
 		<a href="#_menu" class="js-menu-open header__nav-a header__menu-button{{ if not .IsTranslated }} header__nav-a--last{{ end }}" tabindex="0" aria-hidden="true"><button class="header__nav-button" tabindex="-1">{{ i18n "menu" }}</button></a>{{ print -}}
 		<div class="js-menu header__menu" id="_menu">
-			<div class="header__menu-inner">
-				<a class="header__nav-a header__menu-home" href="{{ relref . "/" }}">{{ i18n "home" }}</a>{{ print -}}
-				<a class="header__nav-a" href="{{ relref . "/events" }}">{{ i18n "events" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
-				<a class="header__nav-a" href="{{ relref . "/music" }}">{{ i18n "music" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
-				<a class="header__nav-a" href="{{ relref . "/life" }}">{{ i18n "life" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
-				<a class="header__nav-a" href="{{ relref . "/gallery" }}">{{ i18n "gallery" }}</a><span class="header__nav-delimit">|</span>{{ print -}}
-				<a class="header__nav-a{{ if not .IsTranslated }} header__nav-a--last{{ end }}" href="{{ relref . "/contact" }}">{{ i18n "contact" }}</a>{{ print -}}
-			</div>{{ print -}}
+			<ul class="header__menu-inner">
+				{{ range slice "home" "events" "music" "life" "gallery" "contact" -}}
+					<li class="header__menu-item"><a class="header__nav-a{{ if and (eq . "contact") (not $.IsTranslated) }} header__nav-a--last{{ end }}" href="{{ relref $ (print "/" (cond (eq . "home") "" .)) }}">{{ i18n . }}</a>{{ if ne . "contact" }}<span class="header__nav-delimit">|</span>{{ end }}</li>
+				{{- end }}
+			</ul>{{ print -}}
 			<a href="#" class="js-menu-close header__nav-a header__menu-close" tabindex="0" aria-hidden="true"><button class="header__nav-button header__menu-close-inner" tabindex="-1">{{ i18n "close" }}</button></a>{{ print -}}
 		</div>
 		{{- if .IsTranslated -}}
