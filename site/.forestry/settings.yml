@@ -19,25 +19,23 @@ sections:
   path: site/data/details.yaml
   label: Details
 - type: heading
-  label: Seiten
-- type: directory
-  path: site/content
   label: Deutsche Seiten
-  create: all
-  match: "**/*.de.md"
-  new_doc_ext: de.md
-  templates:
-  - seite
-  - liste
 - type: directory
   path: site/content
-  label: Englische Seiten
-  create: all
-  match: "**/*.en.md"
-  new_doc_ext: en.md
+  label: Start
+  create: none
+  match: _index.de.md
   templates:
-  - seite
-  - liste
+  - start
+- type: heading
+  label: Englische Seiten
+- type: directory
+  path: site/content
+  label: Start
+  create: none
+  match: _index.en.md
+  templates:
+  - start
 upload_dir: static/disabled
 public_path: "/disabled"
 front_matter_path: ''
