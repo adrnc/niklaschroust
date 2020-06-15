@@ -13,3 +13,5 @@ fields:
   label: Kategorie
   description: optional<br>Legt fest, was die URL der Seite ist:<br>z.b. Musik -&gt;
     musik
+pages:
+- site/content/_index.de.md
