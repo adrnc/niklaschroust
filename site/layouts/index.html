@@ -1,5 +1,5 @@
 {{ define "main" }}
-	{{ .Content }}
+	{{ index .Site.Data.home .Lang | markdownify }}
 
 	<div class="events-list">
 		<h1 class="events-list__title">{{ i18n "upcoming-events" }}</h1>
