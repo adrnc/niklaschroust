@@ -34,17 +34,19 @@ fields:
       step: 
       required: true
   - name: pdf
-    type: file
+    type: text
     config:
-      maxSize: 64
+      required: false
     label: PDF
-    hidden: true
+    description: URL (z.B. <a href="https://example.com" title="https://example.com"
+      target="_blank">https://example.com</a>)
   - name: audio
-    type: file
+    type: text
     config:
-      maxSize: 64
+      required: false
+    description: URL (z.B. <a href="https://example.com" title="https://example.com"
+      target="_blank">https://example.com</a>)
     label: Audio
-    hidden: true
   - type: field_group
     name: de
     fields:
@@ -113,18 +115,20 @@ fields:
         max: 
         step: 
         required: true
-    - name: pdf
-      type: file
+    - name: pdfd
+      type: text
       config:
-        maxSize: 64
+        required: false
       label: PDF
-      hidden: true
+      description: URL (z.B. <a href="https://example.com" title="https://example.com"
+        target="_blank">https://example.com</a>)
     - name: audio
-      type: file
+      type: text
       config:
-        maxSize: 64
+        required: false
+      description: URL (z.B. <a href="https://example.com" title="https://example.com"
+        target="_blank">https://example.com</a>)
       label: Audio
-      hidden: true
     - name: de
       type: field_group
       config: {}
