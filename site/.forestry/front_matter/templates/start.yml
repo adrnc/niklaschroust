@@ -1,0 +1,10 @@
+---
+label: Start
+hide_body: true
+fields:
+- type: textarea
+  name: de
+  label: de
+- type: textarea
+  name: en
+  label: en
