@@ -14,6 +14,3 @@ fields:
   label: URL
   description: optional
   hidden: true
-pages:
-- site/content/gallery/_index.de.md
-- site/content/gallery/_index.en.md

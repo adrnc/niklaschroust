@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: site/data/home.yaml
+  label: Start
+  match: "**/*"
+- type: document
   path: site/data/events.yaml
   label: Events
 - type: document
@@ -14,24 +18,12 @@ sections:
   path: site/data/life.yaml
   label: Leben
 - type: document
+  path: site/data/gallery.yaml
+  label: Galerie
+  match: "**/*"
+- type: document
   path: site/data/contact.yaml
   label: Kontakt
-- type: heading
-  label: Deutsche Seiten
-- type: document
-  path: site/content/_index.de.md
-  label: Start
-- type: document
-  path: site/content/gallery/_index.de.md
-  label: Galerie
-- type: heading
-  label: Englische Seiten
-- type: document
-  path: site/content/_index.en.md
-  label: Start
-- type: document
-  path: site/content/gallery/_index.en.md
-  label: Galerie
 upload_dir: static/uploads/forestry
 public_path: "/uploads/forestry"
 front_matter_path: ''

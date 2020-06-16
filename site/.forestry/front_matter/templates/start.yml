@@ -9,6 +9,3 @@ fields:
     required: true
   label: Titel
   hidden: true
-pages:
-- site/content/_index.de.md
-- site/content/_index.en.md
