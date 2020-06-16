@@ -4,7 +4,12 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Titel
+  config:
+    required: true
+  hidden: true
 - type: text
   name: url
-  label: url
+  label: URL
+  description: optional
+  hidden: true
