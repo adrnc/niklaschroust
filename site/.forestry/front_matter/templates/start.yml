@@ -4,7 +4,15 @@ hide_body: true
 fields:
 - type: textarea
   name: de
-  label: de
+  label: Deutscher Text
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: textarea
   name: en
-  label: en
+  label: Englischer Text
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
