@@ -1,0 +1,17 @@
+---
+label: Bild
+hide_body: true
+fields:
+- type: field_group_list
+  name: Gallery
+  label: Gallery
+  fields:
+  - type: text
+    name: url
+    label: url
+  - type: text
+    name: de
+    label: de
+  - type: text
+    name: en
+    label: en
