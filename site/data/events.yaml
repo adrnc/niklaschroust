@@ -19,18 +19,18 @@
   piece: Winter-Quartett
   de:
     location: Arnold-Schönberg-Center, Wien
-    instruments: |
-      - Johannes Fleischmann - Violine
-      - Robert Olisa Nzekwu instrument - Violine
-      - Lena Fankhauser - Viola
-      - Melissa Coleman - Violoncello
+    instruments: |-
+      * Johannes Fleischmann - Violine
+      * Robert Olisa Nzekwu - Violine
+      * Lena Fankhauser - Viola
+      * Melissa Coleman - Violoncello
   en:
     location: Arnold-Schönberg-Center, Vienna
-    instruments: |
-      - Johannes Fleischmann - Violin
-      - Robert Olisa Nzekwu instrument - Violin
-      - Lena Fankhauser - Viola
-      - Melissa Coleman - Violoncello
+    instruments: |-
+      * Johannes Fleischmann - Violin
+      * Robert Olisa Nzekwu - Violin
+      * Lena Fankhauser - Viola
+      * Melissa Coleman - Violoncello
 - date: 2019-11-24
   piece: Shape the Future Waltz
   de:
