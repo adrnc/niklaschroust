@@ -35,6 +35,10 @@ fields:
     name: website
     label: Website
     description: optional
+  - name: hidden
+    type: boolean
+    label: Versteckt
+    default: false
   label: Weitere Personen
 pages:
 - site/data/contact.yaml
