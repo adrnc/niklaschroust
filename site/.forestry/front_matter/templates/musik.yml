@@ -38,14 +38,14 @@ fields:
     config:
       required: false
     label: PDF
-    description: URL (z.B. <a href="https://example.com" title="https://example.com"
-      target="_blank">https://example.com</a>)
+    description: URL (z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
+      target="_blank">https://example.com/datei.txt</a>)
   - name: audio
     type: text
     config:
       required: false
-    description: URL (z.B. <a href="https://example.com" title="https://example.com"
-      target="_blank">https://example.com</a>)
+    description: URL (z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
+      target="_blank">https://example.com/datei.txt</a>)
     label: Audio
   - type: field_group
     name: de
@@ -120,14 +120,14 @@ fields:
       config:
         required: false
       label: PDF
-      description: URL (z.B. <a href="https://example.com" title="https://example.com"
-        target="_blank">https://example.com</a>)
+      description: URL (z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
+        target="_blank">https://example.com/datei.txt</a>)
     - name: audio
       type: text
       config:
         required: false
-      description: URL (z.B. <a href="https://example.com" title="https://example.com"
-        target="_blank">https://example.com</a>)
+      description: URL (z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
+        target="_blank">https://example.com/datei.txt</a>)
       label: Audio
     - name: de
       type: field_group
