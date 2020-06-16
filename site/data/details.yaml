@@ -1,20 +1,30 @@
-email: chroust.niklas@gmail.com
-address: nonono
+niklaschroust:
+  name: Niklas A. Chroust
+  email: chroust.niklas@gmail.com
 
-people:
-  - name: Andrea Chroust
-    email: andrea.chroust@gmx.at
+andreachroust:
+  relation: mother
+  name: Andrea Chroust
+  email: andrea.chroust@gmx.at
 
-  - name: Martin Chroust
-    email: chroust.martin@gmail.com
-    website: https://www.martinchroust.info/
+martinchroust:
+  relation: father
+  name: Martin Chroust
+  email: chroust.martin@gmail.com
+  website: https://www.martinchroust.info/
 
-  - name: Adrian Chroust
-    email: chroust.adrian@gmail.com
-    website: https://adrianchroust.com/
+adrianchroust:
+  relation: brother
+  name: Adrian Chroust
+  email: chroust.adrian@gmail.com
+  website: https://adrianchroust.com/
 
-  - name: Ella Chroust
+ellachroust:
+  relation: sister
+  name: Ella Chroust
 
-  - name: Gerhard Chroust
-    email: gerhard.chroust@jku.at
-    website: http://www.gerhard-chroust.at/
+gerhardchroust:
+  relation: grandfather
+  name: Gerhard Chroust
+  email: gerhard.chroust@jku.at
+  website: http://www.gerhard-chroust.at/

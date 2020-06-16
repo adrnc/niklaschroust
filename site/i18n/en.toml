@@ -46,6 +46,30 @@
 [no-events]
 	other = 'At the moment there are no upcoming events :('
 
+[webdesign]
+	other = 'Webdesign'
+
+[pictures]
+	other = 'Pictures'
+
+[related]
+	other = 'Related'
+
+[father]
+	other = 'Father'
+
+[mother]
+	other = 'Mother'
+
+[brother]
+	other = 'Brother'
+
+[sister]
+	other = 'Sister'
+
+[grandfather]
+	other = 'Grandfather'
+
 
 # Months
 
