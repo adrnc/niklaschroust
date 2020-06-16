@@ -1,3 +1,4 @@
-- url: /test
+---
+- url: "/test"
   de: test
   en: test

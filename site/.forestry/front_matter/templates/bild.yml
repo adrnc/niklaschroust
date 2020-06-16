@@ -21,3 +21,5 @@ fields:
     label: Englischer Text
     config:
       required: true
+pages:
+- site/data/gallery.yaml
