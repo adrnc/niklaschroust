@@ -4,82 +4,119 @@ hide_body: true
 fields:
 - type: field_group
   name: niklaschroust
-  label: niklaschroust
   fields:
   - type: text
     name: name
-    label: name
+    label: Name
+    config:
+      required: true
   - type: text
     name: email
-    label: email
+    label: Email
+  - name: number
+    type: text
+    config:
+      required: false
+    label: Nummer
+  label: Niklas Chroust
 - type: field_group
   name: andreachroust
-  label: andreachroust
+  label: Andrea Chroust
   fields:
   - type: text
-    name: relation
-    label: relation
-  - type: text
     name: name
-    label: name
+    label: Name
+    config:
+      required: true
+  - type: text
+    name: relation
+    label: Beziehung
+    hidden: true
   - type: text
     name: email
-    label: email
+    label: Email
+  - name: website
+    type: text
+    config:
+      required: false
+    label: Website
 - type: field_group
   name: martinchroust
-  label: martinchroust
   fields:
   - type: text
-    name: relation
-    label: relation
-  - type: text
     name: name
-    label: name
+    label: Name
+    config:
+      required: true
+  - type: text
+    name: relation
+    label: Beziehung
+    hidden: true
   - type: text
     name: email
-    label: email
+    label: Email
   - type: text
     name: website
-    label: website
+    label: Website
+  label: Martin Chroust
 - type: field_group
   name: adrianchroust
-  label: adrianchroust
+  label: Adrian Chroust
   fields:
   - type: text
-    name: relation
-    label: relation
-  - type: text
     name: name
-    label: name
+    label: Name
+    config:
+      required: true
+  - type: text
+    name: relation
+    label: Beziehung
+    hidden: true
   - type: text
     name: email
-    label: email
+    label: Email
   - type: text
     name: website
-    label: website
+    label: Website
 - type: field_group
   name: ellachroust
-  label: ellachroust
   fields:
   - type: text
-    name: relation
-    label: relation
-  - type: text
     name: name
-    label: name
+    label: Name
+    config:
+      required: true
+  - type: text
+    name: relation
+    label: Beziehung
+    hidden: true
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: website
+    type: text
+    config:
+      required: false
+    label: Website
+  label: Ella Chroust
 - type: field_group
   name: gerhardchroust
-  label: gerhardchroust
   fields:
   - type: text
-    name: relation
-    label: relation
-  - type: text
     name: name
-    label: name
+    label: Name
+    config:
+      required: true
+  - type: text
+    name: relation
+    label: Beziehung
+    hidden: true
   - type: text
     name: email
-    label: email
+    label: Email
   - type: text
     name: website
-    label: website
+    label: Website
+  label: Gerhard Chroust
