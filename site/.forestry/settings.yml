@@ -17,7 +17,7 @@ sections:
   label: Leben
 - type: document
   path: site/data/contact.yaml
-  label: Details
+  label: Kontakt
 - type: heading
   label: Deutsche Seiten
 - type: document
