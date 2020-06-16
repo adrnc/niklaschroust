@@ -7,7 +7,6 @@ sections:
 - type: document
   path: site/data/home.yaml
   label: Start
-  match: "**/*"
 - type: document
   path: site/data/events.yaml
   label: Events
@@ -20,7 +19,6 @@ sections:
 - type: document
   path: site/data/gallery.yaml
   label: Galerie
-  match: "**/*"
 - type: document
   path: site/data/contact.yaml
   label: Kontakt
