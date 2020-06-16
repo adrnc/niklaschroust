@@ -11,6 +11,8 @@ fields:
     label: URL
     config:
       required: true
+    description: z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
+      target="_blank">https://example.com/datei.txt</a>
   - type: text
     name: de
     label: Deutscher Text
