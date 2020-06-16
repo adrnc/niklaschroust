@@ -4,7 +4,7 @@ uglyURLs = false
 disableKinds = ['taxonomy', 'taxonomyTerm', 'RSS']
 
 title = 'Niklas A. Chroust'
-baseURL = '/'
+baseURL = 'https://niklaschroust.com/'
 googleAnalytics = ''
 
 [params]
