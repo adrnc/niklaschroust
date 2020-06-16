@@ -10,9 +10,11 @@ fields:
 - type: text
   name: email
   label: Email
+  description: optional
 - type: text
   name: number
   label: Nummer
+  description: optional
 - type: field_group_list
   name: related
   fields:
