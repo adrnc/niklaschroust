@@ -1,6 +1,15 @@
-{{ $contact := .Site.Data.contact }}
+{{ $pictures := "Ella Chroust" }}
+{{ $webdesign := "Adrian Chroust" }}
+
+{{ $pictures_website := "" }}
+{{ $webdesign_website := "" }}
+
+{{ range .Site.Data.contact.related }}
+	{{ if eq $pictures .name }}{{ $pictures_website = .website }}{{ end }}
+	{{ if eq $webdesign .name }}{{ $webdesign_website = .website }}{{ end }}
+{{ end }}
 
 <footer class="footer">
-	<p class="footer__further-info">{{ i18n "pictures" }}: <a class="footer__link"{{ with $contact.ellachroust.website}} href="{{ . }}"{{ end }}>{{ $contact.ellachroust.name }}</a></p>
-	<p class="footer__further-info">{{ i18n "webdesign" }}: <a class="footer__link"{{ with $contact.adrianchroust.website}} href="{{ . }}"{{ end }}>{{ $contact.adrianchroust.name }}</a></p>
+		<p class="footer__further-info">{{ i18n "pictures" }}: <a class="footer__link"{{ with $pictures_website }} href="{{ . }}"{{ end }}>{{ $pictures }}</a></p>
+		<p class="footer__further-info">{{ i18n "webdesign" }}: <a class="footer__link"{{ with $webdesign_website }} href="{{ . }}"{{ end }}>{{ $webdesign }}</a></p>
 </footer>

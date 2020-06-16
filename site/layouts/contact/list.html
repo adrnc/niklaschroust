@@ -1,14 +1,12 @@
 {{ define "main" }}
-	{{ with .Site.Data.contact }}
-		{{ range slice .niklaschroust .andreachroust .martinchroust .adrianchroust .ellachroust .gerhardchroust }}
-			<section class="contact{{ if eq .name $.Site.Params.author }} contact--special{{ end }}">
-				<h1 class="contact__name">{{ .name }}</h1>
-				{{ with .relation }}<h2 class="contact__relation">{{ i18n . }}</h2>{{ end }}
-				{{ with .email }}<p class="contact__item"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
-				{{ with .number }}<p class="contact__item"><a href="tel:{{ . }}">{{ . }}</a></p>{{ end }}
-				{{ with .website }}<p class="contact__item"><a href="{{ . }}">{{ . }}</a></p>{{ end }}
-			</section>
-		{{ end }}
+	{{ range (slice .Site.Data.contact) | append .Site.Data.contact.related }}
+		<section class="contact{{ if eq .name $.Site.Params.author }} contact--special{{ end }}">
+			<h1 class="contact__name">{{ .name }}</h1>
+			{{ with .relation }}<h2 class="contact__relation">{{ with i18n . }}{{ . }}{{ else }}{{ .relation }}{{ end }}</h2>{{ end }}
+			{{ with .email }}<p class="contact__item"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
+			{{ with .number }}<p class="contact__item"><a href="tel:{{ . }}">{{ . }}</a></p>{{ end }}
+			{{ with .website }}<p class="contact__item"><a href="{{ . }}">{{ . }}</a></p>{{ end }}
+		</section>
 	{{ end }}
 {{ end }}
 {{ define "html-head-inject" }}
