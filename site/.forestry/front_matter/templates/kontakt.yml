@@ -4,26 +4,33 @@ hide_body: true
 fields:
 - type: text
   name: name
-  label: name
+  label: Name
+  config:
+    required: true
 - type: text
   name: email
-  label: email
+  label: Email
 - type: text
   name: number
-  label: number
+  label: Nummer
 - type: field_group_list
   name: related
-  label: related
   fields:
   - type: text
-    name: relation
-    label: relation
-  - type: text
     name: name
-    label: name
+    label: Name
+    config:
+      required: true
+  - type: text
+    name: relation
+    label: Beziehung
+    description: optional
   - type: text
     name: email
-    label: email
+    label: Email
+    description: optional
   - type: text
     name: website
-    label: website
+    label: Website
+    description: optional
+  label: Weitere Personen
