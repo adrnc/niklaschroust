@@ -1,28 +1,28 @@
+---
 niklaschroust:
   name: Niklas A. Chroust
   email: chroust.niklas@gmail.com
-
+  number: ''
 andreachroust:
   relation: mother
   name: Andrea Chroust
   email: andrea.chroust@gmx.at
-
+  website: ''
 martinchroust:
   relation: father
   name: Martin Chroust
   email: chroust.martin@gmail.com
   website: https://www.martinchroust.info/
-
 adrianchroust:
   relation: brother
   name: Adrian Chroust
   email: chroust.adrian@gmail.com
   website: https://adrianchroust.com/
-
 ellachroust:
   relation: sister
   name: Ella Chroust
-
+  email: ''
+  website: ''
 gerhardchroust:
   relation: grandfather
   name: Gerhard Chroust
