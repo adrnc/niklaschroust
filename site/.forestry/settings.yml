@@ -4,8 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Informationen
+- type: document
+  path: site/content/gallery/_index.en.md
+  label: Galerie
+  match: "**/*"
 - type: document
   path: site/data/events.yaml
   label: Events
@@ -23,6 +25,10 @@ sections:
 - type: document
   path: site/content/_index.de.md
   label: Start
+- type: document
+  path: site/content/gallery/_index.de.md
+  label: Galerie
+  match: "**/*"
 - type: heading
   label: Englische Seiten
 - type: document
