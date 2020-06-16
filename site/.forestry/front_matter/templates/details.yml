@@ -1,5 +1,5 @@
 ---
-label: Details
+label: Kontakt
 hide_body: true
 fields:
 - type: field_group
@@ -121,4 +121,4 @@ fields:
     label: Website
   label: Gerhard Chroust
 pages:
-- site/data/details.yaml
+- site/data/contact.yaml
