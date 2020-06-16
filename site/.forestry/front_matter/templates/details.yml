@@ -120,5 +120,3 @@ fields:
     name: website
     label: Website
   label: Gerhard Chroust
-pages:
-- site/data/details.yaml
