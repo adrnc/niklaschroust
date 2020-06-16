@@ -8,10 +8,16 @@ fields:
   fields:
   - type: text
     name: url
-    label: url
+    label: URL
+    config:
+      required: true
   - type: text
     name: de
-    label: de
+    label: Deutscher Text
+    config:
+      required: true
   - type: text
     name: en
-    label: en
+    label: Englischer Text
+    config:
+      required: true
