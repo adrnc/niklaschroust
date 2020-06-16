@@ -34,3 +34,5 @@ fields:
     label: Website
     description: optional
   label: Weitere Personen
+pages:
+- site/data/contact.yaml
