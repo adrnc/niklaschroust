@@ -1,0 +1,29 @@
+---
+label: Kontakt
+hide_body: true
+fields:
+- type: text
+  name: name
+  label: name
+- type: text
+  name: email
+  label: email
+- type: text
+  name: number
+  label: number
+- type: field_group_list
+  name: related
+  label: related
+  fields:
+  - type: text
+    name: relation
+    label: relation
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: email
+    label: email
+  - type: text
+    name: website
+    label: website
