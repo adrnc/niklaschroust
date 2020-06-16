@@ -1,6 +1,6 @@
-{{ $details := .Site.Data.details }}
+{{ $contact := .Site.Data.contact }}
 
 <footer class="footer">
-	<p class="footer__further-info">{{ i18n "pictures" }}: <a class="footer__link">{{ $details.ellachroust.name }}</a></p>
-	<p class="footer__further-info">{{ i18n "webdesign" }}: <a class="footer__link" href="{{ $details.adrianchroust.website }}">{{ $details.adrianchroust.name }}</a></p>
+	<p class="footer__further-info">{{ i18n "pictures" }}: <a class="footer__link"{{ with $contact.ellachroust.website}} href="{{ . }}"{{ end }}>{{ $contact.ellachroust.name }}</a></p>
+	<p class="footer__further-info">{{ i18n "webdesign" }}: <a class="footer__link"{{ with $contact.adrianchroust.website}} href="{{ . }}"{{ end }}>{{ $contact.adrianchroust.name }}</a></p>
 </footer>
