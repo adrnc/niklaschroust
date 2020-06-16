@@ -23,5 +23,7 @@ fields:
     config:
       required: true
   label: Bild
+  config:
+    labelField: de
 pages:
 - site/data/gallery.yaml
