@@ -28,8 +28,8 @@ sections:
 - type: document
   path: site/content/_index.en.md
   label: Start
-upload_dir: static/disabled
-public_path: "/disabled"
+upload_dir: static/uploads/forestry
+public_path: "/uploads/forestry"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
