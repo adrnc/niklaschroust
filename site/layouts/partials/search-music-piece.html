@@ -7,11 +7,12 @@
 {{ range $l := $list }}
 	{{ if eq .title $title }}
 		{{ $langpiece := index . $.Lang }}
-		{{ $piecename := cond (ne $langpiece.title "") $langpiece.title .title }}
+		{{ $piecename := cond (ne $langpiece.title "") $langpiece.title  .title }}
 		{{ $piece = dict "title" $piecename "anchor" ((print $parent $piecename) | anchorize) }}
-	{{ end }}
-	{{ with .children }}
-		{{ $piece = partial "search-music-piece" (dict "page" $ "title" $title "parent" (print $parent $l.title) "child" .) }}
+	{{ else }}
+		{{ with .children }}
+			{{ $piece = partial "search-music-piece" (dict "page" $ "title" $title "parent" (print $parent $l.title) "child" .) }}
+		{{ end }}
 	{{ end }}
 {{ end }}
 
