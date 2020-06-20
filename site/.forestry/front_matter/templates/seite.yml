@@ -12,6 +12,7 @@ fields:
   name: url
   label: URL
   description: optional
+  hidden: true
 - name: description
   type: textarea
   default: ''
