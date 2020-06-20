@@ -2,6 +2,12 @@
 label: Event
 hide_body: true
 fields:
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+  description: z.B. <a href="https://example.com" title="https://example.com" target="_blank">https://example.com</a>
 - type: field_group_list
   name: Events
   label: Event
@@ -14,6 +20,13 @@ fields:
       export_format: YYYY-MM-DD
       time_format: " "
     default: ''
+  - name: url
+    type: text
+    config:
+      required: false
+    description: optional<br>z.B. <a href="https://example.com" title="https://example.com"
+      target="_blank">https://example.com</a>
+    label: URL
   - type: text
     name: piece
     label: Stück
