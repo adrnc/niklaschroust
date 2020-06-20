@@ -5,7 +5,7 @@ disableKinds = ['taxonomy', 'taxonomyTerm', 'RSS']
 
 title = 'Niklas A. Chroust'
 baseURL = 'https://niklaschroust.com/'
-googleAnalytics = ''
+googleAnalytics = 'UA-170179785-1'
 
 [params]
 	author = 'Niklas A. Chroust'
