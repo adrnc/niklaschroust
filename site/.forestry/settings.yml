@@ -11,6 +11,11 @@ sections:
   path: site/data/events.yaml
   label: Events
 - type: document
+  path: site/data/press.yaml
+  label: Presse
+  match: "**/*"
+  read_only: true
+- type: document
   path: site/data/music.yaml
   label: Musik
 - type: document
