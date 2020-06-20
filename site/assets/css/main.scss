@@ -117,6 +117,7 @@ $border-top: 0.3rem solid $color1;
 	&__nav {
 		color: $font-color2;
 		text-align: center;
+		font-size: 1.8rem;
 	}
 
 	&__nav-a {
@@ -125,7 +126,7 @@ $border-top: 0.3rem solid $color1;
 		text-decoration: none;
 		margin: 1.5rem 1rem;
 		letter-spacing: 0.3rem;
-		font-size: 2.3rem;
+		font-size: 2rem;
 		cursor: pointer;
 
 		&--last {
@@ -210,7 +211,7 @@ $border-top: 0.3rem solid $color1;
 	}
 
 	&__menu-button, &__menu-button:link {
-		margin: 0 2rem;
+		margin: 0 1.5rem;
 		box-shadow: none;
 	}
 
@@ -230,7 +231,7 @@ $border-top: 0.3rem solid $color1;
 
 	&__lang, &__lang:link {
 		font-weight: bold;
-		margin: 0 2rem;
+		margin: 0 1.5rem;
 		color: $color1;
 		box-shadow: none;
 
@@ -245,7 +246,7 @@ $border-top: 0.3rem solid $color1;
 	.header {
 		padding: 0 4rem;
 
-		&__nav-a {margin: 0 2rem;}
+		&__nav-a {margin: 0 1.5rem;}
 
 		&__menu, &__menu--open, &__menu:target, &__menu-inner {
 			display: inline;
@@ -261,7 +262,7 @@ $border-top: 0.3rem solid $color1;
 		&__menu-inner a {box-shadow: none;}
 		&__nav-delimit {display: inline;}
 		&__about {
-			font-size: 3.5rem;
+			font-size: 3rem;
 		}
 	}
 }
