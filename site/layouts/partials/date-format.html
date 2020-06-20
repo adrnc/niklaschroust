@@ -1,0 +1,9 @@
+{{ $date := "" }}
+
+{{ if eq .lang "de" }}
+	{{ $date = print (dateFormat "2" .date) ". " (i18n (dateFormat "January" .date | lower)) " " (dateFormat "2006" .date) }}
+{{ else }}
+	{{ $date = dateFormat "2 January 2006" .date }}
+{{ end }}
+
+{{ return $date }}
