@@ -1,10 +1,26 @@
 ---
 label: Seite
-hide_body: true
+hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
-  label: title
+  label: Titel
+  config:
+    required: true
 - type: text
   name: url
-  label: url
+  label: URL
+  description: optional
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    min: 50
+    max: 160
+  label: Beschreibung
+  description: für die Suchmaschine
