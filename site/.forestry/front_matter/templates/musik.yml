@@ -38,14 +38,14 @@ fields:
     config:
       required: false
     label: PDF
-    description: URL (z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
-      target="_blank">https://example.com/datei.txt</a>)
+    description: optional<br>z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
+      target="_blank">https://example.com/datei.txt</a>
   - name: audio
     type: text
     config:
       required: false
-    description: URL (z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
-      target="_blank">https://example.com/datei.txt</a>)
+    description: optional<br>z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
+      target="_blank">https://example.com/datei.txt</a>
     label: Audio
   - type: field_group
     name: de
