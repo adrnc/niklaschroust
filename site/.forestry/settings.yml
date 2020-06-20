@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: site/content
-  label: Englische Seiten
-  create: none
-  match: "**/*.en.md"
 - type: document
   path: site/data/home.yaml
   label: Start
@@ -27,16 +22,18 @@ sections:
 - type: document
   path: site/data/contact.yaml
   label: Kontakt
-- type: directory
-  path: ''
+- type: heading
   label: Seiten
-  create: all
-  match: "**/*"
 - type: directory
   path: site/content
   label: Deutsche Seiten
   create: none
   match: "**/*.de.md"
+- type: directory
+  path: site/content
+  label: Englische Seiten
+  create: none
+  match: "**/*.en.md"
 upload_dir: static/uploads/forestry
 public_path: "/uploads/forestry"
 front_matter_path: ''
