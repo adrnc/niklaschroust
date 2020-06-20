@@ -26,6 +26,7 @@ fields:
     label: Stück
     config:
       required: true
+    description: Originaltitel
   - type: field_group
     name: de
     fields:
