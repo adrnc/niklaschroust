@@ -14,8 +14,8 @@ sections:
   path: site/data/music.yaml
   label: Musik
 - type: document
-  path: site/data/life.yaml
-  label: Leben
+  path: site/data/biography.yaml
+  label: Biographie
 - type: document
   path: site/data/gallery.yaml
   label: Galerie
