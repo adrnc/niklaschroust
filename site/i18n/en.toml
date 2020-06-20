@@ -14,7 +14,7 @@
 	other = 'Events'
 
 [press]
-	other = 'Presse'
+	other = 'Press'
 
 [gallery]
 	other = 'Gallery'
@@ -48,6 +48,12 @@
 
 [no-events]
 	other = 'At the moment there are no upcoming events :('
+
+[news]
+	other = 'News'
+
+[no-news]
+	other = 'At the moment there are no news :('
 
 [webdesign]
 	other = 'Webdesign'

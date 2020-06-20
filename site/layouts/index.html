@@ -1,8 +1,13 @@
 {{ define "main" }}
 	{{ index .Site.Data.home .Lang | markdownify }}
 
-	<div class="events-list">
-		<h1 class="events-list__title">{{ i18n "upcoming-events" }}</h1>
+	<div class="item-list">
+		<h1 class="item-list__title"><a class="item-list__link" href="{{ relref . "/press" }}">{{ i18n "news" }}</a></h1>
+		<p class="item-list__none">{{ i18n "no-news" }}</p>
+	</div>
+
+	<div class="item-list">
+		<h1 class="item-list__title"><a class="item-list__link" href="{{ relref . "/events" }}">{{ i18n "upcoming-events" }}</a></h1>
 
 		{{ $events := .Site.Data.events }}
 
@@ -12,7 +17,7 @@
 			{{ end }}
 		{{ end }}
 
-		<p class="events-list__none">{{ i18n "no-events" }}</p>
+		<p class="item-list__none">{{ i18n "no-events" }}</p>
 	</div>
 {{ end }}
 {{ define "html-head-inject" }}
@@ -36,23 +41,32 @@
 			display: inline;
 		}
 
-		.events-list {
-			margin-top: 6rem;
+		.item-list {
+			margin-top: 8rem;
 		}
 
-		.events-list__title {
+		.item-list__title {
 			margin: 0;
 			font-size: 1.3em;
 			color: rgba(255, 255, 255, 0.8);
 			font-weight: normal;
 		}
 
-		.events-list__none {
+		.item-list__link, .item-list__link:link {
+			color: inherit;
+			box-shadow: none;
+		}
+
+		.item-list__link:link {
+			box-shadow: inset 0 -0.15em rgba(255, 255, 255, 0.05);
+		}
+
+		.item-list__none {
 			font-size: 1em;
 			margin-left: 1.5rem;
 		}
 
-		.event + .events-list__none {
+		.event + .item-list__none, .news + .item-list__none {
 			display: none;
 		}
 	</style>
