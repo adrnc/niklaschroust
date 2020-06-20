@@ -3,7 +3,7 @@ label: Lebensabschnitt
 hide_body: true
 fields:
 - type: field_group_list
-  name: Life
+  name: Biography
   fields:
   - type: text
     name: title-de
