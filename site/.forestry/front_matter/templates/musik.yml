@@ -66,6 +66,7 @@ fields:
         wysiwyg: true
         schema:
           format: markdown
+        required: true
     label: Deutsche Informationen
   - type: field_group
     name: en
@@ -84,6 +85,7 @@ fields:
         wysiwyg: true
         schema:
           format: markdown
+        required: true
     label: Englische Informationen
   - name: children
     type: field_group_list
