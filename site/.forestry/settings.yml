@@ -29,11 +29,15 @@ sections:
   label: Deutsche Seiten
   create: none
   match: "**/*.de.md"
+  templates:
+  - seite
 - type: directory
   path: site/content
   label: Englische Seiten
   create: none
   match: "**/*.en.md"
+  templates:
+  - seite
 upload_dir: static/uploads/forestry
 public_path: "/uploads/forestry"
 front_matter_path: ''
