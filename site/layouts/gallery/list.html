@@ -33,6 +33,7 @@
 			background-color: transparent;
 			border: none;
 			padding: 0;
+			font-size: inherit;
 		}
 
 		.gallery__image-view {
@@ -49,7 +50,6 @@
 			display: inline-block;
 			position: absolute;
 			line-height: 1;
-			font-size: 1.8rem;
 			left: 0;
 			bottom: 0;
 			width: 100%;
@@ -61,7 +61,7 @@
 			cursor: pointer;
 		}
 
-		.gallery__image:hover .gallery__image-text {opacity: 1;}
+		.gallery__image:hover .gallery__image-text, .gallery__image:focus .gallery__image-text {opacity: 1;}
 
 		@media screen and (max-width: 600px) {
 			.content {
