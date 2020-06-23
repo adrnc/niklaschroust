@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: document
   path: site/data/home.yaml
@@ -56,5 +56,5 @@ build:
   preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm start
+  instant_preview_command: npm run start
 version: 0.71.1
