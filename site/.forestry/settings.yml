@@ -55,5 +55,5 @@ build:
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run start -- --minify
+  instant_preview_command: hugo server
 version: 0.71.1
