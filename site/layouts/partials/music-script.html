@@ -5,12 +5,14 @@
 		classDescriptionHidden = 'music__description--hidden',
 		classReadMoreVisible = 'music__readmore--visible';
 
-		description.classList.add(classDescriptionHidden);
-		readMore.classList.add(classReadMoreVisible);
-		readMore.addEventListener('click', event => {
-			description.classList.remove(classDescriptionHidden);
-			event.currentTarget.classList.remove(classReadMoreVisible);
-		}, false);
+		if (description.innerText.length > 160) {
+			description.classList.add(classDescriptionHidden);
+			readMore.classList.add(classReadMoreVisible);
+			readMore.addEventListener('click', event => {
+				description.classList.remove(classDescriptionHidden);
+				event.currentTarget.classList.remove(classReadMoreVisible);
+			}, false);
+		}
 	});
 
 	{
