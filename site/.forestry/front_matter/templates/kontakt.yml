@@ -24,9 +24,15 @@ fields:
     config:
       required: true
   - type: text
-    name: relation
-    label: Beziehung
-    description: optional<br>Eigenname oder klein geschrieben und auf Englisch
+    name: relation-de
+    label: Beziehung (deutsch)
+    description: optional
+  - name: relation-en
+    type: text
+    config:
+      required: false
+    label: Beziehung (englisch)
+    description: optional
   - type: text
     name: email
     label: Email
