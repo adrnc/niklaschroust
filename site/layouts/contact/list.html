@@ -3,7 +3,7 @@
 		{{ if not .hidden }}
 			<section class="contact{{ if eq .name $.Site.Params.author }} contact--special{{ end }}">
 				<h1 class="contact__name">{{ .name }}</h1>
-				{{ with index . (print "relation-" .Lang) }}<h2 class="contact__relation">{{ . }}</h2>{{ end }}
+				{{ with index . (print "relation-" $.Lang) }}<h2 class="contact__relation">{{ . }}</h2>{{ end }}
 				{{ with .email }}<p class="contact__item"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
 				{{ with .number }}<p class="contact__item"><a href="tel:{{ . }}">{{ . }}</a></p>{{ end }}
 				{{ with .website }}<p class="contact__item"><a href="{{ . }}">{{ . }}</a></p>{{ end }}

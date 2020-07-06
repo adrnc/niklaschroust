@@ -262,15 +262,8 @@ $border-top: 0.3rem solid $color1;
 		}
 		&__menu-button, &__menu-close, &__menu-home {display: none;}
 		&__nav-delimit {display: inline;}
-		&__about {
-			font-size: 3rem;
-		}
-
-		&__menu-inner {
-			margin-right: -0.75rem;
-
-			a {box-shadow: none;}
-		}
+		&__about {font-size: 3rem;}
+		&__menu-inner a {box-shadow: none;}
 	}
 }
 
