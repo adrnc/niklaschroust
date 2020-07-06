@@ -53,3 +53,5 @@ fields:
     description: optional<br>eigene, kurze Beschreibung
   config:
     labelField: title-de
+pages:
+- site/data/press.yaml
