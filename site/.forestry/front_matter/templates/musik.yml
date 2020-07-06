@@ -155,7 +155,7 @@ fields:
           schema:
             format: markdown
         label: Beschreibung
-      label: Deutsche Informationen
+      label: Informationen (deutsch)
     - name: en
       type: field_group
       config: {}
@@ -180,7 +180,7 @@ fields:
           schema:
             format: markdown
         label: Beschreibung
-      label: Englische Informationen
+      label: Informationen (englisch)
     config:
       min: 
       max: 
