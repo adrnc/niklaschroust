@@ -51,3 +51,5 @@ fields:
       max: 160
     label: Beschreibung (englisch)
     description: optional<br>eigene, kurze Beschreibung
+  config:
+    labelField: title-de
