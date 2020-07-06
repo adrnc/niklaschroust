@@ -7,7 +7,7 @@ fields:
   fields:
   - type: text
     name: title-de
-    label: Deutscher Titel
+    label: Titel (deutsch)
     config:
       required: true
   - name: description-de
@@ -18,10 +18,10 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-    label: Deutsche Beschreibung
+    label: Beschreibung (deutsch)
   - type: text
     name: title-en
-    label: Englischer Titel
+    label: Titel (englisch)
     config:
       required: true
   - name: description-en
@@ -32,7 +32,7 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-    label: Englische Beschreibung
+    label: Beschreibung (englisch)
   label: Lebensabschnitt
 pages:
 - site/data/biography.yaml
