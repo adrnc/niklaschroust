@@ -8,7 +8,7 @@
 		"url": "git+https://github.com/adrianchroust/niklaschroust.git"
 	},
 	"scripts": {
-		"start": "hugo server -s site --gc --disableFastRender --ignoreCache",
+		"start": "hugo server -s site --gc --minify --disableFastRender --ignoreCache",
 		"build": "hugo -s site -d ../dist --gc --minify"
 	},
 	"devDependencies": {
