@@ -26,7 +26,7 @@ related:
   name: Ella Chroust
   email: ''
   website: ''
-  hidden: false
+  hidden: true
 - relation-de: Großvater
   relation-en: Grandfather
   name: Gerhard Chroust
