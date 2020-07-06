@@ -14,7 +14,7 @@ fields:
   - type: text
     name: url
     label: URL
-    description: z.B.
+    description: z.B. <a href="https://example.com/seite.html" title="" target="_blank">https://example.com/seite.html</a>
     config:
       required: true
   - type: text
