@@ -14,12 +14,12 @@ fields:
       target="_blank">https://example.com/datei.txt</a>
   - type: text
     name: de
-    label: Deutscher Text
     config:
       required: true
+    label: Text (deutsch)
   - type: text
     name: en
-    label: Englischer Text
+    label: Text (englisch)
     config:
       required: true
   label: Bild
