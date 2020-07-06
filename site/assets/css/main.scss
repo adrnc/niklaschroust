@@ -208,7 +208,7 @@ $border-top: 0.3rem solid $color1;
 	&__menu-item {
 		margin: 0;
 		padding: 0;
-		display: inline;
+		display: inline-block;
 	}
 
 	&__menu-button, &__menu-button:link {
@@ -252,6 +252,7 @@ $border-top: 0.3rem solid $color1;
 		&__menu, &__menu--open, &__menu:target, &__menu-inner {
 			display: inline;
 			padding: 0;
+			margin: 0;
 			box-shadow: none;
 			position: relative;
 			background-color: transparent !important;
@@ -260,10 +261,15 @@ $border-top: 0.3rem solid $color1;
 			border-top: none;
 		}
 		&__menu-button, &__menu-close, &__menu-home {display: none;}
-		&__menu-inner a {box-shadow: none;}
 		&__nav-delimit {display: inline;}
 		&__about {
 			font-size: 3rem;
+		}
+
+		&__menu-inner {
+			margin-right: -0.75rem;
+
+			a {box-shadow: none;}
 		}
 	}
 }
@@ -329,12 +335,16 @@ $content-padding-color: transparentize($color: $background-color1, $amount: 0.07
 	z-index: 1;
 
 
-	&__further-info {
+	&__info, &__further-info {
 		color: transparentize($color: $font-color1, $amount: 0.2);
 		margin: 0;
 		padding: 0;
 		font-size: 0.8em;
 		text-align: center;
+	}
+
+	&__further-info {
+		margin-top: 2rem;
 	}
 
 	&__link {

@@ -1,9 +1,9 @@
 <header class="header">
 	<h1 class="header__about{{ if eq .Kind "home" }} header__about--invisible{{ end }}">
 		<a class="header__about-inner" href="{{ relref . "/" }}">
-			<span class="header__about--colorful">{{ substr .Site.Params.firstname 0 1 }}</span><span class="header__about--small">.</span><span class="header__about--not-small">{{ substr .Site.Params.firstname 1 }}</span>
+			<span class="header__about--colorful">{{ substr .Site.Params.firstname 0 1 }}</span><span class="header__about--small" aria-hidden="true">.</span><span class="header__about--not-small">{{ substr .Site.Params.firstname 1 }}</span>
 			{{- with .Site.Params.middlename }} {{ substr . 0 1 }}. {{ end -}}
-			{{ substr .Site.Params.surname 0 1 }}<span class="header__about--extrasmall">.</span><span class="header__about--not-extrasmall">{{ substr .Site.Params.surname 1 }}</span>
+			{{ substr .Site.Params.surname 0 1 }}<span class="header__about--extrasmall" aria-hidden="true">.</span><span class="header__about--not-extrasmall">{{ substr .Site.Params.surname 1 }}</span>
 		</a>
 	</h1>
 	<nav class="header__nav">

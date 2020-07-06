@@ -10,6 +10,14 @@
 {{ end }}
 
 <footer class="footer">
-		<p class="footer__further-info">{{ i18n "pictures" }}: <a class="footer__link"{{ with $pictures_website }} href="{{ . }}"{{ end }}>{{ $pictures }}</a></p>
-		<p class="footer__further-info">{{ i18n "webdesign" }}: <a class="footer__link"{{ with $webdesign_website }} href="{{ . }}"{{ end }}>{{ $webdesign }}</a></p>
+		<p class="footer__info">
+			{{ i18n "pictures-by" }} <a class="footer__link"{{ with $pictures_website }} href="{{ . }}"{{ end }}>{{ $pictures }}</a>
+			<br>
+			{{ i18n "webdesign-by" }} <a class="footer__link"{{ with $webdesign_website }} href="{{ . }}"{{ end }}>{{ $webdesign }}</a>
+		</p>
+		<p class="footer__further-info">
+			{{ i18n "code-on" }} <a class="footer__link" href="https://github.com/adrianchroust/niklaschroust">Github</a>
+			<br>
+			{{ i18n "deployed-to" }} <a class="footer__link" href="https://www.netlify.com/">Netlify</a>
+		</p>
 </footer>

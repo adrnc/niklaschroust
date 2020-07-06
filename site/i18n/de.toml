@@ -55,29 +55,21 @@
 [no-news]
 	other = 'Zur Zeit gibt es keine Neuigkeiten :('
 
-[webdesign]
-	other = 'Webdesign'
-
-[pictures]
-	other = 'Bilder'
-
 [related]
 	other = 'Andere'
 
-[father]
-	other = 'Vater'
+[webdesign-by]
+	other = 'Webdesign von'
 
-[mother]
-	other = 'Mutter'
+[pictures-by]
+	other = 'Bilder von'
 
-[brother]
-	other = 'Bruder'
+[code-on]
+	other = 'Code auf'
 
-[sister]
-	other = 'Schwester'
+[deployed-to]
+	other = 'Deployed auf'
 
-[grandfather]
-	other = 'Großvater'
 
 # Months
 
