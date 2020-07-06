@@ -11,6 +11,8 @@ fields:
     label: Datum
     config:
       required: true
+      date_format: DD.MM.YYYY
+      export_format: YYYY-MM-DD
   - type: text
     name: url
     label: URL
