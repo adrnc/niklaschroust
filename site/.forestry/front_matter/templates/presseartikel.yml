@@ -4,23 +4,50 @@ hide_body: true
 fields:
 - type: field_group_list
   name: Press
-  label: Press
+  label: Pressartikel
   fields:
   - type: datetime
     name: date
-    label: date
+    label: Datum
+    config:
+      required: true
   - type: text
     name: url
-    label: url
+    label: URL
+    description: z.B.
+    config:
+      required: true
   - type: text
     name: title-de
-    label: title-de
-  - type: text
-    name: description-de
-    label: description-de
+    description: eigener, kurzer Titel
+    config:
+      required: true
+    label: Titel (deutsch)
+  - name: description-de
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+      max: 160
+    label: Beschreibung (deutsch)
+    description: optional<br>eigene, kurze Beschreibung
   - type: text
     name: title-en
-    label: title-en
-  - type: text
-    name: description-en
-    label: description-en
+    label: Titel (englisch)
+    description: eigener, kurzer Titel
+    config:
+      required: true
+  - name: description-en
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+      max: 160
+    label: Beschreibung (englisch)
+    description: optional<br>eigene, kurze Beschreibung
