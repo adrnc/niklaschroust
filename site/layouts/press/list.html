@@ -1,0 +1,11 @@
+{{ define "main" }}
+	{{ $press := .Site.Data.press }}
+
+	{{ range $press }}
+		{{ partial "article" (dict "page" $ "element" .) }}
+	{{ end }}
+{{ end }}
+
+{{ define "html-head-inject" }}
+	{{ partial "article-style" . }}
+{{ end }}

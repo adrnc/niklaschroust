@@ -49,8 +49,8 @@
 [no-events]
 	other = 'Zur Zeit gibt es keine bevorstehenden Events :('
 
-[news]
-	other = 'Neuigkeiten'
+[recent-news]
+	other = 'Letzte Neuigkeiten'
 
 [no-news]
 	other = 'Zur Zeit gibt es keine Neuigkeiten :('

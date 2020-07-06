@@ -2,7 +2,15 @@
 	{{ index .Site.Data.home .Lang | markdownify }}
 
 	<div class="item-list">
-		<h1 class="item-list__title"><a class="item-list__link" href="{{ relref . "/press" }}">{{ i18n "news" }}</a></h1>
+		<h1 class="item-list__title"><a class="item-list__link" href="{{ relref . "/press" }}">{{ i18n "recent-news" }}</a></h1>
+
+		{{ $press := .Site.Data.press }}
+		{{ with $press }}
+			{{ range first 3 . }}
+				{{ partial "article" (dict "page" $ "element" .) }}
+			{{ end }}
+		{{ end }}
+
 		<p class="item-list__none">{{ i18n "no-news" }}</p>
 	</div>
 
@@ -46,7 +54,7 @@
 		}
 
 		.item-list__title {
-			margin: 0;
+			margin: 0 0 1.5rem 0;
 			font-size: 1.3em;
 			color: rgba(255, 255, 255, 0.8);
 			font-weight: normal;
@@ -66,11 +74,12 @@
 			margin-left: 1.5rem;
 		}
 
-		.event + .item-list__none, .news + .item-list__none {
+		.event + .item-list__none, .article + .item-list__none {
 			display: none;
 		}
 	</style>
 
 	{{ partial "event-style" . }}
+	{{ partial "article-style" . }}
 {{ end }}
 

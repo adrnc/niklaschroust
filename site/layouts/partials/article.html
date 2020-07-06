@@ -1,0 +1,8 @@
+{{ $ := .page }}
+{{ with .element }}
+	<section class="article">
+		<h2 class="article__date"><time class="article__time" datetime="{{ .date }}">{{ partial "date-format" (dict "lang" $.Lang "date" .date) }}</time></h2>
+		<h1 class="article__title"><a class="article__link" href="{{ .url }}">{{ index . (print "title-" $.Lang) }}</a></h1>
+		<p class="article__description">{{ index . (print "description-" $.Lang) }}</p>
+	</section>
+{{ end }}
