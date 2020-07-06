@@ -44,7 +44,7 @@ fields:
         schema:
           format: markdown
       label: Beschreibung / Instrumente
-    label: Deutsche Informationen
+    label: Informationen (deutsch)
   - type: field_group
     name: en
     fields:
@@ -62,7 +62,7 @@ fields:
         schema:
           format: markdown
       label: Beschreibung / Instrumente
-    label: Englische Informationen
+    label: Informationen (englisch)
   config:
     labelField: piece
 pages:
