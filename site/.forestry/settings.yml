@@ -11,7 +11,7 @@ sections:
   path: site/data/events.yaml
   label: Events
 - type: document
-  path: site/data/press.yaml
+  path: site/data/press.yamls
   label: Presse
 - type: document
   path: site/data/music.yaml
