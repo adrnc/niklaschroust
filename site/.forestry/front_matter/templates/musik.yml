@@ -67,7 +67,7 @@ fields:
         schema:
           format: markdown
         required: true
-    label: Deutsche Informationen
+    label: Informationen (deutsch)
   - type: field_group
     name: en
     fields:
@@ -86,7 +86,7 @@ fields:
         schema:
           format: markdown
         required: true
-    label: Englische Informationen
+    label: Informationen (englisch)
   - name: children
     type: field_group_list
     fields:
