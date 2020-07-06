@@ -1,0 +1,26 @@
+---
+label: Presseartikel
+hide_body: true
+fields:
+- type: field_group_list
+  name: Press
+  label: Press
+  fields:
+  - type: datetime
+    name: date
+    label: date
+  - type: text
+    name: url
+    label: url
+  - type: text
+    name: title-de
+    label: title-de
+  - type: text
+    name: description-de
+    label: description-de
+  - type: text
+    name: title-en
+    label: title-en
+  - type: text
+    name: description-en
+    label: description-en
