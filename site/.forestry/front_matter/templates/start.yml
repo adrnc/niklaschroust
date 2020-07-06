@@ -4,17 +4,17 @@ hide_body: true
 fields:
 - type: textarea
   name: de
-  label: Deutscher Text
   config:
     wysiwyg: true
     schema:
       format: markdown
+  label: Text (deutsch)
 - type: textarea
   name: en
-  label: Englischer Text
   config:
     wysiwyg: true
     schema:
       format: markdown
+  label: Text (englisch)
 pages:
 - site/data/home.yaml
