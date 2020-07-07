@@ -1,7 +1,7 @@
 {{ define "main" }}
-	{{ range (slice .Site.Data.contact) | append .Site.Data.contact.related }}
+	{{ range $i, $e := (slice .Site.Data.contact) | append .Site.Data.contact.related }}
 		{{ if not .hidden }}
-			<section class="contact{{ if eq .name $.Site.Params.author }} contact--special{{ end }}">
+			<section class="contact{{ if not $i }} contact--special{{ end }}">
 				<h1 class="contact__name">{{ .name }}</h1>
 				{{ with index . (print "relation-" $.Lang) }}<h2 class="contact__relation">{{ . }}</h2>{{ end }}
 				{{ with .email }}<p class="contact__item"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
