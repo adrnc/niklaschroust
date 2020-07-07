@@ -62,11 +62,15 @@
 
 		.item-list__link, .item-list__link:link {
 			color: inherit;
-			box-shadow: none;
+			--color: rgba(255, 255, 255, 0.05);
 		}
 
-		.item-list__link:link {
-			box-shadow: inset 0 -0.15em rgba(255, 255, 255, 0.05);
+		.item-list__link:hover, .item-list__link:link:hover {
+			--color: var(--color2);
+		}
+
+		.item-list__link:active, .item-list__link:link:active {
+			color: var(--color1);
 		}
 
 		.item-list__none {

@@ -7,7 +7,7 @@ $background-color2: hsl(0, 3%, 15%);
 $color1: hsl(348, 80%, 55%);
 $color2: hsla(348, 80%, 55%, 0.7);
 
-@import '_default';
+@import '_normalize', '_default';
 
 :root {
 	--color1: #{$color1};
@@ -101,6 +101,11 @@ $border-top: 0.3rem solid $color1;
 		font-weight: normal;
 		font-size: 3rem;
 		margin: 0 0 0.5rem 0;
+		transition: box-shadow 0.15s;
+
+		&:hover {
+			box-shadow: inset 0 -0.5rem $color2;
+		}
 	}
 
 	&__about-inner, &__about-inner:link {
@@ -121,7 +126,7 @@ $border-top: 0.3rem solid $color1;
 		font-size: 1.8rem;
 	}
 
-	&__nav-a {
+	&__nav-a, &__nav-a:link {
 		display: inline-block;
 		color: $font-color1;
 		text-decoration: none;
@@ -129,6 +134,15 @@ $border-top: 0.3rem solid $color1;
 		letter-spacing: 0.3rem;
 		font-size: 2rem;
 		cursor: pointer;
+		--color: #{$color2};
+
+		&:hover {
+			--color: #{$color2};
+		}
+
+		&:active {
+			color: $color1;
+		}
 
 		&--last {
 			margin-right: 0 !important;
@@ -140,7 +154,7 @@ $border-top: 0.3rem solid $color1;
 		background-color: transparent;
 		padding: 0;
 		border: none;
-		color: inherit;
+		color: $font-color1;
 		font: inherit;
 		cursor: pointer;
 	}
@@ -201,8 +215,6 @@ $border-top: 0.3rem solid $color1;
 	&__menu-inner {
 		padding: 1rem 2rem;
 		list-style-type: none;
-
-		a {box-shadow: inset 0 -0.5rem $color1;}
 	}
 
 	&__menu-item {
@@ -247,8 +259,6 @@ $border-top: 0.3rem solid $color1;
 	.header {
 		padding: 0 4rem;
 
-		&__nav-a {margin: 0 1.5rem;}
-
 		&__menu, &__menu--open, &__menu:target, &__menu-inner {
 			display: inline;
 			padding: 0;
@@ -263,7 +273,10 @@ $border-top: 0.3rem solid $color1;
 		&__menu-button, &__menu-close, &__menu-home {display: none;}
 		&__nav-delimit {display: inline;}
 		&__about {font-size: 3rem;}
-		&__menu-inner a {box-shadow: none;}
+		&__nav-a, &__nav-a:link {
+			margin: 0 1.5rem;
+			--color: transparent;
+		}
 	}
 }
 
@@ -348,6 +361,10 @@ $content-padding-color: transparentize($color: $background-color1, $amount: 0.07
 
 		&:link {
 			text-decoration: underline dotted $font-color1;
+
+			&:hover {
+				--color: transparent;
+			}
 		}
 	}
 }

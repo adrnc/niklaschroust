@@ -18,18 +18,22 @@
 
 	.event__date {
 		font-size: 2em;
-		color: white;
+		color: var(--font-color1);
 		font-weight: normal;
 		margin: 0;
 	}
 
 	.event__url, .event__url:link {
-		color: inherit;
-		box-shadow: none;
+		color: var(--font-color1);
+		--color: rgba(255, 255, 255, 0.05);
 	}
 
-	.event__url:link {
-		box-shadow: inset 0 -0.2em rgba(255, 255, 255, 0.05);
+	.event__url:hover, .event__url:link:hover {
+		--color: var(--color2);
+	}
+
+	.event__url:active[href], .event__url:link:active {
+		color: var(--color1);
 	}
 
 	.event__piece {
