@@ -97,7 +97,7 @@ $border-top: 0.3rem solid $color1;
 	z-index: 2;
 	width: 100%;
 
-	&__about {
+	&__about, &__about:link {
 		font-weight: normal;
 		font-size: 3rem;
 		margin: 0 0 0.5rem 0;
@@ -112,6 +112,10 @@ $border-top: 0.3rem solid $color1;
 		text-decoration: none;
 		color: $font-color1;
 		box-shadow: none;
+
+		&:active {
+			color: $color1;
+		}
 	}
 
 	&__about--invisible {visibility: hidden;}
@@ -355,9 +359,10 @@ $content-padding-color: transparentize($color: $background-color1, $amount: 0.07
 	}
 
 	&__link {
-		box-shadow: none;
-		color: $font-color1;
-		box-shadow: none;
+		&, &:link {
+			box-shadow: none;
+			color: $font-color1;
+		}
 
 		&:link {
 			text-decoration: underline dotted $font-color1;
