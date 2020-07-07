@@ -2,19 +2,6 @@
 	{{ index .Site.Data.home .Lang | markdownify }}
 
 	<div class="item-list">
-		<h1 class="item-list__title"><a class="item-list__link" href="{{ relref . "/press" }}">{{ i18n "recent-news" }}</a></h1>
-
-		{{ $press := .Site.Data.press }}
-		{{ with $press }}
-			{{ range first 3 . }}
-				{{ partial "article" (dict "page" $ "element" .) }}
-			{{ end }}
-		{{ end }}
-
-		<p class="item-list__none">{{ i18n "no-news" }}</p>
-	</div>
-
-	<div class="item-list">
 		<h1 class="item-list__title"><a class="item-list__link" href="{{ relref . "/events" }}">{{ i18n "upcoming-events" }}</a></h1>
 
 		{{ $events := .Site.Data.events }}
@@ -26,6 +13,19 @@
 		{{ end }}
 
 		<p class="item-list__none">{{ i18n "no-events" }}</p>
+	</div>
+
+	<div class="item-list">
+		<h1 class="item-list__title"><a class="item-list__link" href="{{ relref . "/press" }}">{{ i18n "recent-news" }}</a></h1>
+
+		{{ $press := .Site.Data.press }}
+		{{ with $press }}
+			{{ range first 3 . }}
+				{{ partial "article" (dict "page" $ "element" .) }}
+			{{ end }}
+		{{ end }}
+
+		<p class="item-list__none">{{ i18n "no-news" }}</p>
 	</div>
 {{ end }}
 {{ define "html-head-inject" }}
