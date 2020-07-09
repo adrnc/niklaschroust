@@ -26,17 +26,21 @@ sections:
   path: site/data/contact.yaml
   label: Kontakt
 - type: heading
-  label: Seiten
+  label: Einstellungen
+- type: document
+  path: site/content/background_images.yaml
+  label: Hintergrundbilder
+  match: "**/*"
 - type: directory
   path: site/content
-  label: Deutsche Seiten
+  label: Seiten (deutsch)
   create: none
   match: "**/*.de.md"
   templates:
   - seite
 - type: directory
   path: site/content
-  label: Englische Seiten
+  label: Seiten (englisch)
   create: none
   match: "**/*.en.md"
   templates:
