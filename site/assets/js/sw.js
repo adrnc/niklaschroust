@@ -3,7 +3,6 @@
 self.addEventListener('fetch', event => {
 	event.respondWith(
 		(async () => {
-			console.log(event.request);
 			const cache = await caches.match(event.request);
 			if (cache) return cache;
 
