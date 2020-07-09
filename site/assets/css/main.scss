@@ -227,18 +227,20 @@ $border-top: 0.3rem solid $color1;
 		display: inline-block;
 	}
 
-	&__menu-button, &__menu-button:link {
+	&__menu-button, &__menu-button {
 		@extend .header__nav-a;
 		margin: 0 1.5rem;
-		box-shadow: none;
 	}
 
-	&__menu-close, &__menu-close:link, &__menu-close-inner {
+	&__menu-close, &__menu-close, &__menu-close-inner {
 		display: block;
 		margin: 0;
 		background-color: rgba(255, 255, 255, 0.01);
 		font-size: 2.5rem;
 		text-align: center;
+	}
+
+	&__menu-button:link, &__menu-close:link {
 		box-shadow: none;
 	}
 

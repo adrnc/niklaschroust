@@ -60,6 +60,14 @@
 
 <script src="https://instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
+{{ $sw := resources.Get "js/sw.js" | resources.ExecuteAsTemplate "sw.js" . | fingerprint }}
+{{ $app := resources.Get "js/app.js" | resources.ExecuteAsTemplate "js/app.js" $sw.RelPermalink | fingerprint }}
+{{ if hugo.IsProduction }}
+	{{ $sw = $sw | minify }}
+	{{ $app = $app | minify }}
+{{ end }}
+<script src="{{ $app.RelPermalink }}" type="module"></script>
+
 {{ if hugo.IsProduction }}
 	{{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
