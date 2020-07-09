@@ -1,5 +1,5 @@
 ---
-title: Niklas A. Chroust
+title: Home
 description: Niklas A. Chroust (* June 4, 2004) is a young composer based in Vienna,
   Austria.
 

@@ -1,27 +1,6 @@
 [menu]
 	other = 'Menu'
 
-[home]
-	other = 'Home'
-
-[biography]
-	other = 'Biography'
-
-[contact]
-	other = 'Contact'
-
-[events]
-	other = 'Events'
-
-[press]
-	other = 'Press'
-
-[gallery]
-	other = 'Gallery'
-
-[music]
-	other = 'Music'
-
 [notfound]
 	other = 'Not found'
 

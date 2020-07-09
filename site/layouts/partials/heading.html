@@ -2,6 +2,8 @@
 	<h1 class="heading__title">
 		{{ if eq .Kind "404" }}
 			<span class="heading__title--colorful">404</span> {{ i18n "notfound" }}
+		{{ else if eq .Kind "home" }}
+			<span class="heading__title--colorful">{{ substr .Site.Params.author 0 1 }}</span>{{ substr .Site.Params.author 1 }}
 		{{ else }}
 			<span class="heading__title--colorful">{{ substr .Title 0 1 }}</span>{{ substr .Title 1 }}
 		{{ end }}

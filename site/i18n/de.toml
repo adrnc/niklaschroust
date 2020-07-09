@@ -1,27 +1,6 @@
 [menu]
 	other = 'Menü'
 
-[home]
-	other = 'Start'
-
-[biography]
-	other = 'Biographie'
-
-[contact]
-	other = 'Kontakt'
-
-[events]
-	other = 'Events'
-
-[press]
-	other = 'Presse'
-
-[gallery]
-	other = 'Galerie'
-
-[music]
-	other = 'Musik'
-
 [notfound]
 	other = 'Nicht gefunden'
 
