@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Lang }}">
 	<head>
-		{{ partial "html-meta" . }}
 		{{ partialCached "html-head" . }}
+		{{ partial "html-meta" . }}
 		{{ block "html-head-inject" . }}{{ end }}
 	</head>
 	<body>
