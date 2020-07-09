@@ -67,3 +67,5 @@ fields:
       target="_blank">https://example.com/bild.jpg</a>
     label: Kontakt
   label: Menüsparten
+pages:
+- site/data/background_images.yaml
