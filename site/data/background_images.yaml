@@ -1,0 +1,11 @@
+default: /background-images/default.jpg
+404: /background-images/404.jpg
+
+sections:
+  home:
+  events: /background-images/events.jpg
+  press: /background-images/press.jpg
+  music:  /background-images/music.jpg
+  biography:  /background-images/biography.jpg
+  gallery:  /background-images/gallery.jpg
+  contact:  /background-images/contact.jpg

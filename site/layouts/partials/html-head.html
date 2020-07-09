@@ -30,15 +30,16 @@
 
 <meta name="theme-color" content="#121111">
 
-{{ $background := cond (ne .Section "") (print .Section ".jpg") (cond (eq .Kind "404") "404.jpg" "default.jpg") }}
-<link rel="preload" as="image" href="/background-images/{{ $background }}">
+{{ $background := index .Site.Data.background_images (cond (eq .Kind "404") "404" "default") }}
+{{ with index .Site.Data.background_images.sections .Section }}{{ $background = . }}{{ end }}
+<link rel="preload" as="image" href="{{ $background }}">
 <style>
 </style>
 <style>
 	html, body {background-color: #121111;}
 	.page {display: none;}
 	.page::before {
-		--url: url(/background-images/{{ $background | safeCSS }});
+		--url: url({{ $background | safeCSS }});
 	}
 </style>
 
