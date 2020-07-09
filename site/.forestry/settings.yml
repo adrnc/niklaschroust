@@ -27,9 +27,6 @@ sections:
   label: Kontakt
 - type: heading
   label: Einstellungen
-- type: document
-  path: site/data/background_images.yaml
-  label: Hintergrundbilder
 - type: directory
   path: site/content
   label: Seiten (deutsch)
@@ -44,6 +41,9 @@ sections:
   match: "**/*.en.md"
   templates:
   - seite
+- type: document
+  path: site/data/background_images.yaml
+  label: Hintergrundbilder
 upload_dir: static/uploads/forestry
 public_path: "/uploads/forestry"
 front_matter_path: ''
