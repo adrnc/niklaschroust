@@ -6,7 +6,7 @@ fields:
   type: text
   config:
     required: false
-  label: Profilbild (URL)
+  label: Profilbild
   description: optional<br>z.B. <a href="https://example.com/bild.jpg" title="" target="_blank">https://example.com/bild.jpg</a>
 - type: textarea
   name: de
