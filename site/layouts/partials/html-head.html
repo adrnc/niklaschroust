@@ -5,6 +5,8 @@
 <title>
 	{{- if eq .Kind "404" -}}
 		404 {{ i18n "notfound" }}
+	{{- else if eq .Kind "home" -}}
+		{{ .Site.Params.author }}
 	{{- else -}}
 		{{ .Title }}{{ if not (eq .Kind "home") }} - {{ .Site.Title }}{{ end }}
 	{{- end -}}

@@ -1,6 +1,11 @@
 {{ define "main" }}
-	{{ with .Site.Data.home.image	}}<img class="profile" title="{{ .Site.Data.contact.name }}" alt="{{ .Site.Data.contact.name }}">{{ end }}
 	{{ index .Site.Data.home .Lang | markdownify }}
+	{{ with .Site.Data.home.image	}}
+		<button class="profile-picture">
+			<img class="profile-picture__image" src="{{ . }}" title="{{ $.Site.Data.contact.name }}" alt="{{ $.Site.Data.contact.name }}">
+			<span class="profile-picture__text">{{ $.Site.Data.contact.name }}</span>
+		</button>
+	{{ end }}
 
 	<div class="item-list">
 		<h1 class="item-list__title"><a class="item-list__link" href="{{ relref . "/events" }}">{{ i18n "upcoming-events" }}</a></h1>
@@ -81,6 +86,68 @@
 
 		.event + .item-list__none, .article + .item-list__none {
 			display: none;
+		}
+
+		.profile-picture {
+			display: block;
+			position: relative;
+			background-color: transparent;
+			border: none;
+			margin: 10rem auto;
+			padding: 0;
+			cursor: pointer;
+		}
+
+		.profile-picture:focus {
+			outline: none;
+		}
+
+		.profile-picture:focus > .profile-picture__image {
+			transform: scale(1.6);
+		}
+
+		.profile-picture:focus::before, .profile-picture:focus::after {
+			opacity: 0;
+		}
+
+		.profile-picture:hover > .profile-picture__image {
+			filter: brightness(120%);
+		}
+
+		.profile-picture::before, .profile-picture::after {
+			content: "";
+			position: absolute;
+			height: calc(50% - 0.05rem);
+			max-width: 80vw;
+			width: 2rem;
+			top: 0;
+			transition: opacity 0.15s;
+			border-bottom: 0.1rem solid rgba(255, 255, 255, 0.5);
+		}
+
+		.profile-picture::before {
+			right: calc(100% + 2rem);
+		}
+
+		.profile-picture::after {
+			left: calc(100% + 2rem);
+		}
+
+		.profile-picture__image {
+			height: auto;
+			width: 15rem;
+			margin: 0;
+			border-radius: 4rem;
+			transition: filter 0.15s, transform 0.15s;
+		}
+
+		.profile-picture__text {
+			position: absolute;
+			display: inline-block;
+			overflow: hidden;
+			height: 0;
+			width: 0;
+			color: var(--font-color1);
 		}
 	</style>
 
