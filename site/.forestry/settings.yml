@@ -28,9 +28,8 @@ sections:
 - type: heading
   label: Einstellungen
 - type: document
-  path: site/content/background_images.yaml
+  path: site/data/background_images.yaml
   label: Hintergrundbilder
-  match: "**/*"
 - type: directory
   path: site/content
   label: Seiten (deutsch)
