@@ -33,7 +33,6 @@ html, body {
 .page {
 	display: block;
 
-
 	&::before {
 		position: fixed;
 		top: 0;
@@ -47,6 +46,10 @@ html, body {
 		opacity: 0;
 		transition: opacity 0.6s;
 		filter: brightness(25%) /*grayscale(100%)*/;
+	}
+
+	&--image-ready::before {
+		opacity: 1;
 	}
 }
 
