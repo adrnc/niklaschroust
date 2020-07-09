@@ -34,13 +34,14 @@
 
 {{ $background := index .Site.Data.background_images (cond (eq .Kind "404") "404" "default") }}
 {{ with index .Site.Data.background_images.sections .Section }}{{ $background = . }}{{ end }}
-<link rel="preload" as="image" href="{{ $background }}">
+<link rel="preload" as="image" href="{{ $background }}" onload="document.documentElement.classList.add('root--image-ready')">
 <style>
 </style>
 <style>
 	html, body {background-color: #121111;}
 	.page {display: none;}
-	.page::before {
+	.root--image-ready .page::before {
+		opacity: 1;
 		--url: url({{ $background | safeCSS }});
 	}
 </style>
@@ -54,6 +55,7 @@
 <link rel="stylesheet" href="{{ $font }}" media="print" onload="this.onload=null;this.media='all'">
 
 <noscript>
+	<style>.page::before {--url: url({{ $background | safeCSS }});}</style>
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	<link rel="stylesheet" href="{{ $font }}">
 </noscript>
