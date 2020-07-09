@@ -1,0 +1,28 @@
+<link rel="canonical" href="{{ .Permalink }}">
+
+<title>
+	{{- if eq .Kind "404" -}}
+		404 {{ i18n "notfound" }}
+	{{- else if eq .Kind "home" -}}
+		{{ .Site.Params.author }}
+	{{- else -}}
+		{{ .Title }}{{ if not (eq .Kind "home") }} - {{ .Site.Title }}{{ end }}
+	{{- end -}}
+</title>
+<meta name="description" content="
+	{{- with .Description -}}
+		{{- . -}}
+	{{- else -}}
+		{{- with .Summary -}}
+			{{ . }}
+		{{- else -}}
+			{{ .Site.Params.Description }}
+		{{- end -}}
+	{{- end -}}
+">
+<meta name="keywords" content="
+	{{- delimit .Site.Params.keywords ", " -}}
+	{{- with .Keywords -}}
+			{{ range . }}, {{ . }}{{ end }}
+	{{- end -}}
+">

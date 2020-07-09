@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Lang }}">
 	<head>
-		{{ partial "html-head" . }}
+		{{ partial "html-meta" . }}
+		{{ partialCached "html-head" . }}
 		{{ block "html-head-inject" . }}{{ end }}
 	</head>
 	<body>
@@ -19,7 +20,7 @@
 				{{ partialCached "footer" . }}
 			{{ end }}
 		</div>
-		{{ partial "html-body" . }}
+		{{ partialCached "html-body" . }}
 		{{ block "html-body-inject" . }}{{ end }}
 	</body>
 </html>
