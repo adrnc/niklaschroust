@@ -1,4 +1,5 @@
 {{ define "main" }}
+	{{ with .Site.Data.home.image	}}<img class="profile" title="{{ .Site.Data.contact.name }}" alt="{{ .Site.Data.contact.name }}">{{ end }}
 	{{ index .Site.Data.home .Lang | markdownify }}
 
 	<div class="item-list">
