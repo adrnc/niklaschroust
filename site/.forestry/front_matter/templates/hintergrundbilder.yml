@@ -1,0 +1,35 @@
+---
+label: Hintergrundbilder
+hide_body: true
+fields:
+- type: file
+  name: default
+  label: default
+- type: file
+  name: '404'
+  label: '404'
+- type: field_group
+  name: sections
+  label: sections
+  fields:
+  - type: text
+    name: home
+    label: home
+  - type: file
+    name: events
+    label: events
+  - type: file
+    name: press
+    label: press
+  - type: file
+    name: music
+    label: music
+  - type: file
+    name: biography
+    label: biography
+  - type: file
+    name: gallery
+    label: gallery
+  - type: file
+    name: contact
+    label: contact
