@@ -2,7 +2,7 @@
 label: Start
 hide_body: true
 fields:
-- name: profilbild
+- name: image
   type: text
   config:
     required: false
