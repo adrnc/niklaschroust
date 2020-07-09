@@ -7,21 +7,21 @@
 		</a>
 	</h1>
 	<nav class="header__nav">
-		<a href="#_menu" class="js-menu-open header__menu-open header__nav-a header__menu-button{{ if not .IsTranslated }} header__nav-a--last{{ end }}" tabindex="0" aria-hidden="true"><button class="header__nav-button" tabindex="-1">{{ i18n "menu" }}</button></a>{{ print -}}
+		<a href="#_menu" class="js-menu-open header__menu-button{{ if not .IsTranslated }} header__nav-a--last{{ end }}" tabindex="0" aria-hidden="true"><button class="header__nav-button" tabindex="-1">{{ i18n "menu" }}</button></a>{{ print -}}
 		<div class="js-menu header__menu" id="_menu">
 			<ul class="header__menu-inner">
-				{{ range $i, $e := slice "home" "events" "press" "music" "biography" "gallery" "contact" -}}
-					<li class="header__menu-item{{ if eq . "home" }} header__menu-home{{ end }}">
-						{{ $page := $.GetPage (print "/" .) }}
+				{{ range slice "home" "events" "press" "music" "biography" "gallery" "contact" -}}
+					<li class="header__menu-item{{ if eq . "home" }} header__menu-item--home{{ end }}">
+						{{ $page := $.GetPage (print "/" (cond (eq "home" .) "" .)) }}
 						<a class="header__nav-a{{ if and (eq . "contact") (not $.IsTranslated) }} header__nav-a--last{{ end }}" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>{{ if ne . "contact" }}<span class="header__nav-delimit">|</span>{{ end }}
 					</li>
 				{{- end }}
 			</ul>{{ print -}}
-			<a href="#" class="js-menu-close header__menu-close" tabindex="0" aria-hidden="true"><button class="header__nav-button header__menu-close-inner" tabindex="-1">{{ i18n "close" }}</button></a>{{ print -}}
+			<a href="#" class="js-menu-close header__menu-close" tabindex="0" aria-hidden="true"><button class="header__menu-close-inner" tabindex="-1">{{ i18n "close" }}</button></a>{{ print -}}
 		</div>
 		{{- if .IsTranslated -}}
 			{{- range .Translations -}}
-				<span class="header__lang-delimit">|</span><a class="header__nav-a header__lang" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Language.LanguageName }}">{{ .Lang | upper }}</a>
+				<span class="header__lang-delimit">|</span><a class="header__lang" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .Language.LanguageName }}">{{ .Lang | upper }}</a>
 			{{- end }}
 		{{ end }}
 	</nav>

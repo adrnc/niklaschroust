@@ -4,7 +4,7 @@ $font-color1: hsl(0, 0%, 100%);
 $font-color2: hsl(0, 0%, 40%);
 $background-color1: hsl(0, 3%, 7%);
 $background-color2: hsl(0, 3%, 15%);
-$color1: hsl(348, 80%, 55%);
+$color1: hsl(350, 100%, 64%); // hsl(348, 80%, 55%)
 $color2: hsla(348, 80%, 55%, 0.7);
 
 @import '_normalize', '_default';
@@ -228,6 +228,7 @@ $border-top: 0.3rem solid $color1;
 	}
 
 	&__menu-button, &__menu-button:link {
+		@extend .header__nav-a;
 		margin: 0 1.5rem;
 		box-shadow: none;
 	}
@@ -242,11 +243,13 @@ $border-top: 0.3rem solid $color1;
 	}
 
 	&__menu-close-inner {
+		@extend .header__nav-button;
 		padding: 1.5rem 3rem;
 		width: 100%;
 	}
 
 	&__lang, &__lang:link {
+		@extend .header__nav-a;
 		font-weight: bold;
 		margin: 0 1.5rem;
 		color: $color1;
@@ -274,7 +277,7 @@ $border-top: 0.3rem solid $color1;
 			animation: none;
 			border-top: none;
 		}
-		&__menu-button, &__menu-close, &__menu-home {display: none;}
+		&__menu-button, &__menu-close, &__menu-item--home {display: none;}
 		&__nav-delimit {display: inline;}
 		&__about {font-size: 3rem;}
 		&__nav-a, &__nav-a:link {
