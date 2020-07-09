@@ -21,6 +21,5 @@ menuClose.addEventListener('click', event => {
 	setTimeout(() => menu.classList.remove('header__menu--invisible'), parseFloat(getComputedStyle(menu).animationDuration) * 1000);
 }, false);
 
-document.querySelector('.page').classList.add('page--image-ready');
-
+window.addEventListener('load', () => document.querySelector('.page').classList.add('page--image-ready'), false);
 navigator.serviceWorker.register('{{ . }}'); // hugo template
