@@ -43,3 +43,26 @@ googleAnalytics = 'UA-170179785-1'
 	[markup.goldmark]
 		[markup.goldmark.parser]
 			autoHeadingIDType = 'blackfriday'
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+		image = '/background-images/default.jpg'
+  [[menu.main]]
+    identifier = 'events'
+		image = '/background-images/events.jpg'
+  [[menu.main]]
+    identifier = 'press'
+		image = '/background-images/press.jpg'
+  [[menu.main]]
+    identifier = 'music'
+		image = '/background-images/music.jpg'
+  [[menu.main]]
+    identifier = 'biography'
+		image = '/background-images/biography.jpg'
+  [[menu.main]]
+    identifier = 'gallery'
+		image = '/background-images/gallery.jpg'
+  [[menu.main]]
+    identifier = 'contact'
+		image = '/background-images/contact.jpg'
