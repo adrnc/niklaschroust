@@ -26,3 +26,11 @@
 			{{ range . }}, {{ . }}{{ end }}
 	{{- end -}}
 ">
+
+{{ $background := index .Site.Data.background_images (cond (eq .Kind "404") "404" "default") }}
+{{ with index .Site.Data.background_images.sections .Section }}{{ $background = . }}{{ end }}
+<link rel="preload" as="image" href="{{ $background }}">
+
+<style>
+	.page::before {--url: url({{ $background | safeCSS }});}
+</style>

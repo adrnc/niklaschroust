@@ -3,13 +3,9 @@
 <meta name="author" content="{{ .Site.Params.Author }}">
 <meta name="theme-color" content="#121111">
 
-{{ $background := index .Site.Data.background_images (cond (eq .Kind "404") "404" "default") }}
-{{ with index .Site.Data.background_images.sections .Section }}{{ $background = . }}{{ end }}
-<link rel="preload" as="image" href="{{ $background }}">
 <style>
 	html, body {background-color: #121111;}
 	.page {display: none;}
-	.page::before {--url: url({{ $background | safeCSS }});}
 </style>
 
 {{ $style := resources.Get "css/main.scss" | toCSS | postCSS }}
@@ -21,9 +17,9 @@
 <link rel="stylesheet" href="{{ $font }}" media="print" onload="this.onload=null;this.media='all'">
 
 <noscript>
-	<style>.page::before {--url: url({{ $background | safeCSS }});}</style>
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	<link rel="stylesheet" href="{{ $font }}">
+	<style>.page::before {opacity: 1;}</style>
 </noscript>
 
 <script src="https://instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
