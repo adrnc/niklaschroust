@@ -16,6 +16,9 @@
 {{ $font := "https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" }}
 <link rel="stylesheet" href="{{ $font }}" media="print" onload="this.onload=null;this.media='all'">
 
+<link rel="icon" href="{{ (resources.Get "icons/favicon.svg").RelPermalink }}" type="image/svg+xml">
+<link rel="alternate icon" href="{{ (resources.Get "icons/favicon.ico").RelPermalink }}" type="image/x-icon">
+
 <noscript>
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	<link rel="stylesheet" href="{{ $font }}">
