@@ -135,6 +135,9 @@
 			color: var(--font-color1);
 		}
 
+		.profile-picture:hover::before, .profile-picture:hover::after,
+		.profile-picture:hover:not(:focus)::before, .profile-picture:hover:not(:focus)::after,
+		.profile-picture:active::before, .profile-picture:active::after,
 		.profile-picture:focus::before, .profile-picture:focus::after {
 			opacity: 0;
 		}
