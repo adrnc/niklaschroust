@@ -67,5 +67,6 @@ fields:
       target="_blank">https://example.com/bild.jpg</a>
     label: Kontakt
   label: Menüsparten
+  description: Die Bilder sollten alle nicht größer als 2MB sein!
 pages:
 - site/data/background_images.yaml
