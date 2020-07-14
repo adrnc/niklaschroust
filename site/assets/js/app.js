@@ -20,7 +20,7 @@ menuClose.addEventListener('click', event => {
 	menu.classList.remove(classMenuOpen);
 	menu.classList.add(classMenuInvisible);
 	setTimeout(() => {
-		menuOpen.blur();
+		event.target.blur();
 		menu.classList.remove(classMenuInvisible);
 	}, parseFloat(getComputedStyle(menu).animationDuration) * 1000);
 }, false);
