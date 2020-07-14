@@ -1,25 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-	const menuOpen = document.querySelector('.js-menu-open'),
-	menuClose = document.querySelector('.js-menu-close');
+const menu = document.querySelector('.js-menu'),
+menuOpen = document.querySelector('.js-menu-open'),
+menuClose = document.querySelector('.js-menu-close'),
 
-	menuOpen.removeAttribute('href');
-	menuOpen.addEventListener('click', event => {
-		event.preventDefault();
-		document.querySelector('.js-menu').classList.add('header__menu--open');
-	}, false);
+classMenuOpen = 'header__menu--open',
+classMenuInvisible = 'header__menu--invisible';
 
-	menuClose.removeAttribute('href');
-	menuClose.addEventListener('click', event => {
-		event.preventDefault();
-		const menu = document.querySelector('.js-menu');
-		menu.classList.remove('header__menu--open');
-		menu.classList.add('header__menu--invisible');
-		setTimeout(() => {
-			event.target.blur();
-			menu.classList.remove('header__menu--invisible');
-		}, parseFloat(getComputedStyle(menu).animationDuration) * 1000);
-	}, false);
+menu.classList.add('header__menu--focusable');
+
+menuOpen.removeAttribute('href');
+menuOpen.addEventListener('click', event => {
+	event.preventDefault();
+	menu.classList.add(classMenuOpen);
+}, false);
+
+menuClose.removeAttribute('href');
+menuClose.addEventListener('click', event => {
+	event.preventDefault();
+	if (location.hash == '#_menu') location.hash = '';
+	menu.classList.remove(classMenuOpen);
+	menu.classList.add(classMenuInvisible);
+	setTimeout(() => {
+		menuOpen.blur();
+		menu.classList.remove(classMenuInvisible);
+	}, parseFloat(getComputedStyle(menu).animationDuration) * 1000);
 }, false);
 
 window.addEventListener('load', () => document.querySelector('.page').classList.add('page--image-ready'), false);
-navigator.serviceWorker.register('/sw.js');

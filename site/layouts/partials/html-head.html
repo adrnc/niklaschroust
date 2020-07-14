@@ -25,13 +25,14 @@
 	<style>.page::before {opacity: 1;}</style>
 </noscript>
 
-{{ $sw := resources.Get "sw.js" | resources.ExecuteAsTemplate "sw.js" . }}
 {{ $app := resources.Get "js/app.js" | fingerprint }}
+<script src="{{ $app.RelPermalink }}" type="module"></script>
+
 {{ if hugo.IsProduction }}
-	{{ $sw = $sw.RelPermalink }}
 	{{ $app = $app | minify }}
+	{{ $sw := resources.Get "sw.js" | resources.ExecuteAsTemplate "sw.js" . | minify }}
+	<script>navigator.serviceWorker.register('{{ $sw.RelPermalink }}');</script>
 {{ end }}
-<script src="{{ $app.RelPermalink }}" async></script>
 
 {{ if hugo.IsProduction }}
 	{{ template "_internal/google_analytics_async.html" . }}

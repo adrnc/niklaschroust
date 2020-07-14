@@ -172,17 +172,6 @@ $border-top: 0.3rem solid $color1;
 		}
 	}
 
-	&__nav-button {
-		display: inline;
-		background-color: transparent;
-		padding: 0;
-		border: none;
-		color: $font-color1;
-		font: inherit;
-		cursor: pointer;
-	}
-
-
 	@keyframes menu--invisible {
 		0%, 100% {
 			width: auto;
@@ -237,7 +226,7 @@ $border-top: 0.3rem solid $color1;
 			@include header--open;
 		}
 
-		&:focus-within:not(&--invisible) {
+		&--focusable:focus-within:not(&--invisible) {
 			@include header--open;
 			animation-duration: 0.001ms;
 		}
@@ -320,8 +309,8 @@ $border-top: 0.3rem solid $color1;
 			border-top: none;
 		}
 		&__menu, &__menu--open, &__menu:target, &__menu-inner {@include header--open;}
-		&__menu:focus-within:not(&__menu--invisible) {@include header--open;}
-		&__menu-button, &__menu-close, &__menu-item--home {display: none;}
+		&__menu--focusable:focus-within:not(&__menu--invisible) {@include header--open;}
+		&__menu-button, &__menu-button:link, &__menu-close, &__menu-close:link, &__menu-item--home {display: none;}
 		&__nav-delimit {display: inline;}
 		&__about {font-size: 3rem;}
 		&__nav-a, &__nav-a {
