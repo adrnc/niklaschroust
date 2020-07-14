@@ -27,10 +27,10 @@
 
 <script src="https://instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
-{{ $sw := resources.Get "sw.js" | resources.ExecuteAsTemplate "sw.js" . | fingerprint }}
+{{ $sw := resources.Get "sw.js" | resources.ExecuteAsTemplate "sw.js" . }}
 {{ $app := resources.Get "js/app.js" | fingerprint }}
 {{ if hugo.IsProduction }}
-	{{ $link := $sw.RelPermalink }}
+	{{ $sw = $sw.RelPermalink }}
 	{{ $app = $app | minify }}
 {{ end }}
 <script src="{{ $app.RelPermalink }}" type="module"></script>
