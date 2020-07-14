@@ -239,6 +239,7 @@ $border-top: 0.3rem solid $color1;
 
 		&:focus-within:not(&--invisible) {
 			@include header--open;
+			animation-duration: 0.001ms;
 		}
 	}
 

@@ -11,9 +11,9 @@
 
 <footer class="footer">
 		<p class="footer__info">
-			{{ i18n "pictures-by" }} <a class="footer__link"{{ with $pictures_website }} href="{{ . }}"{{ end }}>{{ $pictures }}</a>
+			{{ i18n "pictures-by" }} {{ with $pictures_website }}<a{{ else }}<span{{ end }} class="footer__link"{{ with $pictures_website }} href="{{ . }}"{{ end }}>{{ $pictures }}{{ with $pictures_website }}</a>{{ else }}</span>{{ end }}
 			<br>
-			{{ i18n "webdesign-by" }} <a class="footer__link"{{ with $webdesign_website }} href="{{ . }}"{{ end }}>{{ $webdesign }}</a>
+			{{ i18n "webdesign-by" }} {{ with $webdesign_website }}<a{{ else }}<span{{ end }} class="footer__link"{{ with $webdesign_website }} href="{{ . }}"{{ end }}>{{ $webdesign }}{{ with $webdesign_website }}</a>{{ else }}</span>{{ end }}
 		</p>
 		<p class="footer__further-info">
 			{{ i18n "code-on" }} <a class="footer__link" href="https://github.com/adrianchroust/niklaschroust">Github</a>
