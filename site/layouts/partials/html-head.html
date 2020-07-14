@@ -31,7 +31,6 @@
 {{ $app := resources.Get "js/app.js" | fingerprint }}
 {{ if hugo.IsProduction }}
 	{{ $link := $sw.RelPermalink }}
-	{{ $sw = $sw | minify }}
 	{{ $app = $app | minify }}
 {{ end }}
 <script src="{{ $app.RelPermalink }}" type="module"></script>
