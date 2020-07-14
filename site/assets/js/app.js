@@ -12,7 +12,7 @@ menuClose.addEventListener('click', event => {
 	menu.classList.remove('header__menu--open');
 	menu.classList.add('header__menu--invisible');
 	setTimeout(() => {
-		event.currentTarget.blur();
+		event.target.blur();
 		menu.classList.remove('header__menu--invisible');
 	}, parseFloat(getComputedStyle(menu).animationDuration) * 1000);
 }, false);
