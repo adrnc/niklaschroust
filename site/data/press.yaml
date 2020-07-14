@@ -1,10 +1,10 @@
 ---
-- date: 2020-02-29
-  url: https://test.com/
-  title-de: Test
-  description-de: test
-  title-en: Test
-  description-en: test
+- date: 2020-02-10
+  url: https://www.jammusiclab.com/de/news/jugend-komponiert-2020
+  title-de: Jugend komponiert 2020
+  description-de: ''
+  title-en: Jugend komponiert 2020
+  description-en: ''
 - date: 2020-02-01
   url: https://test.com/
   title-de: Test
