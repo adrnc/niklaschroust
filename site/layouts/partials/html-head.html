@@ -25,8 +25,6 @@
 	<style>.page::before {opacity: 1;}</style>
 </noscript>
 
-<script src="https://instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
-
 {{ $sw := resources.Get "sw.js" | resources.ExecuteAsTemplate "sw.js" . }}
 {{ $app := resources.Get "js/app.js" | fingerprint }}
 {{ if hugo.IsProduction }}
@@ -38,3 +36,5 @@
 {{ if hugo.IsProduction }}
 	{{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
+
+<script src="https://instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
