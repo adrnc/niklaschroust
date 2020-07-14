@@ -1,13 +1,11 @@
 const menuOpen = document.querySelector('.js-menu-open'),
 menuClose = document.querySelector('.js-menu-close');
 
-menuOpen.removeAttribute('href');
 menuOpen.addEventListener('click', event => {
 	event.preventDefault();
 	document.querySelector('.js-menu').classList.add('header__menu--open');
 }, false);
 
-menuClose.removeAttribute('href');
 menuClose.addEventListener('click', event => {
 	event.preventDefault();
 	const menu = document.querySelector('.js-menu');

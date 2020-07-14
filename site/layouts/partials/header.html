@@ -14,7 +14,7 @@
 				{{ range slice "home" "events" "press" "music" "biography" "gallery" "contact" -}}
 					<li class="header__menu-item{{ if eq . "home" }} header__menu-item--home{{ end }}">
 						{{ $page := $.GetPage (print "/" (cond (eq "home" .) "" .)) }}
-						<a class="header__nav-a{{ if and (eq . "contact") (not $.IsTranslated) }} header__nav-a--last{{ end }}" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>{{ if ne . "contact" }}<span class="header__nav-delimit">|</span>{{ end }}
+						<a class="header__nav-a{{ if and (eq . "contact") (not $.IsTranslated) }} header__nav-a--last{{ end }}" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>{{ if ne . "contact" }}<span class="header__nav-delimit" aria-hidden="true">|</span>{{ end }}
 					</li>
 				{{- end }}
 			</ul>{{ print -}}
