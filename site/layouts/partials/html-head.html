@@ -33,7 +33,7 @@
 	{{ $sw = $sw.RelPermalink }}
 	{{ $app = $app | minify }}
 {{ end }}
-<script src="{{ $app.RelPermalink }}" type="module"></script>
+<script src="{{ $app.RelPermalink }}" async></script>
 
 {{ if hugo.IsProduction }}
 	{{ template "_internal/google_analytics_async.html" . }}
