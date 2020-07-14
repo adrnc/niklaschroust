@@ -103,17 +103,21 @@ $border-top: 0.3rem solid $color1;
 	width: 100%;
 
 	&__skiptocontent, &__skiptocontent:link {
-		position: fixed;
-		bottom: 100%;
+		position: absolute;
+		top: 0;
 		left: 0;
-		margin: 4rem;
+		margin: 3rem 4rem;
 		padding: 0.5rem 1rem;
 		background-color: $color2;
 		color: $font-color1;
 		font-size: 2rem;
+		opacity: 0;
+		z-index: -1;
+		transform: translateY(-30rem);
 
 		&:focus {
-			transform: translateY(11rem);
+			opacity: 1;
+			transform: none;
 
 			& + .header__about {opacity: 0;}
 		}
