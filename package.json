@@ -8,8 +8,8 @@
 		"url": "git+https://github.com/adrianchroust/niklaschroust.git"
 	},
 	"scripts": {
-		"start": "hugo server -s site --gc --minify",
-		"build": "hugo -s site -d ../dist --gc --minify"
+		"start": "hugo server -e development -s site --gc --minify",
+		"build": "hugo -e production -s site -d ../dist --gc --minify"
 	},
 	"devDependencies": {
 		"autoprefixer": "^9.8.0",

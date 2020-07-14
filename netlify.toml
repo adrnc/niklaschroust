@@ -4,13 +4,9 @@
 
 [build.environment]
 	HUGO_VERSION = '0.72.0'
-	HUGO_ENV = 'development'
 
 [build.processing]
 	skip_processing = true
-
-[context.production.environment]
-	HUGO_ENV = 'production'
 
 [[redirects]]
   from = '/en/*'
