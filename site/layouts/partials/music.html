@@ -9,11 +9,11 @@
 		<h3 class="music__additional">{{ .year }}, {{ i18n "opus" }} {{ .opus }}</h3>
 		<p class="music__instruments">{{ $lang.instruments }}</p>
 		<div class="music__description js-description">{{ $lang.description | markdownify }}</div>
-		<p class="music__view">
-			{{- with .audio }}<a class="music__view-item js-audio" target="_blank" href="{{ . }}" rel="noreferrer">{{ i18n "listen" }}</a>{{ end -}}
-			{{- with .pdf }}<a class="music__view-item" target="_blank" href="{{ . }}" rel="noreferrer">{{ i18n "view" }}</a>{{ end -}}
-			<button class="music__readmore js-readmore">{{ i18n "readmore" }}</button>
-		</p>
+		<ul class="music__view">
+			{{ with .audio }}<li class="music__view-item"><a class="music__view-link js-audio" target="_blank" href="{{ . }}" rel="noreferrer">{{ i18n "listen" }}</a></li>{{ end }}
+			{{ with .pdf }}<li class="music__view-item"><a class="music__view-link" target="_blank" href="{{ . }}" rel="noreferrer">{{ i18n "view" }}</a></li>{{ end }}
+			<li class="music__view-item music__view-item--hidden js-readmore"><button class="music__readmore js-readmore">{{ i18n "readmore" }}</button></li>
+		</ul>
 		{{ with .children }}
 			{{ range . }}
 				{{ partial "music" (dict "page" $ "element" .) }}

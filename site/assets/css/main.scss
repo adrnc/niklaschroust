@@ -102,6 +102,24 @@ $border-top: 0.3rem solid $color1;
 	z-index: 2;
 	width: 100%;
 
+	&__skiptocontent, &__skiptocontent:link {
+		position: fixed;
+		bottom: 100%;
+		left: 0;
+		margin: 4rem;
+		padding: 0.5rem 1rem;
+		background-color: $color2;
+		color: $font-color1;
+		font-size: 2rem;
+
+		&:focus {
+			transform: translateY(11rem);
+
+			& + .header__about {opacity: 0;}
+		}
+
+	}
+
 	&__about, &__about:link {
 		font-weight: normal;
 		font-size: 3rem;
@@ -151,10 +169,6 @@ $border-top: 0.3rem solid $color1;
 
 		&:active {
 			color: $color1;
-		}
-
-		&--last {
-			margin-right: 0 !important;
 		}
 	}
 
@@ -210,20 +224,27 @@ $border-top: 0.3rem solid $color1;
 			box-shadow: 0 0 15rem 100vh rgba(0, 0, 0, 0.5);
 		}
 
-		&--open, &:target {
+		@mixin header--open {
 			width: auto;
 			height: auto;
-			visibility: visible;
 			opacity: 1;
 			box-shadow: 0 0 15rem 100vh rgba(0, 0, 0, 0.5);
 			animation: 0.4s ease-out 0s menu--open;
 			overflow: visible;
 		}
+
+		&--open, &:target {
+			@include header--open;
+		}
+
+		&:focus-within:not(&--invisible) {
+			@include header--open;
+		}
 	}
 
 	&__menu-inner {
-		padding: 1rem 2rem;
-		list-style-type: none;
+		margin: 0;
+		padding: 2rem;
 	}
 
 	&__menu-item {
@@ -232,27 +253,38 @@ $border-top: 0.3rem solid $color1;
 		display: inline-block;
 	}
 
+	&__translations {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: inline;
+	}
+
 	&__menu-button, &__menu-button {
 		@extend .header__nav-a;
 		margin: 0 1.5rem;
+
+		&--last {
+			margin-right: 0;
+		}
 	}
 
-	&__menu-close, &__menu-close, &__menu-close-inner {
+	&__menu-close, &__menu-close:link {
 		display: block;
 		margin: 0;
 		background-color: rgba(255, 255, 255, 0.01);
 		font-size: 2.5rem;
 		text-align: center;
+		color: $font-color1;
+		cursor: pointer;
+		padding: 1.5rem 3rem;
+		width: 100%;
+
+		&:active {color: $color1;}
 	}
 
 	&__menu-button:link, &__menu-close:link {
 		box-shadow: none;
-	}
-
-	&__menu-close-inner {
-		@extend .header__nav-button;
-		padding: 1.5rem 3rem;
-		width: 100%;
 	}
 
 	&__lang, &__lang:link {
@@ -261,6 +293,8 @@ $border-top: 0.3rem solid $color1;
 		margin: 0 1.5rem;
 		color: $color1;
 		box-shadow: none;
+
+		&:active {color: $font-color1;}
 
 		&:last-child {margin-right: 0;}
 	}
@@ -273,7 +307,7 @@ $border-top: 0.3rem solid $color1;
 	.header {
 		padding: 0 4rem;
 
-		&__menu, &__menu--open, &__menu:target, &__menu-inner {
+		@mixin header--open {
 			display: inline;
 			padding: 0;
 			margin: 0;
@@ -284,12 +318,20 @@ $border-top: 0.3rem solid $color1;
 			animation: none;
 			border-top: none;
 		}
+		&__menu, &__menu--open, &__menu:target, &__menu-inner {@include header--open;}
+		&__menu:focus-within:not(&__menu--invisible) {@include header--open;}
 		&__menu-button, &__menu-close, &__menu-item--home {display: none;}
 		&__nav-delimit {display: inline;}
 		&__about {font-size: 3rem;}
-		&__nav-a, &__nav-a:link {
-			margin: 0 1.5rem;
-			--color: transparent;
+		&__nav-a, &__nav-a {
+			&, &:link {
+				margin: 0 1.5rem;
+				--color: transparent;
+			}
+
+			&--last, &--last:link {
+				margin-right: 0;
+			}
 		}
 	}
 }
@@ -399,4 +441,14 @@ $content-padding-color: transparentize($color: $background-color1, $amount: 0.07
 	.content, .header__menu {
 		background-color: transparentize($color: $background-color2, $amount: 0.5);
 	}
+}
+
+@media screen and
+  (prefers-reduced-motion: reduce),
+  (update: slow) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }

@@ -8,7 +8,7 @@
 	<body>
 		<div class="page">
 			{{ partial "header" . }}
-			<main class="main">
+			<main class="main" id="_main">
 				{{ partial "heading" . }}
 				<div class="content{{ if eq .Kind "404" }} --hidden{{ end }}">
 					{{ block "main" . }}

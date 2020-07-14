@@ -1,4 +1,4 @@
-// {{ cond hugo.IsProduction now "" }} hugo template
+"{{ now }}"; // hugo template
 
 self.addEventListener('fetch', event => {
 	event.respondWith(

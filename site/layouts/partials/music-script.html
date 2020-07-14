@@ -3,14 +3,14 @@
 		const description = element.querySelector('.js-description'),
 		readMore = element.querySelector('.js-readmore'),
 		classDescriptionHidden = 'music__description--hidden',
-		classReadMoreVisible = 'music__readmore--visible';
+		classViewItemHidden = 'music__view-item--hidden';
 
 		if (description.innerText.length > 160) {
 			description.classList.add(classDescriptionHidden);
-			readMore.classList.add(classReadMoreVisible);
+			readMore.classList.remove(classViewItemHidden);
 			readMore.addEventListener('click', event => {
 				description.classList.remove(classDescriptionHidden);
-				event.currentTarget.classList.remove(classReadMoreVisible);
+				event.currentTarget.classList.add(classViewItemHidden);
 			}, false);
 		}
 	});
