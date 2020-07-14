@@ -20,4 +20,4 @@ menuClose.addEventListener('click', event => {
 }, false);
 
 window.addEventListener('load', () => document.querySelector('.page').classList.add('page--image-ready'), false);
-navigator.serviceWorker.register('sw.js');
+navigator.serviceWorker.register('/sw.js');
