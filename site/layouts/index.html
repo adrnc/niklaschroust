@@ -1,7 +1,7 @@
 {{ define "main" }}
 	{{ index .Site.Data.home .Lang | markdownify }}
 	{{ with .Site.Data.home.image	}}
-		<button class="profile-picture">
+		<button class="profile-picture js-profile-picture">
 			<img class="profile-picture__image" src="{{ . }}" title="{{ $.Site.Data.contact.name }}" alt="{{ $.Site.Data.contact.name }}">
 			<span class="profile-picture__text">{{ $.Site.Data.contact.name }}</span>
 		</button>
@@ -135,38 +135,33 @@
 			color: var(--font-color1);
 		}
 
-		.profile-picture:hover::before, .profile-picture:hover::after,
-		.profile-picture:hover:not(:focus)::before, .profile-picture:hover:not(:focus)::after,
-		.profile-picture:active::before, .profile-picture:active::after,
-		.profile-picture:focus::before, .profile-picture:focus::after {
+		.profile-picture--zoom::before, .profile-picture--zoom::after {
 			opacity: 0;
 		}
 
-		.profile-picture:hover:not(:focus) > .profile-picture__image {
+		.profile-picture:hover:not(.profile-picture--zoom) > .profile-picture__image {
 			filter: brightness(130%);
 		}
 
-		.profile-picture:focus > .profile-picture__image {
+		.profile-picture--zoom > .profile-picture__image {
 			transform: scale(1.7);
-			filter: none;
-			cursor: default;
 			border-radius: 0;
-		}
-
-		@media (pointer: coarse), (hover: none) {
-			.profile-picture:hover > .profile-picture__image,
-			.profile-picture:hover:not(:focus) > .profile-picture__image,
-			.profile-picture:active > .profile-picture__image,
-			.profile-picture:focus .profile-picture__image {
-				transform: scale(1.7);
-				filter: none;
-				cursor: default;
-				border-radius: 0;
-			}
 		}
 	</style>
 
 	{{ partial "event-style" . }}
 	{{ partial "article-style" . }}
 {{ end }}
-
+{{ define "html-body-inject" }}
+	<script>
+		{
+			const profilePicture = document.querySelector('.js-profile-picture');
+			if (profilePicture) profilePicture.addEventListener('click', event => {
+				const targetClasses = event.currentTarget.classList,
+				classZoom = 'profile-picture--zoom';
+				if (targetClasses.contains(classZoom)) targetClasses.remove(classZoom);
+				else targetClasses.add(classZoom);
+			}, false);
+		}
+	</script>
+{{ end }}

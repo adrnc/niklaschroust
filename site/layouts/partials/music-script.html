@@ -7,10 +7,10 @@
 
 		if (description.innerText.length > 160) {
 			description.classList.add(classDescriptionHidden);
-			readMore.classList.remove(classViewItemHidden);
+			readMore.parentElement.classList.remove(classViewItemHidden);
 			readMore.addEventListener('click', event => {
 				description.classList.remove(classDescriptionHidden);
-				event.currentTarget.classList.add(classViewItemHidden);
+				event.currentTarget.parentElement.classList.add(classViewItemHidden);
 			}, false);
 		}
 	});
@@ -20,7 +20,7 @@
 
 		document.querySelectorAll('.js-audio').forEach(element => element.addEventListener('click' , event => {
 			const currentTarget = event.currentTarget,
-			classSelected = 'music__view-item--selected',
+			classSelected = 'music__view-link--selected',
 			selectedItem = document.querySelector(`.${classSelected}`);
 
 			event.preventDefault();
