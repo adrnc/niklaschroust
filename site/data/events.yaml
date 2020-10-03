@@ -1,5 +1,5 @@
 ---
-- date:
+- date: 
   piece: Die Stadtgrenze
   de:
     location: Styriarte, Helmut-List-Halle, Graz
@@ -7,14 +7,32 @@
   en:
     location: Styriarte, Helmut-List-Halle, Graz
     instruments: Classical wind quintet
-- date:
+  url: ''
+- date: 2020-11-15
   piece: Winter-Quartett
   de:
-    location: Mozarteum, Salzburg
-    instruments: Names Ensemble
+    location: Bösendorfersaal, Universität Mozarteum Salzburg
+    instruments: |-
+      **Besuch nur mit Anmeldung möglich!**
+
+      * Anna Lindenbaum, Violine
+      * Jacobo Hernández Enríquez, Violine
+      * Silvija Čiuladytė, Viola
+      * Leo Morello, Violoncello
+
+      [https://www.ticket.re-creation.at/events/aspektesalzburg-2020-finale-wettbewerb-jugend-komponiert/](https://www.ticket.re-creation.at/events/aspektesalzburg-2020-finale-wettbewerb-jugend-komponiert/ "aspekteSALZBURG 2020: Finale Wettbewerb Jugend komponiert")
   en:
-    location: Mozarteum, Salzburg
-    instruments: Names Ensemble
+    location: Bösendorfersaal, University Mozarteum Salzburg
+    instruments: |-
+      **Visit only possible with registration!**
+
+      * Anna Lindenbaum, Violin
+      * Jacobo Hernández Enríquez, Violin
+      * Silvija Čiuladytė, Viola
+      * Leo Morello, Violoncello
+
+      [https://www.ticket.re-creation.at/events/aspektesalzburg-2020-finale-wettbewerb-jugend-komponiert/](https://www.ticket.re-creation.at/events/aspektesalzburg-2020-finale-wettbewerb-jugend-komponiert/ "aspekteSALZBURG 2020: Finale Wettbewerb Jugend komponiert")
+  url: ''
 - date: 2020-01-19
   piece: Winter-Quartett
   de:
@@ -31,6 +49,7 @@
       * Robert Olisa Nzekwu - Violin
       * Lena Fankhauser - Viola
       * Melissa Coleman - Violoncello
+  url: ''
 - date: 2019-11-24
   piece: Shape the Future Waltz
   de:
@@ -45,6 +64,7 @@
       - Johanna Hechwartner - Violin
       - Rebekka Rennert - Violoncello
       - Defne Saydam - Piano
+  url: ''
 - date: 2019-07-10
   piece: Atlantic
   de:
@@ -57,6 +77,7 @@
     instruments: |
       - Harald Martin Winkler - Violin
       - Simon Schuller - Piano
+  url: ''
 - date: 2019-06-17
   piece: 7. Jänner
   de:
@@ -67,3 +88,4 @@
     location: Johann Sebastian Bach Musikschule Annual Concert, Vienna Musikverein,
       Glass Hall
     instruments: Four-handed piano Tobias Antonic & Niklas Chroust
+  url: ''
