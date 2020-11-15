@@ -20,11 +20,15 @@
       * Silvija Čiuladytė, Viola
       * Leo Morello, Violoncello
   url: https://www.ticket.re-creation.at/events/aspektesalzburg-2020-finale-wettbewerb-jugend-komponiert/
-- date:
+  time: 1:00
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
+- date: 
   piece: Die Stadtgrenze
   postponed: false
-  dePostponedText:
-  enPostponedText:
+  dePostponedText: ''
+  enPostponedText: ''
   de:
     location: Styriarte, Helmut-List-Halle, Graz
     instruments: Klassisches Bläserquintett
@@ -32,6 +36,7 @@
     location: Styriarte, Helmut-List-Halle, Graz
     instruments: Classical wind quintet
   url: ''
+  time: 
 - date: 2020-01-19
   time: 12-00
   piece: Winter-Quartett
@@ -50,6 +55,9 @@
       * Lena Fankhauser - Viola
       * Melissa Coleman - Violoncello
   url: ''
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
 - date: 2019-11-24
   piece: Shape the Future Waltz
   de:
@@ -65,6 +73,10 @@
       - Rebekka Rennert - Violoncello
       - Defne Saydam - Piano
   url: ''
+  time: 
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
 - date: 2019-07-10
   piece: Atlantic
   de:
@@ -78,6 +90,10 @@
       - Harald Martin Winkler - Violin
       - Simon Schuller - Piano
   url: ''
+  time: 
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
 - date: 2019-06-17
   piece: 7. Jänner
   de:
@@ -89,3 +105,7 @@
       Glass Hall
     instruments: Four-handed piano Tobias Antonic & Niklas Chroust
   url: ''
+  time: 
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
