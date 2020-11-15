@@ -14,13 +14,6 @@ fields:
       export_format: YYYY-MM-DD
       time_format: " "
     default: ''
-  - name: url
-    type: text
-    config:
-      required: false
-    description: optional<br>z.B. <a href="https://example.com" title="https://example.com"
-      target="_blank">https://example.com</a>
-    label: URL
   - name: time
     type: number
     description: optional<br>0 &lt;= t &lt;= 2359
@@ -31,6 +24,13 @@ fields:
       max: 2359
       step: 
     label: Uhrzeit
+  - name: url
+    type: text
+    config:
+      required: false
+    description: optional<br>z.B. <a href="https://example.com" title="https://example.com"
+      target="_blank">https://example.com</a>
+    label: URL
   - type: text
     name: piece
     label: Stück
