@@ -14,6 +14,16 @@ fields:
       export_format: YYYY-MM-DD
       time_format: " "
     default: ''
+  - name: time
+    type: datetime
+    description: optional
+    config:
+      required: false
+      date_format: ''
+      time_format: h:mm A
+      display_utc: false
+      export_format: h:mm
+    label: Uhrzeit
   - name: url
     type: text
     config:
@@ -27,6 +37,27 @@ fields:
     config:
       required: true
     description: Originaltitel
+  - name: postponed
+    type: boolean
+    label: Verschoben
+  - name: dePostponedText
+    type: text
+    config:
+      required: false
+    label: Verschoben (Text, deutsch)
+    description: optional
+    showOnly:
+      field: postponed
+      value: true
+  - name: enPostponedText
+    type: text
+    config:
+      required: false
+    label: Verschoben (Text, englisch)
+    showOnly:
+      field: postponed
+      value: true
+    description: optional
   - type: field_group
     name: de
     fields:
