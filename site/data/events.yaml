@@ -26,9 +26,9 @@
   time: 1400
 - date: 
   piece: Die Stadtgrenze
-  postponed: false
-  dePostponedText: ''
-  enPostponedText: ''
+  postponed: true
+  dePostponedText: Aufgrund von Corona verschoben
+  enPostponedText: Postponed due to Corona
   de:
     location: Styriarte, Helmut-List-Halle, Graz
     instruments: Klassisches Bläserquintett
