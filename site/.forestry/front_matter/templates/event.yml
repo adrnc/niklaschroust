@@ -20,7 +20,7 @@ fields:
     config:
       required: false
       date_format: ''
-      time_format: h:mm
+      time_format: H:mm
       display_utc: false
       export_format: h:mm
     label: Uhrzeit
