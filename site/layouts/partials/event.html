@@ -17,7 +17,13 @@
 							{{ i18n "postponed" }}
 						{{ end }}
 					{{ else }}
-						<time class="events__time" datetime="{{ .date }}">{{ partial "date-format" (dict "lang" $.Lang "date" .date) }}</time>
+						<time class="events__time" datetime="{{ .date }}">
+							{{ if ge .time 0 }}
+								{{ partial "date-format" (dict "lang" $.Lang "date" .date "time" .time) }}
+							{{ else }}
+								{{ partial "date-format" (dict "lang" $.Lang "date" .date) }}
+							{{ end }}
+						</time>
 					{{ end }}{{ if .url }}
 				</a>{{ else }}</span>
 			{{ end }}

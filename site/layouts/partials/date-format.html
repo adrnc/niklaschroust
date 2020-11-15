@@ -1,9 +1,33 @@
 {{ $date := "" }}
+{{ $time := "" }}
 
 {{ if eq .lang "de" }}
 	{{ $date = print (dateFormat "2" .date) ". " (i18n (dateFormat "January" .date | lower)) " " (dateFormat "2006" .date) }}
+	{{ if ne .time nil }}
+		{{ $hour := print (math.Floor (div .time 100)) }}
+		{{ $minutes := mod .time 100 }}
+		{{ if lt $hour 10 }}{{ $hour = print 0 (trim $hour " ") }}{{ end }}
+		{{ if lt $minutes 10 }}{{ $minutes = print 0 (trim $minutes " ") }}{{ end }}
+		{{ $time = print ", " $hour ":" $minutes }}
+	{{ end }}
 {{ else }}
 	{{ $date = dateFormat "2 January 2006" .date }}
+	{{ if ne .time nil }}
+		{{ $hour := int (math.Floor (div .time 100)) }}
+		{{ $minutes := int (mod .time 100) }}
+		{{ $ext := "AM" }}
+		{{ if eq $hour 0 }}
+			{{ $hour = 12 }}
+		{{ else if eq $hour 12 }}
+			{{ $ext = "PM" }}
+		{{ else if gt $hour 12 }}
+			{{ $hour = sub $hour 12 }}
+			{{ $ext = "PM" }}
+		{{ end }}
+		{{ if lt $hour 10 }}{{ $hour = print 0 (trim $hour " ") }}{{ end }}
+		{{ if lt $minutes 10 }}{{ $minutes = print 0 (trim $minutes " ") }}{{ end }}
+		{{ $time = print ", " $hour ":" $minutes " " $ext }}
+	{{ end }}
 {{ end }}
 
-{{ return $date }}
+{{ return (print $date $time) }}
