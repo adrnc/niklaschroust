@@ -44,6 +44,9 @@ fields:
     config:
       required: false
     label: Verschoben (Text, englisch)
+    showOnly:
+      field: postponed
+      value: true
   - type: field_group
     name: de
     fields:
