@@ -7,7 +7,21 @@
 
 	<section class="event{{ if .date }}{{ if gt (now.Format "2006-01-02") $e.date }} event--passed{{ end }}{{ else }} event--delayed{{ end }}">
 		<h2 class="event__piece">{{ if $piece.title }}<a{{ else }}<span{{ end }} class="event__rel"{{ if $piece.title }} href="{{ relref $ "/music" }}#{{ $piece.anchor }}">{{ $piece.title }}{{ else }}>{{ .piece }}{{ end }}{{ if $piece.title }}</a>{{ else }}</span>{{ end }}</h2>
-		<h1 class="event__date">{{ if .url }}<a{{ else }}<span{{ end }} class="event__url"{{ with .url }} href="{{ . }}"{{ end }}>{{ if not .date }}{{ i18n "postponed" }}{{ else }}<time class="events__time" datetime="{{ .date }}">{{ partial "date-format" (dict "lang" $.Lang "date" .date) }}</time>{{ end }}{{ if .url }}</a>{{ else }}</span>{{ end }}</h1>
+		<h1 class="event__date">
+			{{ if .url }}
+				<a{{ else }}<span{{ end }} class="event__url"{{ with .url }} href="{{ . }}"{{ end }}>
+					{{ if or .postponed (not .date) }}
+						{{ if index . (print $.Lang "PostponedText") }}
+							{{ index . (print $.Lang "PostponedText") }}
+						{{ else }}
+							{{ i18n "postponed" }}
+						{{ end }}
+					{{ else }}
+						<time class="events__time" datetime="{{ .date }}">{{ partial "date-format" (dict "lang" $.Lang "date" .date) }}</time>
+					{{ end }}{{ if .url }}
+				</a>{{ else }}</span>
+			{{ end }}
+		</h1>
 		<p class="event__location">{{ $lang.location }}</p>
 		<div class="event__instruments">{{ $lang.instruments | markdownify }}</div>
 	</section>
