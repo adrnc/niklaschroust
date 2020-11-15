@@ -38,7 +38,7 @@
   url: ''
   time: 
 - date: 2020-01-19
-  time: 
+  time: 1100
   piece: Winter-Quartett
   de:
     location: Arnold-Schönberg-Center, Wien
@@ -54,7 +54,7 @@
       * Robert Olisa Nzekwu - Violin
       * Lena Fankhauser - Viola
       * Melissa Coleman - Violoncello
-  url: ''
+  url: https://www.schoenberg.at/index.php/de/veranstaltungen/eventdetail/3044/-/abschlusskonzert-der-3-komponierwerkstatt-fuer-junge-komponist-innen-am-arnold-schoenberg-center
   postponed: false
   dePostponedText: ''
   enPostponedText: ''
