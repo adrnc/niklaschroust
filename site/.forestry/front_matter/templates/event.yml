@@ -47,6 +47,7 @@ fields:
     showOnly:
       field: postponed
       value: true
+    description: optional
   - type: field_group
     name: de
     fields:
