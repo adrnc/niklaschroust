@@ -20,8 +20,8 @@ fields:
     config:
       required: false
       date_format: ''
-      time_format: h:mm A ZZ
-      display_utc: true
+      time_format: h:mm A
+      display_utc: false
       export_format: h:mm
     label: Uhrzeit
   - name: url
