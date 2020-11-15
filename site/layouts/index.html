@@ -13,7 +13,7 @@
 		{{ $events := .Site.Data.events }}
 
 		{{ range $events }}
-			{{ if or (not .date) (lt (now.Format "2006-01-02") .date) }}
+			{{ if or (or (not .date) .postponed) (le (now.Format "2006-01-02") .date) }}
 				{{ partial "event" (dict "page" $ "element" .) }}
 			{{ end }}
 		{{ end }}
