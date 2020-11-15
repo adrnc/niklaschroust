@@ -14,6 +14,16 @@ fields:
       export_format: YYYY-MM-DD
       time_format: " "
     default: ''
+  - name: time
+    type: datetime
+    description: optional
+    config:
+      required: false
+      date_format: ''
+      time_format: h:mm
+      display_utc: false
+      export_format: h:mm
+    label: Uhrzeit
   - name: url
     type: text
     config:
