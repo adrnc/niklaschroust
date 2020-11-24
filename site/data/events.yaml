@@ -1,4 +1,17 @@
 ---
+- date: 
+  piece: Die Stadtgrenze
+  postponed: true
+  dePostponedText: Aufgrund von Corona verschoben
+  enPostponedText: Postponed due to Corona
+  de:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Klassisches Bläserquintett
+  en:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Classical wind quintet
+  url: ''
+  time: 
 - date: 2020-11-15
   piece: Winter-Quartett
   de:
@@ -24,19 +37,6 @@
   dePostponedText: Aufgrund von Corona abgesagt
   enPostponedText: Canceled due to Corona
   time: 1400
-- date: 
-  piece: Die Stadtgrenze
-  postponed: true
-  dePostponedText: Aufgrund von Corona verschoben
-  enPostponedText: Postponed due to Corona
-  de:
-    location: Styriarte, Helmut-List-Halle, Graz
-    instruments: Klassisches Bläserquintett
-  en:
-    location: Styriarte, Helmut-List-Halle, Graz
-    instruments: Classical wind quintet
-  url: ''
-  time: 
 - date: 2020-01-19
   time: 1100
   piece: Winter-Quartett
