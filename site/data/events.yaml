@@ -4,6 +4,8 @@
   de:
     location: Bösendorfersaal, Universität Mozarteum Salzburg
     instruments: |-
+      Konzert konnte aufgrund von der Corona-Pandemie nicht öffentlich abgehalten werden.
+
       * Anna Lindenbaum, Violine
       * Jacobo Hernández Enríquez, Violine
       * Silvija Čiuladytė, Viola
@@ -11,12 +13,14 @@
   en:
     location: Bösendorfersaal, University Mozarteum Salzburg
     instruments: |-
+      The concert could not be held in public due to the corona pandemic.
+
       * Anna Lindenbaum, Violin
       * Jacobo Hernández Enríquez, Violin
       * Silvija Čiuladytė, Viola
       * Leo Morello, Violoncello
   url: https://www.ticket.re-creation.at/events/aspektesalzburg-2020-finale-wettbewerb-jugend-komponiert/
-  postponed: true
+  postponed: false
   dePostponedText: Aufgrund von Corona abgesagt
   enPostponedText: Canceled due to Corona
   time: 1400
