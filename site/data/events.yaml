@@ -1,4 +1,20 @@
 ---
+- date: 2020-12-12
+  time: 
+  url: https://www.bach-musikschule.at/tuer-12-jsbm-adventkalender/
+  piece: 7. Jänner
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
+  de:
+    location: Online Adventskalender
+    instruments: "Tobias Antonic und Niklas A. Chroust spielen _7. Jänner_ von Niklas
+      A. Chroust.  \nTobias und Niklas sind Schüler bei Hans G. Kitzbichler an der
+      JSBM."
+  en:
+    location: Online advent calendar
+    instruments: Tobias Antonic and Niklas A. Chroust play _January 7th_ by Niklas
+      A. Chroust. Tobias and Niklas are students of Hans G. Kitzbichler at the JSBM.
 - date: 
   piece: Die Stadtgrenze
   postponed: true
