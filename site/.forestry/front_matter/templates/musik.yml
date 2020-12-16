@@ -117,7 +117,7 @@ fields:
         max: 
         step: 
         required: true
-    - name: pdfd
+    - name: pdf
       type: text
       config:
         required: false
