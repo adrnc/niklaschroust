@@ -1,4 +1,35 @@
 ---
+- title: Sternbilder - Constellations
+  year: 2020
+  opus: 20
+  pdf: ''
+  audio: ''
+  de:
+    description: Die Sternenbilder sind ein Klavierzyklus mit insgesamt 88 musikalischen
+      Sternenvisionen, wovon 26 derzeit fertig sind. Der Rest ist noch in Bearbeitung.
+    instruments: Klavier
+    title: ''
+  en:
+    description: The star images are a piano cycle with a total of 88 musical star
+      visions, 26 of which are currently finished. The rest is still in progress.
+    instruments: Piano
+    title: ''
+  children:
+  - year: 2020
+    opus: 20
+    pdfd: https://niklas-chroust.imfast.io/pdf/kassiopeia - cassiopeia.pdf
+    audio: https://niklas-chroust.imfast.io/pdf/kassiopeia - cassiopeia.mp3
+    de:
+      instruments: Klavier
+      description: Kassiopeia war in der griechischen Mythologie die Ehefrau Kepheus
+        und von äußerst schöner Gestalt.
+      title: ''
+    en:
+      description: Cassiopeia was the wife of Cepheus in Greek mythology and was of
+        an extremely beautiful figure.
+      instruments: Piano
+      title: ''
+    title: Kassiopeia - Cassiopeia
 - title: Winter-Quartett
   year: 2019
   opus: 13
