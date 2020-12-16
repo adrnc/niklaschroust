@@ -2,7 +2,7 @@
 - title: Sternbilder - Constellations
   year: 2020
   opus: 20
-  pdf: ''
+  pdf: https://niklas-chroust.imfast.io/pdf/Kassiopeia%20-%20Cassiopeia.pdf
   audio: ''
   de:
     description: Die Sternenbilder sind ein Klavierzyklus mit insgesamt 88 musikalischen
@@ -17,7 +17,7 @@
   children:
   - year: 2020
     opus: 20
-    pdfd: https://niklas-chroust.imfast.io/pdf/Kassiopeia%20-%20Cassiopeia.pdf
+    pdfd: ''
     audio: https://niklas-chroust.imfast.io/audio/Kassiopeia - Cassiopeia.mp3
     de:
       instruments: Klavier
