@@ -1,4 +1,17 @@
 ---
+- date: 
+  piece: Die Stadtgrenze
+  postponed: true
+  dePostponedText: Aufgrund von Corona verschoben
+  enPostponedText: Postponed due to Corona
+  de:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Klassisches Bläserquintett
+  en:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Classical wind quintet
+  url: ''
+  time: 
 - date: 2020-12-16
   time: 
   url: https://www.radiocore.at/de/blog/mit-80-wirds-gefaehrlich-139
@@ -18,19 +31,6 @@
       Gerald Schuhfried publishes personal stories or experiences of various personalities on _radioCORE_ that are seldom expressed.
 
       In the issue _From 80 it gets dangerous_ (originally_: Ab 80 wird es gefährlich_), an 82-year-old woman talks about getting older. Niklas A. Chroust composed the music for it, Tobias Antonic played it on the piano.
-- date: 
-  piece: Die Stadtgrenze
-  postponed: true
-  dePostponedText: Aufgrund von Corona verschoben
-  enPostponedText: Postponed due to Corona
-  de:
-    location: Styriarte, Helmut-List-Halle, Graz
-    instruments: Klassisches Bläserquintett
-  en:
-    location: Styriarte, Helmut-List-Halle, Graz
-    instruments: Classical wind quintet
-  url: ''
-  time: 
 - date: 2020-12-12
   time: 
   url: https://www.bach-musikschule.at/tuer-12-jsbm-adventkalender/
