@@ -40,13 +40,14 @@
   enPostponedText: ''
   de:
     location: Online Adventskalender
-    instruments: "Tobias Antonic und Niklas A. Chroust spielen _7. Jänner_ von Niklas
-      A. Chroust.  \nTobias und Niklas sind Schüler bei Hans G. Kitzbichler an der
-      JSBM."
+    instruments: Tobias Antonic und Niklas A. Chroust spielen anlässlich des Online
+      Adventskalender der Johann Sebastian Bach Musikschule _7. Jänner_ von Niklas
+      A. Chroust.
   en:
     location: Online advent calendar
-    instruments: Tobias Antonic and Niklas A. Chroust play _January 7th_ by Niklas
-      A. Chroust. Tobias and Niklas are students of Hans G. Kitzbichler at the JSBM.
+    instruments: Tobias Antonic and Niklas A. Chroust play on the occasion of the
+      online advent calendar of the Johann Sebastian Bach Music School _January 7th_
+      by Niklas A. Chroust.
 - date: 2020-11-15
   piece: Winter-Quartett
   de:
