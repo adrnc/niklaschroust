@@ -12,7 +12,6 @@ fields:
   config:
     maxSize: 64
   label: 404 Bild
-  description: optional
 - type: field_group
   name: sections
   fields:
@@ -21,19 +20,16 @@ fields:
     config:
       maxSize: 64
     label: Start
-    description: optional
   - name: events
     type: file
     config:
       maxSize: 64
     label: Events
-    description: optional
   - name: press
     type: file
     config:
       maxSize: 64
     label: Presse
-    description: optional
   - name: music
     type: file
     config:
@@ -45,19 +41,16 @@ fields:
     config:
       maxSize: 64
     label: Biographie
-    description: optional
   - name: gallery
     type: file
     config:
       maxSize: 64
     label: Galerie
-    description: optional
   - name: contact
     type: file
     config:
       maxSize: 64
     label: Kontakt
-    description: optional
   label: Menüsparten
   description: Die Bilder sollten nicht größer als 2MB sein!
 pages:
