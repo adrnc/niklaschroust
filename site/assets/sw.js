@@ -10,7 +10,7 @@ self.addEventListener('fetch', event => {
 			if (response.ok && response.status == 200) {
 				const url = new URL(response.url);
 				if (location.origin == url.origin && /^\/(js|css)\//g.test(url.pathname)) {
-					const cache = caches.open('app');
+					const cache = await caches.open('app');
 					cache.put(event.request, response.clone());
 				}
 			}
