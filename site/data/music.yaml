@@ -30,12 +30,12 @@
         an extremely beautiful figure.
       instruments: Piano
       title: ''
-    pdf: https://niklas-chroust.imfast.io/pdf/Kassiopeia%20-%20Cassiopeia.pdf
+    pdf:
 - title: Winter-Quartett
   year: 2019
   opus: 13
-  pdf: https://niklas-chroust.imfast.io/pdf/winter-quartett.pdf
-  audio: https://niklas-chroust.imfast.io/audio/winter-quartett.mp3
+  pdf:
+  audio:
   de:
     instruments: Violine, Violine, Viola, Violoncello
     description: |
@@ -67,8 +67,8 @@
 - title: Shape the Future Waltz
   year: 2019
   opus: 11
-  pdf: https://niklas-chroust.imfast.io/pdf/shape-the-future-waltz.pdf
-  audio: https://niklas-chroust.imfast.io/audio/shape-the-future-waltz.mp3
+  pdf:
+  audio:
   de:
     instruments: Violine, Violoncello, Klavier
     description: |
@@ -92,8 +92,8 @@
 - title: Atlantic
   year: 2018
   opus: 8.17
-  pdf: https://niklas-chroust.imfast.io/pdf/atlantic.pdf
-  audio: https://niklas-chroust.imfast.io/audio/atlantic.mp3
+  pdf:
+  audio:
   de:
     instruments: Violine, Klavier
     description: |
@@ -166,8 +166,8 @@
 - title: 7. Jänner
   year: 2018
   opus: 4
-  pdf: https://niklas-chroust.imfast.io/pdf/7-jaenner.pdf
-  audio: https://niklas-chroust.imfast.io/audio/7-jaenner.mp3
+  pdf:
+  audio:
   de:
     instruments: 4-händiges Klavier
     description: |

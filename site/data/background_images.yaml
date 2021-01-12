@@ -1,6 +1,6 @@
 ---
 '404': "uploads/images/404.jpg"
-default: "images/background/default.jpg"
+default: "uploads/images/default.jpg"
 sections:
   home: ''
   events: "uploads/images/events.jpg"
