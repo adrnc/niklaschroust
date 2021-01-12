@@ -52,6 +52,8 @@
 [skiptocontent]
 	other = 'Skip to content'
 
+[link]
+	other = 'Link'
 
 # Months
 

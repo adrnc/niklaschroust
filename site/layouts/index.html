@@ -2,11 +2,13 @@
 	{{ index .Site.Data.home .Lang | markdownify }}
 	{{ with .Site.Data.home.image	}}
 		{{ $image := resources.Get . }}
-		{{ $image = $image.Resize "x400" }}
-		<button class="profile-picture js-profile-picture">
-			<img class="profile-picture__image" src="{{ $image.RelPermalink }}" title="{{ $.Site.Data.contact.name }}" alt="{{ $.Site.Data.contact.name }}">
-			<span class="profile-picture__text">{{ $.Site.Data.contact.name }}</span>
-		</button>
+		{{ if $image }}
+			{{ $image = $image.Resize "x400" }}
+			<button class="profile-picture js-profile-picture">
+				<img class="profile-picture__image" src="{{ $image.RelPermalink }}" title="{{ $.Site.Data.contact.name }}" alt="{{ $.Site.Data.contact.name }}">
+				<span class="profile-picture__text">{{ $.Site.Data.contact.name }}</span>
+			</button>
+		{{ end }}
 	{{ end }}
 
 	<div class="item-list">

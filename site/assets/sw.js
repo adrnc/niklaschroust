@@ -6,8 +6,9 @@ self.addEventListener('fetch', event => {
 			const cache = await caches.match(event.request);
 			if (cache) return cache;
 
+			const url = new URL(event.request);
 			const response = await fetch(event.request);
-			if (response.ok && response.status == 200 && /^https?:\/\/[^\/]+\/(js|css)\//g.test(response.url)) {
+			if (location.origin == url.origin && response.ok && response.status == 200 && /^\/(js|css)\//g.test(url.pathname)) {
 				(await caches.open('app')).put(event.request, response.clone());
 			}
 			return response;

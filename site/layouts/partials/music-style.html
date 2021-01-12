@@ -4,6 +4,7 @@
 		padding: 2rem;
 		margin-top: 1.5rem;
 		border-left: 1rem solid rgba(255, 255, 255, 0.05);
+		position: relative;
 	}
 
 	.music:first-child {margin-top: 0;}
@@ -126,5 +127,18 @@
 
 	.music__readmore:hover {
 		transform: scale(1.05);
+	}
+
+	.music__anchor:link {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0 0.8rem;
+		box-shadow: none;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	.music:target > .music__anchor:link {
+		color: var(--color1);
 	}
 </style>

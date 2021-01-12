@@ -32,8 +32,8 @@
 	{{ $background = . }}
 {{ end }}
 
-{{ if $background }}
-	{{ $backgroundImage := resources.Get $background }}
+{{ $backgroundImage := resources.Get $background }}
+{{ if $backgroundImage }}
 	{{ $backgroundImage = $backgroundImage.Resize "x1080" }}
 
 	<link rel="preload" as="image" href="{{ $backgroundImage.RelPermalink }}">
