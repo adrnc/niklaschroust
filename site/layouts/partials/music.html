@@ -10,10 +10,8 @@
 		<p class="music__instruments">{{ $lang.instruments }}</p>
 		<div class="music__description js-description">{{ $lang.description | markdownify }}</div>
 		<ul class="music__view">
-			<!--
 			{{ with .audio }}<li class="music__view-item"><a class="music__view-link js-audio" target="_blank" href="{{ . }}" rel="noreferrer">{{ i18n "listen" }}</a></li>{{ end }}
 			{{ with .pdf }}<li class="music__view-item"><a class="music__view-link" target="_blank" href="{{ . }}" rel="noreferrer">{{ i18n "view" }}</a></li>{{ end }}
-			-->
 			<li class="music__view-item music__view-item--hidden"><button class="music__readmore js-readmore">{{ i18n "readmore" }}</button></li>
 		</ul>
 		{{ with .children }}
