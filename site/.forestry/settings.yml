@@ -44,8 +44,8 @@ sections:
 - type: document
   path: site/data/background_images.yaml
   label: Hintergrundbilder
-upload_dir: static/uploads/forestry
-public_path: "/uploads/forestry"
+upload_dir: assets/uploads
+public_path: uploads
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
