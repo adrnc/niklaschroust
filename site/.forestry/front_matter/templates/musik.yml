@@ -34,12 +34,11 @@ fields:
       step: 
       required: true
   - name: pdf
-    type: text
+    type: file
     config:
-      required: false
+      maxSize: 64
     label: PDF
-    description: optional<br>z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
-      target="_blank">https://example.com/datei.txt</a>
+    description: optional
   - name: audio
     type: text
     config:
@@ -118,12 +117,11 @@ fields:
         step: 
         required: true
     - name: pdf
-      type: text
+      type: file
       config:
-        required: false
+        maxSize: 64
+      description: optional
       label: PDF
-      description: URL (z.B. <a href="https://example.com/datei.txt" title="https://example.com/datei.txt"
-        target="_blank">https://example.com/datei.txt</a>)
     - name: audio
       type: text
       config:
