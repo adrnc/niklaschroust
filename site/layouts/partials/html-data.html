@@ -29,8 +29,11 @@
 
 {{ $background := index .Site.Data.background_images (cond (eq .Kind "404") "404" "default") }}
 {{ with index .Site.Data.background_images.sections .Section }}{{ $background = . }}{{ end }}
-<link rel="preload" as="image" href="{{ $background }}">
 
+{{ $backgroundImage := resources.Get $background }}
+{{ $backgroundImage = $backgroundImage.Resize "x1080" }}
+
+<link rel="preload" as="image" href="{{ $backgroundImage.RelPermalink }}">
 <style>
-	.page::before {--url: url({{ $background | safeCSS }});}
+	.page::before {--url: url({{ $backgroundImage.RelPermalink | safeCSS }});}
 </style>

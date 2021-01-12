@@ -1,8 +1,10 @@
 {{ define "main" }}
 	<div class="gallery">
 		{{ range .Site.Data.gallery -}}
+			{{ $image := resources.Get .url }}
+			{{ $image = $image.Resize "x400px" }}
 			<button class="gallery__image">{{ print -}}
-				<img class="gallery__image-view" src="{{ .url }}" alt="{{ index . $.Lang }}" loading="lazy">{{ print -}}
+				<img class="gallery__image-view" src="{{ $image.RelPermalink }}" alt="{{ index . $.Lang }}" loading="lazy">{{ print -}}
 				<span class="gallery__image-text" aria-hidden="true">{{ index . $.Lang }}</span>{{ print -}}
 			</button>
 		{{- end }}

@@ -1,11 +1,11 @@
 ---
-'404': "/background-images/404.jpg"
-default: "/background-images/default.jpg"
+'404': "uploads/images/404.jpg"
+default: "images/background/default.jpg"
 sections:
   home: ''
-  events: "/background-images/events.jpg"
-  press: "/background-images/press.jpg"
-  music: "/background-images/music.jpg"
-  biography: "/background-images/biography.jpg"
-  gallery: "/background-images/gallery.jpg"
-  contact: "/background-images/contact.jpg"
+  events: "uploads/images/events.jpg"
+  press: "uploads/images/press.jpg"
+  music: "uploads/images/music.jpg"
+  biography: "uploads/images/biography.jpg"
+  gallery: "uploads/images/gallery.jpg"
+  contact: "uploads/images/contact.jpg"
