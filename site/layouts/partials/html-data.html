@@ -27,13 +27,17 @@
 	{{- end -}}
 ">
 
-{{ $background := index .Site.Data.background_images (cond (eq .Kind "404") "404" "default") }}
-{{ with index .Site.Data.background_images.sections .Section }}{{ $background = . }}{{ end }}
+{{ $background := .Site.Data.background_images.default }}
+{{ with cond (eq .Kind "404") (index .Site.Data.background_images "404") (index .Site.Data.background_images.sections (cond (eq .Kind "home") "home" .Section)) }}
+	{{ $background = . }}
+{{ end }}
 
-{{ $backgroundImage := resources.Get $background }}
-{{ $backgroundImage = $backgroundImage.Resize "x1080" }}
+{{ if $background }}
+	{{ $backgroundImage := resources.Get $background }}
+	{{ $backgroundImage = $backgroundImage.Resize "x1080" }}
 
-<link rel="preload" as="image" href="{{ $backgroundImage.RelPermalink }}">
-<style>
-	.page::before {--url: url({{ $backgroundImage.RelPermalink | safeCSS }});}
-</style>
+	<link rel="preload" as="image" href="{{ $backgroundImage.RelPermalink }}">
+	<style>
+		.page::before {--url: url({{ $backgroundImage.RelPermalink | safeCSS }});}
+	</style>
+{{ end }}
