@@ -7,9 +7,12 @@ self.addEventListener('fetch', event => {
 			if (cache) return cache;
 
 			const response = await fetch(event.request);
-			const url = new URL(response.url);
-			if (location.origin == url.origin && response.ok && response.status == 200 && /^\/(js|css)\//g.test(url.pathname)) {
-				(await caches.open('app')).put(event.request, response.clone());
+			if (response.ok && response.status == 200) {
+				const url = new URL(response.url);
+				if (location.origin == url.origin && /^\/(js|css)\//g.test(url.pathname)) {
+					const cache = caches.open('app');
+					cache.put(event.request, response.clone());
+				}
 			}
 			return response;
 		})()
