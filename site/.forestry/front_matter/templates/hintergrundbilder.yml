@@ -2,6 +2,9 @@
 label: Hintergrundbilder
 hide_body: true
 fields:
+- name: blurLayout
+  type: boolean
+  label: Layout Blur
 - name: default
   type: file
   config:
