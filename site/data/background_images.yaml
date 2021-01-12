@@ -1,4 +1,5 @@
 ---
+blurBackground: true
 '404': "uploads/images/404.jpg"
 default: "uploads/images/default.jpg"
 sections:
