@@ -3,7 +3,7 @@
   year: 2020
   opus: 20
   pdf: uploads/kassiopeia-cassiopeia.pdf
-  audio: https://res.cloudinary.com/dpbvsmzby/video/upload/v1610478809/Audio/Kassiopeia%20-%20Cassiopeia.mp3
+  audio: ''
   de:
     description: Die Sternenbilder sind ein Klavierzyklus mit insgesamt 88 musikalischen
       Sternenvisionen, wovon 26 derzeit fertig sind. Der Rest ist noch in Bearbeitung.
@@ -19,7 +19,7 @@
     year: 2020
     opus: 20
     pdfd: https://niklas-chroust.imfast.io/pdf/Kassiopeia%20-%20Cassiopeia.pdf
-    audio: ''
+    audio: https://res.cloudinary.com/dpbvsmzby/video/upload/v1610478809/Audio/Kassiopeia%20-%20Cassiopeia.mp3
     de:
       description: Kassiopeia war in der griechischen Mythologie die Ehefrau Kepheus
         und von äußerst schöner Gestalt.
