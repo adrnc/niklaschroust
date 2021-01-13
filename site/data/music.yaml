@@ -35,7 +35,7 @@
   year: 2019
   opus: 13
   pdf: uploads/winter-quartett.pdf
-  audio: ''
+  audio: https://res.cloudinary.com/dpbvsmzby/video/upload/v1610478816/Audio/Winter-Quartett.mp3
   de:
     instruments: Violine, Violine, Viola, Violoncello
     description: |
@@ -68,7 +68,7 @@
   year: 2019
   opus: 11
   pdf: uploads/shape-the-future-waltz-opus-11.pdf
-  audio: ''
+  audio: https://res.cloudinary.com/dpbvsmzby/video/upload/v1610478813/Audio/Shape%20The%20Future-Waltz.mp3
   de:
     instruments: Violine, Violoncello, Klavier
     description: |
