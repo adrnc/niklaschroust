@@ -1,5 +1,5 @@
 self.addEventListener('install', event => {
-	event.respondWith(
+	event.waitUntil(
 		caches.delete('app')
 	);
 });
