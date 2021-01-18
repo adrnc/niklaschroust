@@ -1,4 +1,10 @@
-"{{ now }}"; // hugo template
+self.addEventListener('install', event => {
+	event.respondWith(
+		caches.delete('app')
+	);
+});
+
+/*
 
 self.addEventListener('fetch', event => {
 	event.respondWith(
@@ -18,3 +24,5 @@ self.addEventListener('fetch', event => {
 		})()
 	);
 });
+
+*/
