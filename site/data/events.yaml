@@ -7,7 +7,7 @@
   dePostponedText: ''
   enPostponedText: ''
   de:
-    location: Stream
+    location: Live-Stream
     instruments: |-
       Das Konzert wird aufgrund der Corona-Pandemie nur via Stream stattfinden können. Der Link zum Stream wird noch bekanntgegeben werden.
 
@@ -17,7 +17,7 @@
       Due to the corona pandemic, the concert will only be able to take place via stream. The link to the stream will be announced later.
 
       A piece for flute, clarinet in Bb & piano.
-    location: Stream
+    location: Live-Stream
 - date: 
   piece: Die Stadtgrenze
   postponed: true
