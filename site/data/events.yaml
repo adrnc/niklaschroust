@@ -1,4 +1,23 @@
 ---
+- date: 2021-03-06
+  time: 
+  url: https://www.komponistenbund.at/jugend-komponiert-finalistinnen-2021/
+  piece: Sommernächte
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
+  de:
+    location: Stream
+    instruments: |-
+      Das Konzert wird aufgrund der Corona-Pandemie nur via Stream stattfinden können.
+
+      Ein Stück für Querflöte, Klarinette in B & Klavier.
+  en:
+    instruments: |-
+      Due to the corona pandemic, the concert will only be able to take place via stream.
+
+      A piece for flute, clarinet in Bb & piano.
+    location: Stream
 - date: 
   piece: Die Stadtgrenze
   postponed: true
