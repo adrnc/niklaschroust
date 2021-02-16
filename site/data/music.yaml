@@ -1,4 +1,50 @@
 ---
+- title: Die Nacht - für Bläserquintett
+  year: 2020
+  opus: 17
+  audio: ''
+  de:
+    title: ''
+    instruments: Querflöte, Oboe, Klarinette in B, Horn in F, Fagott
+    description: "Die Nacht ist ein Ort der Träumerei. Manche Leute finden ihre aufregendsten
+      Gedanken im Schlaf, andere verarbeiten eine scheinbar einfache Alltagssituation.
+      Doch im Schlaf steckt mehr als eine Welt der Träume. Eine Welt eröffnet sich
+      für Wesen, die in der echten Welt nicht existieren. Unwirkliche Situationen
+      geschehen und gehen vorüber. Um jedoch in die Tiefe der Nacht einzutauchen,
+      braucht es mehr als einen Augenblick oder einen Moment der Träumerei. Es braucht
+      eine gewisse Zeit, um sich auf die Situation einzulassen, und die Träumerei
+      wirkt bis in den Morgen auf das aktive Bewusstsein nach.\n\nDer Zyklus folgt
+      der literarischen Form Terzine. Der erste Satz besteht aus den Teilen A-B-A,
+      der zweite aus B-C-B, der dritte aus C-D-C, der vierte aus D-E-D und der letzte
+      aus E-A-E-A.  "
+  en:
+    instruments: flute, oboe, clarinet in Bb, horn in F, bassoon
+    title: ''
+    description: |-
+      The night is a place of reverie. Some people find their most exciting thoughts in their sleep, others deal with a seemingly simple everyday situation. But there is more to sleep than a world of dreams. A world opens up to beings who do not exist in the real world. Unreal situations happen and pass. However, to plunge into the depths of the night it takes more than a moment or a moment of reverie. It takes a certain amount of time to get involved in the situation, and the daydreaming affects the active consciousness well into the morning.
+
+      The cycle follows the literary form terzine. The first movement consists of parts A-B-A, the second from B-C-B, the third from C-D-C, the fourth from D-E-D and the last from E-A-E-A.
+  pdf: ''
+  children:
+  - title: 'Das Schiff am Meer '
+    year: 2020
+    opus: 17
+    pdf: uploads/das-schiff-am-meer.pdf
+    audio: https://res.cloudinary.com/dpbvsmzby/video/upload/v1613505928/Audio/Das_Schiff_am_Meer_yvf5al.mp3
+    de:
+      instruments: Querflöte, Oboe, Klarinette in B, Horn in F, Fagott
+      description: |-
+        Das Schiff am Meer, das schon weit in den Atlantik gestochen ist. Am Schiff ist es, ähnlich wie in der Stadt, sehr aktiv und sehr viele Menschen konsumieren Luxusgüter wie Casino oder teure Restaurants, es fühlt sich weniger wie ein Schiff, eher wie eine Kleinstadt mit lauter Persönlichkeiten an. Es scheint als ob jeder jeden schon sein ganzes Leben kennt. Selten, aber manchmal spürt man eine größer Welle, die durch das Schiff gebrochen wird.
+
+        Die Wellen draußen sind typisch und entsprechen vieler Vorstellung, bewegt aber nicht wild, schön aber nicht geheuer, hoch aber nicht angsteinflößend.
+      title: ''
+    en:
+      title: The Ship by the Sea
+      instruments: flute, oboe, clarinet in Bb, horn in F, bassoon
+      description: |-
+        The ship by the sea that has already plunged far into the Atlantic. It is very active on the ship, just like in the city, and a lot of people consume luxury goods such as casinos or expensive restaurants, it feels less like a ship, more like a small town with lots of personalities. It seems like everyone has known everyone their whole life. Rarely, but sometimes you can feel a bigger wave breaking through the ship.
+
+        The waves outside are typical and correspond to many imaginations, not moving wild, beautiful but not at ease, high but not scary.
 - title: Sternbilder - Astra
   year: 2020
   opus: 20
