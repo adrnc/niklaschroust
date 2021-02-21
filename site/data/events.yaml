@@ -1,5 +1,5 @@
 ---
-- date: 2021-03-06
+- date: 2021-04-02
   time: 1400
   url: https://www.komponistenbund.at/jugend-komponiert-finalistinnen-2021/
   piece: Sommernächte
@@ -18,7 +18,7 @@
 
       A piece for flute, clarinet in Bb & piano.
     location: Live-Stream
-- date: 
+- date:
   piece: Die Stadtgrenze
   postponed: true
   dePostponedText: Aufgrund von Corona verschoben
@@ -30,9 +30,9 @@
     location: Styriarte, Helmut-List-Halle, Graz
     instruments: Classical wind quintet
   url: ''
-  time: 
+  time:
 - date: 2020-12-16
-  time: 
+  time:
   url: https://www.radiocore.at/de/blog/mit-80-wirds-gefaehrlich-139
   piece: Kassiopeia - Cassiopeia
   de:
@@ -51,7 +51,7 @@
 
       In the issue _From 80 it gets dangerous_ (originally_: Ab 80 wird es gefährlich_), an 82-year-old woman talks about getting older. Niklas A. Chroust composed the music for it, Tobias Antonic played it on the piano.
 - date: 2020-12-12
-  time: 
+  time:
   url: https://www.bach-musikschule.at/tuer-12-jsbm-adventkalender/
   piece: 7. Jänner
   postponed: false
@@ -93,7 +93,7 @@
   enPostponedText: Canceled due to Corona
   time: 1400
 - date: 2020-03-30
-  time: 
+  time:
   url: https://oe1.orf.at/ugcsubmission/view/6a01b2fa-994c-4eb1-878a-308a5d69ae49/Das-Schiff-am-Meer
   piece: Das Schiff am Meer
   postponed: false

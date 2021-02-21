@@ -6,11 +6,18 @@
 	<section class="music js-music" id="{{ $piece.anchor }}">
 		{{ if ne $piece.title .title }}<h2 class="music__original-title">{{ .title }}</h2>{{ end }}
 		<h1 class="music__title">{{ $piece.title }}</h1>
-		<h3 class="music__additional">{{ .year }}, {{ i18n "opus" }} {{ .opus }}</h3>
-		<p class="music__instruments">{{ $lang.instruments }}</p>
+		{{ if or .year .opus }}
+			<h3 class="music__additional">
+				{{ if .year }}{{ .year }}{{ end }}{{ if and .year .opus }}, {{ end }}{{ if .opus }}{{ i18n "opus" }} {{ .opus }}{{ end }}</h3>
+		{{ end }}
+		{{ if $lang.instruments }}
+			<p class="music__instruments">{{ $lang.instruments }}</p>
+		{{ end }}
 		<div class="music__description js-description">{{ $lang.description | markdownify }}</div>
 		<ul class="music__view">
-			{{ with .audio }}<li class="music__view-item"><a class="music__view-link js-audio" target="_blank" href="{{ . }}" rel="noreferrer">{{ i18n "listen" }}</a></li>{{ end }}
+			{{ with .audio }}
+				<li class="music__view-item"><a class="music__view-link js-audio" target="_blank" href="{{ . }}" rel="noreferrer">{{ i18n "listen" }}</a></li>
+			{{ end }}
 			{{ with .pdf }}
 				{{ $pdfUrl := (resources.Get .).RelPermalink }}
 				<li class="music__view-item"><a class="music__view-link" target="_blank" href="{{ $pdfUrl }}" rel="noreferrer">{{ i18n "view" }}</a></li>
