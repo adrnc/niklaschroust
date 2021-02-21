@@ -21,7 +21,7 @@ fields:
       min: 
       max: 
       step: 
-      required: true
+      required: false
   - name: opus
     type: number
     label: Opus
@@ -32,7 +32,7 @@ fields:
       min: 
       max: 
       step: 
-      required: true
+      required: false
   - name: pdf
     type: file
     config:
@@ -65,7 +65,7 @@ fields:
         wysiwyg: true
         schema:
           format: markdown
-        required: true
+        required: false
     label: Informationen (deutsch)
   - type: field_group
     name: en
@@ -84,7 +84,7 @@ fields:
         wysiwyg: true
         schema:
           format: markdown
-        required: true
+        required: false
     label: Informationen (englisch)
   - name: children
     type: field_group_list
@@ -103,7 +103,7 @@ fields:
         min: 
         max: 
         step: 
-        required: true
+        required: false
       label: Jahr
     - name: opus
       type: number
@@ -115,7 +115,7 @@ fields:
         min: 
         max: 
         step: 
-        required: true
+        required: false
     - name: pdf
       type: file
       config:
@@ -142,13 +142,13 @@ fields:
       - name: instruments
         type: text
         config:
-          required: true
+          required: false
         label: Instrumente
       - name: description
         type: textarea
         default: ''
         config:
-          required: true
+          required: false
           wysiwyg: true
           schema:
             format: markdown
@@ -167,13 +167,13 @@ fields:
       - name: instruments
         type: text
         config:
-          required: true
+          required: false
         label: Instrumente
       - name: description
         type: textarea
         default: ''
         config:
-          required: true
+          required: false
           wysiwyg: true
           schema:
             format: markdown
