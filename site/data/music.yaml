@@ -13,7 +13,7 @@
     description: The star images are a piano cycle with a total of 88 musical star
       visions, 26 of which are currently finished. The rest is still in progress.
     instruments: Piano
-    title: ''
+    title: Constellations - Astra
   children:
   - title: Kassiopeia - Cassiopeia
     year: 
@@ -59,12 +59,12 @@
   pdf: ''
   children:
   - title: 'Das Schiff am Meer '
-    year: 2020
-    opus: 17
+    year: 
+    opus: 
     pdf: uploads/das-schiff-am-meer.pdf
     audio: https://res.cloudinary.com/dpbvsmzby/video/upload/v1613505928/Audio/Das_Schiff_am_Meer.mp3
     de:
-      instruments: Querflöte, Oboe, Klarinette in B, Horn in F, Fagott
+      instruments: ''
       description: |-
         Das Schiff am Meer, das schon weit in den Atlantik gestochen ist. Am Schiff ist es, ähnlich wie in der Stadt, sehr aktiv und sehr viele Menschen konsumieren Luxusgüter wie Casino oder teure Restaurants, es fühlt sich weniger wie ein Schiff, eher wie eine Kleinstadt mit lauter Persönlichkeiten an. Es scheint als ob jeder jeden schon sein ganzes Leben kennt. Selten, aber manchmal spürt man eine größer Welle, die durch das Schiff gebrochen wird.
 
@@ -72,7 +72,7 @@
       title: ''
     en:
       title: The Ship by the Sea
-      instruments: flute, oboe, clarinet in Bb, horn in F, bassoon
+      instruments: ''
       description: |-
         The ship by the sea that has already plunged far into the Atlantic. It is very active on the ship, just like in the city, and a lot of people consume luxury goods such as casinos or expensive restaurants, it feels less like a ship, more like a small town with lots of personalities. It seems like everyone has known everyone their whole life. Rarely, but sometimes you can feel a bigger wave breaking through the ship.
 
