@@ -16,19 +16,19 @@
     title: ''
   children:
   - title: Kassiopeia - Cassiopeia
-    year: 2020
-    opus: 20
+    year: 
+    opus: 
     pdfd: https://niklas-chroust.imfast.io/pdf/Kassiopeia%20-%20Cassiopeia.pdf
     audio: https://res.cloudinary.com/dpbvsmzby/video/upload/v1610478809/Audio/Kassiopeia%20-%20Cassiopeia.mp3
     de:
       description: Kassiopeia war in der griechischen Mythologie die Ehefrau Kepheus
         und von äußerst schöner Gestalt.
-      instruments: Klavier
+      instruments: ''
       title: ''
     en:
       description: Cassiopeia was the wife of Cepheus in Greek mythology and was of
         an extremely beautiful figure.
-      instruments: Piano
+      instruments: ''
       title: ''
     pdf: uploads/kassiopeia-cassiopeia.pdf
 - title: Fünf Terzinen für Schwärmer
@@ -58,7 +58,7 @@
       The cycle follows the literary form terzine. The first movement consists of parts A-B-A, the second from B-C-B, the third from C-D-C, the fourth from D-E-D and the last from E-A-E-A.
   pdf: ''
   children:
-  - title: 'Das Schiff am Meer'
+  - title: 'Das Schiff am Meer '
     year: 2020
     opus: 17
     pdf: uploads/das-schiff-am-meer.pdf
