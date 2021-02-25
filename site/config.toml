@@ -13,6 +13,19 @@ googleAnalytics = 'UA-170179785-1'
 	middlename = 'Alexander'
 	surname = 'Chroust'
 
+	[params.details]
+		picturesContact = 'Ella Chroust'
+		webdesignContact = 'Adrian Chroust'
+
+		sourceCode = 'Github'
+		sourceCodeURL = 'https://github.com/adrnc/niklaschroust'
+
+		host = 'Netlify'
+		hostURL = 'https://www.netlify.com/'
+
+		contentManagement = 'Forestry'
+		contentManagementURL = 'https://forestry.io/'
+
 [languages]
 	[languages.de]
 		weight = 1

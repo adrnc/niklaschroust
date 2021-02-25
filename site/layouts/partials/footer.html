@@ -1,5 +1,5 @@
-{{ $pictures := "Ella Chroust" }}
-{{ $webdesign := "Adrian Chroust" }}
+{{ $pictures := .Site.Params.details.picturesContact }}
+{{ $webdesign := .Site.Params.details.webdesignContact }}
 
 {{ $pictures_website := "" }}
 {{ $webdesign_website := "" }}
@@ -15,11 +15,13 @@
 			<br>
 			{{ i18n "webdesign-by" }} {{ with $webdesign_website }}<a{{ else }}<span{{ end }} class="footer__link"{{ with $webdesign_website }} href="{{ . }}"{{ end }}>{{ $webdesign }}{{ with $webdesign_website }}</a>{{ else }}</span>{{ end }}
 		</p>
-		<p class="footer__further-info">
-			<a class="footer__link" href="https://github.com/adrnc/niklaschroust">Github</a>
-			⋅
-			<a class="footer__link" href="https://www.netlify.com/">Netlify</a>
-			⋅
-			<a class="footer__link" href="https://forestry.io/">Forestry</a>
-		</p>
+		{{ with .Site.Params.details }}
+			<p class="footer__further-info">
+				{{ if .sourceCode }}<a class="footer__link" href="{{ .sourceCodeURL }}">{{ .sourceCode }}</a>{{ end }}
+				{{ if and .sourceCode (or .host .contentManagement) }}⋅{{ end }}
+				{{ if .host }}<a class="footer__link" href="{{ .hostURL }}">{{ .host }}</a>{{ end }}
+				{{ if and .host .contentManagement }}⋅{{ end }}
+				{{ if .contentManagement }}<a class="footer__link" href="{{ .contentManagementURL }}">{{ .contentManagement }}</a>{{ end }}
+			</p>
+		{{ end }}
 </footer>
