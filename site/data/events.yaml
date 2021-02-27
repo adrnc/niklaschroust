@@ -1,4 +1,28 @@
 ---
+- date: 2021-02-27
+  time: 
+  url: https://www.radiocore.at/de/blog/another-world-141
+  piece: Erste kleine Moment
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
+  de:
+    location: Online Podcast
+    instruments: "Gerald Schuhfried veröffentlicht auf _radioCORE_ persönliche Geschichten
+      oder Erfahrungen von diversen Persönlichkeiten, die selten ausgesprochen werden.\n\nIn
+      der Ausgabe _Another World_ spricht eine Niederländerin über ihre Aktivitäten
+      als Entwicklungshelferin in Indien, den Philippinen oder Nigeria. Niklas A.
+      Chroust komponierte die Musik dazu. \n\n* Tobias Antonic - Altsaxophon\n* Niklas
+      A. Chroust - Klavier"
+  en:
+    instruments: |-
+      Gerald Schuhfried publishes personal stories or experiences of various personalities on _radioCORE_ that are seldom expressed.
+
+      In the issue _Another World_, a Dutch woman speaks about her activities as a development worker in India, the Philippines and Nigeria. Niklas A. Chroust composed the music for it.
+
+      * Tobias Antonic - Alto Saxophone
+      * Niklas A. Chroust - Piano
+    location: Online Podcast
 - date: 2021-03-06
   time: 1400
   url: https://aspekte-salzburg.com/konzert/aspektesalzburg-finale-wettbewerb-jugend-komponiert/
@@ -57,7 +81,7 @@
     instruments: |-
       Gerald Schuhfried publishes personal stories or experiences of various personalities on _radioCORE_ that are seldom expressed.
 
-      In the issue _From 80 it gets dangerous_ (originally_: Ab 80 wird es gefährlich_), an 82-year-old woman talks about getting older. Niklas A. Chroust composed the music for it, Tobias Antonic played it on the piano.
+      In the issue _From 80 it gets dangerous_ (originally: Ab 80 wird es gefährlich), an 82-year-old woman talks about getting older. Niklas A. Chroust composed the music for it, Tobias Antonic played it on the piano.
 - date: 2020-12-12
   time: 
   url: https://www.bach-musikschule.at/tuer-12-jsbm-adventkalender/
