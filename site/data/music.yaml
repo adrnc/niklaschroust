@@ -31,6 +31,42 @@
       instruments: ''
       title: ''
     pdf: uploads/kassiopeia-cassiopeia.pdf
+- title: Fünf kleine Momente
+  year: 2020
+  opus: 19
+  pdf: ''
+  audio: ''
+  de:
+    description: |-
+      Der Zyklus "Fünf kleine Momente" beschreibt fünf kleine, fast schon unbedeutende Szenen, die leicht in Vergessenheit geraten können.
+
+      Zurzeit ist nur der "Erste kleine Moment" veröffentlicht worden.
+    instruments: Altsaxophon, Klavier
+    title: ''
+  en:
+    description: |-
+      The cycle "Five Little Moments" describes five little, almost insignificant scenes that can easily be forgotten.
+
+      At the moment only the "First Little Moment" has been published.
+    instruments: Alto Saxophone, Piano
+    title: Five Little Moments
+  children:
+  - title: Erste kleine Moment
+    year: 
+    opus: 
+    pdf: uploads/erste-kleine-moment.pdf
+    audio: https://res.cloudinary.com/dpbvsmzby/video/upload/v1614412992/Audio/Erste_kleine_Moment.mp3
+    de:
+      description: 'Der erste Moment beschreibt einen sehr schwachen Nieselregen über
+        einer Stadt. Die Stimmung ist recht düster, doch hin und wieder scheint die
+        Sonne durch. '
+      title: ''
+      instruments: ''
+    en:
+      title: First Little Moment
+      instruments: ''
+      description: The first moment describes a very light drizzle over a city. The
+        mood is quite gloomy, but sometimes the sun shines through.
 - title: Fünf Terzinen für Schwärmer
   year: 2020
   opus: 17
