@@ -26,6 +26,19 @@
       * Ferdinand Steiner - clarinet
       * Per Rundberg - piano
     location: Live-Stream
+- date: 
+  piece: Die Stadtgrenze
+  postponed: true
+  dePostponedText: Aufgrund von Corona verschoben
+  enPostponedText: Postponed due to Corona
+  de:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Klassisches Bläserquintett
+  en:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Classical wind quintet
+  url: ''
+  time: 
 - date: 2021-02-27
   time: 
   url: https://www.radiocore.at/de/blog/another-world-141
@@ -50,19 +63,6 @@
       * Tobias Antonic - Alto Saxophone
       * Niklas A. Chroust - Piano
     location: Online Podcast
-- date: 
-  piece: Die Stadtgrenze
-  postponed: true
-  dePostponedText: Aufgrund von Corona verschoben
-  enPostponedText: Postponed due to Corona
-  de:
-    location: Styriarte, Helmut-List-Halle, Graz
-    instruments: Klassisches Bläserquintett
-  en:
-    location: Styriarte, Helmut-List-Halle, Graz
-    instruments: Classical wind quintet
-  url: ''
-  time: 
 - date: 2020-12-16
   time: 
   url: https://www.radiocore.at/de/blog/mit-80-wirds-gefaehrlich-139
