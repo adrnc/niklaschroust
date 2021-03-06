@@ -1,4 +1,56 @@
 ---
+- title: Sommernächte
+  year: 2021
+  opus: 21
+  pdf: ''
+  audio: ''
+  de:
+    title: ''
+    instruments: ''
+    description: Die Sommernächte beschreiben zwei Szenen aus einer lauen, wie der
+      Titel schon sagt, Sommernacht in Arles. Die Menschen befinden sich auf der Straße,
+      lachen, trinken, tanzen feierlich und genießen die örtlichen Straßencafés.
+  en:
+    description: Die Sommernächte beschreiben zwei Szenen aus einer lauen, wie der
+      Titel schon sagt, Sommernacht in Arles. Die Menschen befinden sich auf der Straße,
+      lachen, trinken, tanzen feierlich und genießen die örtlichen Straßencafés.
+    title: Summer Nights
+    instruments: ''
+  children:
+  - title: Zur Abenddämmerung
+    year: 
+    opus: 
+    pdf: uploads/sommernachte.pdf
+    audio: ''
+    de:
+      description: 'Die Geschichte hintern den zwei Stücken bezieht sich im Prinzip
+        auf den Raum. Im ersten Stück das Schlendern durch die Straßen, wo hier jemand
+        die Trompete spielt und wo anders jemand den Heimweg antritt. '
+      title: ''
+      instruments: ''
+    en:
+      description: The story behind the two pieces basically relates to the space.
+        In the first piece, strolling through the streets, where someone is playing
+        the trumpet and where someone else is making their way home.
+      title: At Dusk
+      instruments: ''
+  - title: Zu später Stunde
+    year: 
+    opus: 
+    pdf: uploads/zur-spaten-stunde.pdf
+    audio: ''
+    de:
+      description: Die zweite Szene beschreibt das Erlebnis in einem Nachtcafé. Ausgelassene
+        Stimmung neben einem Billiardtisch, wo man Wein oder andere Spirituosen konsumiert,
+        soll dieses Bild vermitteln.
+      title: ''
+      instruments: ''
+    en:
+      description: The second scene describes the experience in a night café. This
+        image should convey a relaxed atmosphere next to a billiard table, where wine
+        or other spirits are consumed.
+      title: Late at Night
+      instruments: ''
 - title: Sternbilder - Astra
   year: 2020
   opus: 20
