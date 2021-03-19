@@ -5,7 +5,7 @@
 		classDescriptionHidden = 'music__description--hidden',
 		classViewItemHidden = 'music__view-item--hidden';
 
-		if (description.innerText.length > 160) {
+		if (description.innerText.length > 300) {
 			description.classList.add(classDescriptionHidden);
 			readMore.parentElement.classList.remove(classViewItemHidden);
 			readMore.addEventListener('click', event => {
