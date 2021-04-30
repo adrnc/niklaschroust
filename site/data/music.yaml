@@ -85,6 +85,25 @@
       instruments: ''
       title: ''
     pdf: uploads/kassiopeia-cassiopeia.pdf
+  - title: Becher - Crater
+    year: 2021
+    pdf: uploads/becher-crater.pdf
+    audio: ''
+    en:
+      description: The crater is an essential part of the Greek legend, where Apollo
+        instructs a raven, also a constellation, to bring water in a crater for Apollo's
+        father Zeus. The third constellation, immortalized in the sky, is the water
+        snake, which supposedly prevented the raven from his journey.
+      title: Crater
+      instruments: ''
+    de:
+      description: Der Becher ist ein wesentlicher Bestandteil der griechischen Sage,
+        wo Apoll einen Raben, ebenfalls ein Sternbild, beauftragt in einem Becher
+        Wasser für Apolls Vater Zeus zu bringen. Das dritte, am Himmel verewigte Sternbild
+        ist die Wasserschlange, die den Raben angeblich von seiner Reise abhielt.
+      title: ''
+      instruments: ''
+    opus: 
 - title: Fünf kleine Momente
   year: 2020
   opus: 19
