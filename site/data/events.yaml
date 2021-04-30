@@ -1,4 +1,23 @@
 ---
+- date: 2021-04-30
+  time: 
+  url: https://www.radiocore.at/de/blog/luft-zum-atmen-142
+  piece: Becher - Crater
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
+  de:
+    instruments: |-
+      Gerald Schuhfried veröffentlicht auf _radioCORE_ persönliche Geschichten oder Erfahrungen von diversen Persönlichkeiten, die selten ausgesprochen werden.
+
+      In der Ausgabe _Luft zum Atmen_ erzählt ein junger Mann über das Leben in Siebenbürgen, Rumänien. Niklas A. Chroust komponierte die Musik dazu und spielte sie am Klavier ein.
+    location: Online Podcast
+  en:
+    instruments: |-
+      Gerald Schuhfried publishes personal stories or experiences of various personalities on _radioCORE_ that are seldom expressed.
+
+      In the issue of _Air to Breathe_ (originally: Luft zu Atmen), a young man talks about life in Transylvania, Romania. Niklas A. Chroust composed the music for it and played it on the piano.
+    location: Online Podcast
 - date: 
   piece: Die Stadtgrenze
   postponed: true
