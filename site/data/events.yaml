@@ -1,4 +1,17 @@
 ---
+- date: 
+  piece: Die Stadtgrenze
+  postponed: true
+  dePostponedText: Aufgrund von COVID-19 verschoben
+  enPostponedText: Postponed due to COVID-19
+  de:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Klassisches Bläserquintett
+  en:
+    location: Styriarte, Helmut-List-Halle, Graz
+    instruments: Classical wind quintet
+  url: ''
+  time: 
 - date: 2021-04-30
   time: 
   url: https://www.radiocore.at/de/blog/luft-zum-atmen-142
@@ -18,19 +31,6 @@
 
       In the issue of _Air to Breathe_ (originally: Luft zu Atmen), a young man talks about life in Transylvania, Romania. Niklas A. Chroust composed the music for it and played it on the piano.
     location: Online Podcast
-- date: 
-  piece: Die Stadtgrenze
-  postponed: true
-  dePostponedText: Aufgrund von COVID-19 verschoben
-  enPostponedText: Postponed due to COVID-19
-  de:
-    location: Styriarte, Helmut-List-Halle, Graz
-    instruments: Klassisches Bläserquintett
-  en:
-    location: Styriarte, Helmut-List-Halle, Graz
-    instruments: Classical wind quintet
-  url: ''
-  time: 
 - date: 2021-03-06
   time: 1400
   url: https://aspekte-salzburg.com/konzert/aspektesalzburg-finale-wettbewerb-jugend-komponiert/
