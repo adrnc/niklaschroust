@@ -27,6 +27,25 @@
     instruments: Classical wind quintet
   url: ''
   time: 
+- date: 2021-06-30
+  time: 
+  url: https://www.radiocore.at/de/blog/die-kirche-im-dorf-145
+  piece: Wasserschlange - Hydra
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
+  de:
+    instruments: |-
+      Gerald Schuhfried veröffentlicht auf _radioCORE_ persönliche Geschichten oder Erfahrungen von diversen Persönlichkeiten, die selten ausgesprochen werden.
+
+      In der Ausgabe _Die Kirche im Dorf_ erzählt eine ostdeutsche evangelische Pfarrerin wie sie sich in Siebenbürgen um die Gottesdienste und die Kirchengemeinde kümmert. Niklas A. Chroust komponierte die Musik dazu und Tobias Antonic spielte sie am Klavier ein.
+    location: Online Podcast
+  en:
+    instruments: |-
+      Gerald Schuhfried publishes personal stories or experiences of various personalities on _radioCORE_ that are seldom expressed.
+
+      In the issue of _The church in the village_ (originally: Die Kirche im Dorf), an East German Protestant pastor tells how she takes care of church services and the parish in Transylvania. Niklas A. Chroust composed the music for it and Tobias Antonic played it on the piano.
+    location: Online Podcast
 - date: 2021-04-30
   time: 
   url: https://www.radiocore.at/de/blog/luft-zum-atmen-142
