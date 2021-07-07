@@ -1,4 +1,19 @@
 ---
+- date: 2022-01-23
+  time: 1100
+  url: https://www.schoenberg.at/index.php/de/news-sp-1233479798/1923-vierte-komponierwerkstatt
+  piece: Entrückt
+  postponed: false
+  dePostponedText: ''
+  enPostponedText: ''
+  de:
+    location: Arnold-Schönberg-Center, Wien
+    instruments: Ein Werk in drei Sätzen für Oboe, Klarinette in B, Horn in F, Fagott
+      und Klavier.
+  en:
+    instruments: A work in three movements for oboe, clarinet in Bb, horn in F, bassoon
+      and piano.
+    location: Arnold-Schönberg-Center, Vienna
 - date: 
   piece: Die Stadtgrenze
   postponed: true
