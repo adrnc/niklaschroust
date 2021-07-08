@@ -8,11 +8,19 @@
   enPostponedText: ''
   de:
     location: Arnold-Schönberg-Center, Wien
-    instruments: Ein Werk in drei Sätzen für Oboe, Klarinette in B, Horn in F, Fagott
-      und Klavier.
+    instruments: "Ein Werk in drei Sätzen für Oboe, Klarinette in B, Horn in F, Fagott
+      und Klavier.\n\n* Barbara Gatschelhofer - Oboe \n* Stefan Neubauer - Klarinette
+      in B\n* Reinhard Zmölnig - Horn in F\n* Johannes Kafka - Fagott \n* Johannes
+      Piirto - Klavier"
   en:
-    instruments: A work in three movements for oboe, clarinet in Bb, horn in F, bassoon
-      and piano.
+    instruments: |-
+      A work in three movements for oboe, clarinet in Bb, horn in F, bassoon and piano.
+
+      * Barbara Gatschelhofer - oboe
+      * Stefan Neubauer - clarinet in Bb
+      * Reinhard Zmölnig - Horn in F
+      * Johannes Kafka - bassoon
+      * Johannes Piirto - piano
     location: Arnold-Schönberg-Center, Vienna
 - date: 
   piece: Die Stadtgrenze
