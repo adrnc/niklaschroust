@@ -58,12 +58,12 @@
   audio: ''
   de:
     description: Die Sternenbilder sind ein Klavierzyklus mit insgesamt 88 musikalischen
-      Sternenvisionen, wovon 26 derzeit fertig sind. Der Rest ist noch in Bearbeitung.
+      Sternenvisionen, wobei Opus 20 nur insgesamt 8 Sternenbilder enthält.
     instruments: Klavier
     title: ''
   en:
     description: The star images are a piano cycle with a total of 88 musical star
-      visions, 26 of which are currently finished. The rest is still in progress.
+      visions, Opus 20 only containing 8 constellations.
     instruments: Piano
     title: Constellations - Astra
   children:
